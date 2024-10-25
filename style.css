@@ -68,3 +68,9 @@ a {
 .container:hover {
     background-color: rgba(153, 205, 50, 0.123);
 }
+
+footer {
+    margin-top: 35vh;
+    padding: 8px;
+    text-align: center;
+}
