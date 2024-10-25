@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "teste_font";
+    src: url(fonts/RobotoMono-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    font-family: 'teste_font';
+    color: green;
+}
+
+header {
+    cursor: default;
+    font-size: 1.6em;
+    margin: 20px 0px 30px;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+.container {
+    display: inline-flex;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    border: 3px solid green;
+}
+
+a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+#estudoH_C {
+    position: relative;
+    text-align: center;
+}
+
+#estudoH_C > h2 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+}
+
+#github {
+    position: relative;
+    text-align: center;
+}
+
+#github > h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container:hover {
+    background-color: rgba(153, 205, 50, 0.123);
+}
