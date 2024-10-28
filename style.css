@@ -84,6 +84,7 @@ a {
 }
 
 footer {
+    cursor: default;
     margin-top: 32vh;
     padding: 8px;
     text-align: center;
