@@ -28,7 +28,12 @@ main {
     margin: auto;
 }
 
-.container {
+.Repositórios {
+    margin: 15px auto;
+}
+
+.Repositórios > article {
+    margin-top: 15px;
     display: inline-flex;
     height: 300px;
     width: 200px;
@@ -41,19 +46,18 @@ a {
     text-decoration: none;
 }
 
-#estudoH_C {
+article {
     position: relative;
     text-align: center;
 }
 
-#estudoH_C > h2 {
+article h2 {
     position: absolute;
     left: 50%;
     top: 45%;
     transform: translate(-50%, -40%);
 }
-
-.container:hover {
+.Repositórios > article:hover {
     background-color: rgba(153, 205, 50, 0.123);
 }
 
