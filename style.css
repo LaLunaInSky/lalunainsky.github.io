@@ -84,8 +84,23 @@ a {
 }
 
 footer {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
     cursor: default;
-    margin-top: 32vh;
-    padding: 8px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 12px;
     text-align: center;
+}
+
+a > img {
+    /*filter: invert(100%);*/
+    margin-bottom: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+a > img:hover {
+    filter: invert(20%);
 }
