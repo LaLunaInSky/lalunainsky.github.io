@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "teste_font";
+    font-family: "Roboto Mono";
     src: url(fonts/RobotoMono-Regular.ttf);
 }
 
@@ -11,22 +11,21 @@
 
 body {
     background-color: black;
-    font-family: 'teste_font';
+    font-family: 'Roboto Mono';
     color: green;
 }
 
 header {
+    color: black;
+    background-color: antiquewhite;
     cursor: default;
     font-size: 1.6em;
-    margin: 20px 0px 30px;
     text-align: center;
 }
 
 main {
-    max-width: 700px;
     text-align: center;
     margin: auto;
-    padding: 10px;
 }
 
 .container {
@@ -34,7 +33,6 @@ main {
     height: 300px;
     width: 200px;
     border-radius: 10px;
-    margin-top: 20px;
     border: 3px solid green;
 }
 
@@ -53,30 +51,6 @@ a {
     left: 50%;
     top: 45%;
     transform: translate(-50%, -40%);
-}
-
-#github {
-    position: relative;
-    text-align: center;
-}
-
-#github > h2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#linkedin {
-    position: relative;
-    text-align: center;
-}
-
-#linkedin > h2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .container:hover {
