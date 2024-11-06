@@ -18,9 +18,13 @@ body {
 header {
     color: black;
     background-color: antiquewhite;
-    cursor: default;
+    padding: 10px;
     font-size: 1.6em;
     text-align: center;
+}
+
+header > h1 {
+    cursor: default;
 }
 
 main {
