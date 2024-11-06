@@ -16,24 +16,34 @@ body {
 }
 
 header {
+    height: 100vh;
     color: black;
     background-color: antiquewhite;
-    padding: 10px;
-    font-size: 1.6em;
     text-align: center;
 }
 
 header > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: green;
     cursor: default;
 }
 
 main {
+    position: relative;
+    height: 120vh;
     text-align: center;
     margin: auto;
 }
 
 .Repositórios {
-    margin: 15px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .Repositórios > article {
@@ -61,6 +71,7 @@ article h2 {
     top: 45%;
     transform: translate(-50%, -40%);
 }
+
 .Repositórios > article:hover {
     background-color: rgba(153, 205, 50, 0.123);
 }
