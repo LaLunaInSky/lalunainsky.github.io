@@ -20,36 +20,28 @@ function incializaçãoSite() {
     headerSection.appendChild(menuHeader)
 
     //primeira frase
-    function passoUm() {
-        h1Header.innerText = 'Olá, Mundo!'
-        h1Header.style.animation = "typing 2s steps(11), cursor .6s step-end infinite alternate";
-    }
+    h1Header.innerText = 'Olá, Mundo!'
+    h1Header.style.animation = "typing 2s steps(11), cursor .6s step-end infinite alternate";
+    clearInterval(meusIntervalos)
+    meusIntervalos = setInterval(passoDois, 5000)
 
     //segunda frase
-    function passoDois() {
-        h1Header.innerText = 'Eu sou LaLunaInSky'
-        h1Header.style.animation = "typing 2s steps(18), cursor .6s step-end infinite alternate";
-    }
+    h1Header.innerText = 'Eu sou LaLunaInSky'
+    //h1Header.style.animation = "typing 2s steps(18), cursor .6s step-end infinite alternate";
+    clearInterval(meusIntervalos)
 
     //terceira frase
-    function passoTres() {
-        h1Header.innerText = 'Bem Vindo(a)!'
-        h1Header.style.animation = "typing 2s steps(13), cursor .6s step-end infinite alternate";
-    }
+    h1Header.innerText = 'Bem Vindo(a)!'
+    //h1Header.style.animation = "typing 2s steps(13), cursor .6s step-end infinite alternate";
+    clearInterval(meusIntervalos)
 
     //titulo + menu
-    function passoQuatro() {
-        h1Header.innerText = 'LaLunaInSky'
-        h1Header.style.animation = "typing 2s steps(11), cursor .6s step-end infinite alternate";
+    h1Header.innerText = 'LaLunaInSky'
+    h1Header.style.animation = "typing 2s steps(11), cursor .6s step-end infinite alternate";
 
-        function proximoPasso() {
-            MenusOpções(menuHeader)
-        }
-    }
-
-    var listaPassos = [passoUm, passoDois, passoTres, passoQuatro]
-    var contagem = 0
-    h1Header.innerText = `${contagem}`
+    MenusOpções(menuHeader)
+    
+    clearInterval(meusIntervalos)    
 }
 
 incializaçãoSite()

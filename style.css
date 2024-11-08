@@ -66,50 +66,6 @@ header > #secHeader {
     border-bottom: 2px solid yellowgreen;
 }
 
-main {
-    position: relative;
-    height: 120vh;
-    text-align: center;
-    margin: auto;
-}
-
-.Repositórios {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-}
-
-.Repositórios > article {
-    margin-top: 15px;
-    height: 300px;
-    width: 200px;
-    border-radius: 10px;
-    border: 3px solid green;
-}
-
-a {
-    color: yellowgreen;
-    text-decoration: none;
-}
-
-article {
-    display: inline-flex;
-    position: relative;
-    text-align: center;
-}
-
-article h2 {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -40%);
-}
-
-.Repositórios > article:hover {
-    background-color: rgba(153, 205, 50, 0.123);
-}
-
 footer {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
