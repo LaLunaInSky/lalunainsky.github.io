@@ -1,15 +1,23 @@
 function MenusOpções(menu) {
     var listaDeOpçõesMenu = ['Sobre', 'Repositórios', 'Projetos', 'Contato', 'Mídias Sociais']
-    
+
     var quantidadeDeLinksDoMenu = listaDeOpçõesMenu.length
 
     for (var count = 0; count < quantidadeDeLinksDoMenu; count++) {
         var link = document.createElement('a')
-        link.setAttribute('href', '#')
+        if (count == 1) {
+            link.setAttribute('href', 'page_repositórios/repositórios.html')
+        } else {
+            link.setAttribute('href', '#')
+        }
         link.setAttribute('target', '_self')
         link.innerText = `${listaDeOpçõesMenu[count]}`
         menu.appendChild(link)
     }
+}
+
+function teste() {
+
 }
 
 function incializaçãoSite() {
