@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "Roboto Mono";
+    font-family: 'Roboto Mono';
     src: url(fonts/RobotoMono-Regular.ttf);
 }
 
@@ -11,11 +11,13 @@
 
 body {
     background-color: black;
+
     font-family: 'Roboto Mono';
     color: green;
 }
 
 header {
+    font-family: var(--font01);
     height: 100vh;
     color: green;
     background-color: black;
@@ -32,7 +34,7 @@ header > #secHeader {
 }
 
 #secHeader h1 {
-    font-size: 6em;
+    font-size: 7em;
     border-right: 5px solid green;
     width: 100%;
     white-space: nowrap;
@@ -42,7 +44,8 @@ header > #secHeader {
         cursor .6s step-end infinite alternate;
 }
 
-#secHeader a{
+#secHeader a {
+    font-size: 1.3em;
     text-decoration: none;
     color: yellowgreen;
     margin-left: 30px;
@@ -68,26 +71,4 @@ header > #secHeader {
 #secHeader a:hover {
     padding-bottom: 2px;
     text-decoration: underline;
-}
-
-footer {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
-    cursor: default;
-    font-style: italic;
-    font-weight: bold;
-    padding: 12px;
-    text-align: center;
-}
-
-a > img {
-    /*filter: invert(100%);*/
-    margin-bottom: 5px;
-    width: 35px;
-    height: 35px;
-}
-
-a > img:hover {
-    filter: invert(20%);
 }
