@@ -17,19 +17,39 @@ body {
 
 header {
     height: 100vh;
-    color: black;
-    background-color: antiquewhite;
+    color: green;
+    background-color: black;
     text-align: center;
 }
 
-header > h1 {
+header > #secHeader {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5em;
     color: green;
     cursor: default;
+}
+
+#secHeader h1 {
+    font-size: 6em;
+}
+
+#secHeader nav{
+    margin-top: 100px;
+
+}
+
+#secHeader a{
+    color: yellowgreen;
+    margin-left: 30px;
+}
+
+
+#secHeader a:hover {
+    border: 2px solid yellowgreen;
+    padding: 5px;
+    margin-left: 25px;
 }
 
 main {
