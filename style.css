@@ -41,14 +41,13 @@ main {
 
 .Repositórios {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
 }
 
 .Repositórios > article {
     margin-top: 15px;
-    display: inline-flex;
     height: 300px;
     width: 200px;
     border-radius: 10px;
@@ -61,6 +60,7 @@ a {
 }
 
 article {
+    display: inline-flex;
     position: relative;
     text-align: center;
 }
