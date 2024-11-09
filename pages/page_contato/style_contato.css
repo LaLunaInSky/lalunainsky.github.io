@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url(../../fonts/RobotoMono-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto Mono';
+    color: green;
+}
+
+header {
+    color: green;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header > #secHeader {
+    color: green;
+    cursor: default;
+}
+
+#secHeader h1 > a {
+    color: green;
+    font-size: 3em;
+}
+
+#secHeader h1 > a:hover {
+    text-decoration: none;
+}
+
+#secHeader a{
+    text-decoration: none;
+    color: yellowgreen;
+    margin-left: 30px;
+}
+
+#secHeader nav{
+    margin-top: 20px;
+
+}
+
+#secHeader a:hover {
+    padding-bottom: 2px;
+    text-decoration: underline;
+}
+
+footer {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    cursor: default;
+    font-style: italic;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+}
+
+#midiaSociaisLogos > a {
+    color: black;
+}
+
+a > img {
+    filter: invert(100%);
+    margin-bottom: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+a > img:hover {
+    filter: invert(30%);
+}
