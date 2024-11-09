@@ -5,10 +5,14 @@ function MenusOpções(menu) {
 
     for (var count = 0; count < quantidadeDeLinksDoMenu; count++) {
         var link = document.createElement('a')
-        if (count == 1) {
-            link.setAttribute('href', './pages/page_repositórios/repositórios.html')
-        } else {
-            link.setAttribute('href', '#')
+        if (count == 0) {
+            link.setAttribute('href', 'pages/page_sobre/sobre.html')
+        } else if (count == 1) {
+            link.setAttribute('href', 'pages/page_repositórios/repositórios.html')
+        } else if (count == 2) {
+            link.setAttribute('href', 'pages/page_projetos/projetos.html')
+        } else if (count == 3) {
+            link.setAttribute('href', 'pages/page_contato/contato.html')
         }
         link.setAttribute('target', '_self')
         link.innerText = `${listaDeOpçõesMenu[count]}`

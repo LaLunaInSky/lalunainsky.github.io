@@ -5,10 +5,14 @@ function MenusOpções(menu) {
 
     for (var count = 0; count < quantidadeDeLinksDoMenu; count++) {
         var link = document.createElement('a')
-        if (count == 1) {
-            link.setAttribute('href', '#')
-        } else {
-            link.setAttribute('href', '#')
+        if (count == 0) {
+            link.setAttribute('href', './sobre.html')
+        } else if (count == 1) {
+            link.setAttribute('href', '../page_repositórios/repositórios.html')
+        } else if (count == 2) {
+            link.setAttribute('href', '../page_projetos/projetos.html')
+        } else if (count == 3) {
+            link.setAttribute('href', '../page_contato/contato.html')
         }
         link.setAttribute('target', '_self')
         link.innerText = `${listaDeOpçõesMenu[count]}`
@@ -17,7 +21,6 @@ function MenusOpções(menu) {
 }
 
 function incializaçãoHeader() {
-    var contagem = 0
     var headerSection = document.querySelector('section#secHeader')
     var h1Header = document.createElement('h1')
     h1Header.innerHTML =`<a href="../../index.html" target="_self">LaLunaInSky</a>`
