@@ -11,6 +11,7 @@ function MenusOpções(menu) {
             link.setAttribute('href', '../page_repositórios/repositórios.html')
         } else if (count == 2) {
             link.setAttribute('href', './projetos.html')
+            link.setAttribute('id', 'pageAtual')
         } else if (count == 3) {
             link.setAttribute('href', '../page_contato/contato.html')
         }

@@ -9,6 +9,7 @@ function MenusOpções(menu) {
             link.setAttribute('href', '../page_sobre/sobre.html')
         } else if (count == 1) {
             link.setAttribute('href', './repositórios.html')
+            link.setAttribute('id', 'pageAtual')
         } else if (count == 2) {
             link.setAttribute('href', '../page_projetos/projetos.html')
         } else if (count == 3) {

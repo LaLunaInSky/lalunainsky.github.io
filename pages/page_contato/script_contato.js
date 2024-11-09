@@ -13,6 +13,7 @@ function MenusOpções(menu) {
             link.setAttribute('href', '../page_projetos/projetos.html')
         } else if (count == 3) {
             link.setAttribute('href', './contato.html')
+            link.setAttribute('id', 'pageAtual')
         }
         link.setAttribute('target', '_self')
         link.innerText = `${listaDeOpçõesMenu[count]}`

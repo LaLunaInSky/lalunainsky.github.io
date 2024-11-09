@@ -7,6 +7,7 @@ function MenusOpções(menu) {
         var link = document.createElement('a')
         if (count == 0) {
             link.setAttribute('href', './sobre.html')
+            link.setAttribute('id', 'pageAtual')
         } else if (count == 1) {
             link.setAttribute('href', '../page_repositórios/repositórios.html')
         } else if (count == 2) {
