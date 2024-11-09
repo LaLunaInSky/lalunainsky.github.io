@@ -36,6 +36,12 @@ header > #secHeader {
     text-decoration: none;
 }
 
+#secHeader a#pageAtual {
+    color: green;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
 #secHeader a{
     text-decoration: none;
     color: yellowgreen;

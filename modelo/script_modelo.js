@@ -5,6 +5,7 @@ function MenusOpções(menu) {
 
     for (var count = 0; count < quantidadeDeLinksDoMenu; count++) {
         var link = document.createElement('a')
+        //link.setAttribute('id', 'pageAtual') adicionar na página atual
         if (count == 0) {
             link.setAttribute('href', '../pages/page_sobre/sobre.html')
         } else if (count == 1) {
