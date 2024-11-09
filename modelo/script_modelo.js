@@ -6,7 +6,7 @@ function MenusOpções(menu) {
     for (var count = 0; count < quantidadeDeLinksDoMenu; count++) {
         var link = document.createElement('a')
         if (count == 0) {
-            link.setAttribute('href', '../pages/pages_sobre/sobre.html')
+            link.setAttribute('href', '../pages/page_sobre/sobre.html')
         } else if (count == 1) {
             link.setAttribute('href', '../pages/page_repositórios/repositórios.html')
         } else if (count == 2) {
