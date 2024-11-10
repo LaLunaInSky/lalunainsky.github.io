@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: black;
     font-family: 'Roboto Mono';
     color: green;
 }
@@ -59,7 +59,10 @@ header > #secHeader {
 }
 
 main {
+    background-color: white;
+    margin: auto;
     height: 100vh;
+    width: 1100px;
 }
 
 footer {
