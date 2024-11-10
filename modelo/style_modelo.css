@@ -58,6 +58,10 @@ header > #secHeader {
     text-decoration: underline;
 }
 
+main {
+    height: 100vh;
+}
+
 footer {
     color: white;
     font-family: Arial, Helvetica, sans-serif;

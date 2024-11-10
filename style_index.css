@@ -60,9 +60,10 @@ header > #secHeader {
 }
 
 #secHeader nav{
+    margin: auto;
     margin-top: 100px;
     border-right: 3px solid yellowgreen;
-    width: 100%;
+    width: 530px;
     white-space: nowrap;
     overflow: hidden;
 

@@ -28,7 +28,7 @@ function incializaçãoSite() {
     headerSection.appendChild(h1Header)
     var menuHeader = document.createElement('nav')
     headerSection.appendChild(menuHeader)
-    menuHeader.style.animation = `typing 2s steps(${65}), cursor .6s step-end infinite alternate`;
+    menuHeader.style.animation = `typing 2s steps(${40}), cursor .6s step-end infinite alternate`;
     MenusOpções(menuHeader)
 
     function tirarBorda() {
