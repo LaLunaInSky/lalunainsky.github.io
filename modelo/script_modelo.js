@@ -7,6 +7,7 @@ function MenusOpções(menu) {
         var link = document.createElement('a')
         //link.setAttribute('id', 'pageAtual') adicionar na página atual
         if (count == 0) {
+            link.setAttribute('id', 'primeiraOcorrênciaNav')
             link.setAttribute('href', '../pages/page_sobre/sobre.html')
         } else if (count == 1) {
             link.setAttribute('href', '../pages/page_repositórios/repositórios.html')

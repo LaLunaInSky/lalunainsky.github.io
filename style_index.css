@@ -11,20 +11,17 @@
 
 body {
     background-color: black;
-
     font-family: 'Roboto Mono';
     color: green;
 }
 
 header {
-    font-family: var(--font01);
     height: 100vh;
-    color: green;
-    background-color: black;
     text-align: center;
 }
 
 header > #secHeader {
+    padding: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,7 +30,7 @@ header > #secHeader {
     cursor: default;
 }
 
-#secHeader h1 {
+#secHeader > h1 {
     font-size: 7em;
     border-right: 5px solid green;
     width: 100%;
@@ -44,11 +41,23 @@ header > #secHeader {
         cursor .6s step-end infinite alternate;
 }
 
-#secHeader a {
+#secHeader > nav {
+    margin: 100px auto 0px;
+    border-right: 3px solid yellowgreen;
+    width: 492px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#secHeader > nav > a {
     font-size: 1.3em;
     text-decoration: none;
     color: yellowgreen;
-    margin-left: 30px;
+    padding-left: 30px;
+}
+
+#secHeader > nav > a#primeiraOcorrênciaNav {
+    padding-left: 0px;
 }
 
 @keyframes cursor{
@@ -57,16 +66,6 @@ header > #secHeader {
 
 @keyframes typing {
     from {width: 0}
-}
-
-#secHeader nav{
-    margin: auto;
-    margin-top: 100px;
-    border-right: 3px solid yellowgreen;
-    width: 530px;
-    white-space: nowrap;
-    overflow: hidden;
-
 }
 
 #secHeader a:hover {
