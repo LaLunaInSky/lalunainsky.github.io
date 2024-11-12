@@ -1,3 +1,6 @@
+let cssStyle = document.getElementById('styleCss').href
+let link = 'http://127.0.0.1:3000/style_index.css' // ficar de olho nesse link quando for colocar no main!
+let linkSegundário = 'http://127.0.0.1:3000/style_index_alternativo.css'
 
 function aparecimentoSections() {
 
@@ -28,16 +31,19 @@ function aparecimentoSections() {
 
 }
 
-function mudançaHeader() {
-    let cssStyle = document.getElementById('styleCss').href
-    let link = 'http://127.0.0.1:3000/style_index.css' // ficar de olho nesse link quando for colocar no main!
-
+function mudançaCss() {
     if (cssStyle == link) {
         cssStyle = document.getElementById('styleCss').href = './style_index_alternativo.css';
-        document.getElementById('quartoH1').innerHTML = `<a href="#" target="_self" onclick="mudançaHeader()">LaLunaInSky</a>`
+        document.getElementById('quartoH1').innerHTML = `<a href="#" target="_self" onclick="mudançaCss()">LaLunaInSky</a>`
+
+        //mudança links nav 
+        document.getElementById('quartoNav').innerHTML = '<a id="navPrimeiro" href="#" target="_self" onclick="#">Sobre</a><a href="#" target="_self" onclick="#">Repositórios</a><a href="#" target="_self" onclick="#">Projetos</a><a href="#" target="_self" onclick="#">Contato</a>'
     } else {
         cssStyle = document.getElementById('styleCss').href = './style_index.css';
         document.getElementById('quartoH1').innerHTML = `LaLunaInSky`
+
+        //retorno links iniciais nav 
+        document.getElementById('quartoNav').innerHTML = '<a id="navPrimeiro" href="#" target="_self" onclick="mudançaHeader()">Sobre</a><a href="#" target="_self" onclick="mudançaCss()">Repositórios</a><a href="#" target="_self" onclick="mudançaCss()">Projetos</a><a href="#" target="_self" onclick="mudançaCss()">Contato</a>'
     }
 }
 

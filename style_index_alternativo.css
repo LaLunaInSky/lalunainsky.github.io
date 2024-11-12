@@ -25,12 +25,10 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -0%);
-    transition: position 1000ms;
-    transition: transform 1000ms;
 }
 
 .evento > h1 {
-    font-size: 4em;
+    font-size: 4.3em;
 }
 
 #quartoH1 > a {
@@ -44,7 +42,9 @@ body {
 }
 
 .evento > nav {
+    text-align: center;
     margin-top: 25px;
+    margin: 25px auto 0px;
 }
 
 .evento #navPrimeiro {
@@ -56,7 +56,7 @@ body {
     font-weight: bolder;
     text-decoration: none;
     font-size: 1.1em;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .evento a:hover {
