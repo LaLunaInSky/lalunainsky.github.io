@@ -87,13 +87,13 @@ footer {
     color: black;
 }
 
-a > img {
+#midiaSociaisLogos > a > img {
     filter: invert(100%);
     margin-bottom: 5px;
     width: 35px;
     height: 35px;
 }
 
-a > img:hover {
+#midiaSociaisLogos > a > img:hover {
     filter: invert(30%);
 }

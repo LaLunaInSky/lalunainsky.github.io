@@ -3,8 +3,11 @@ let link = 'http://127.0.0.1:3000/style_index.css' // ficar de olho nesse link q
 let linkSegundário = 'http://127.0.0.1:3000/style_index_alternativo.css'
 
 function aparecimentoSections() {
+    //temporário
+    var sec = document.getElementById('quarto')
+    sec.style.visibility = 'visible';
 
-    var sec = document.getElementById('primeiro')
+    /*var sec = document.getElementById('primeiro')
     sec.style.visibility = 'visible';
     
     function passoDois() {
@@ -27,23 +30,48 @@ function aparecimentoSections() {
         //nav.style.visibility = 'hidden';
     }
 
-    passoQuatro()
+    passoQuatro()*/
 
 }
 
 function mudançaCss() {
+    cssStyle = document.getElementById('styleCss').href
+
+    //criando o main e o footer
+    var main = document.createElement('main')
+    var footer = document.createElement('footer')
+    var secFootter = document.createElement('section')
+    var body = document.querySelector('body')
+
+
     if (cssStyle == link) {
+        //footer elementos
+
+        secFootter.innerHTML = '<p id="midiaSociaisLogos"><a id="primeiroAFooter" href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="logos_mídia_sociais/instagram_logo_50px.png" alt="logo_instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="logos_mídia_sociais/github_logo_70px.png " alt="logo_github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="logos_mídia_sociais/linkedin_logo_50px.png" alt="logo_linkedin"></a><a href="https://www.youtube.com/@LaLunaInSky" target="_blank"><img src="logos_mídia_sociais/youtube_logo_50px.png" alt="logo_youtube"></a></p>'
+        secFootter.innerHTML += '<p id="segundoPFooter">Criado por LaLunaInSky em 2024</p>'
+
+        footer.appendChild(secFootter)
+
         cssStyle = document.getElementById('styleCss').href = './style_index_alternativo.css';
         document.getElementById('quartoH1').innerHTML = `<a href="#" target="_self" onclick="mudançaCss()">LaLunaInSky</a>`
 
         //mudança links nav 
         document.getElementById('quartoNav').innerHTML = '<a id="navPrimeiro" href="#" target="_self" onclick="#">Sobre</a><a href="#" target="_self" onclick="#">Repositórios</a><a href="#" target="_self" onclick="#">Projetos</a><a href="#" target="_self" onclick="#">Contato</a>'
-    } else {
+    
+        //adicionando o main e o footer no body
+        body.appendChild(main)
+        body.appendChild(footer)
+    } else{
+
         cssStyle = document.getElementById('styleCss').href = './style_index.css';
         document.getElementById('quartoH1').innerHTML = `LaLunaInSky`
 
         //retorno links iniciais nav 
         document.getElementById('quartoNav').innerHTML = '<a id="navPrimeiro" href="#" target="_self" onclick="mudançaHeader()">Sobre</a><a href="#" target="_self" onclick="mudançaCss()">Repositórios</a><a href="#" target="_self" onclick="mudançaCss()">Projetos</a><a href="#" target="_self" onclick="mudançaCss()">Contato</a>'
+
+        //removendo o main e o footer do body
+        body.removeChild(body.children[1])
+        body.removeChild(body.children[2])
     }
 }
 
