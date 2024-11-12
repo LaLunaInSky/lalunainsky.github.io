@@ -84,6 +84,4 @@ function mudançaCss() {
     }
 }
 
-mudançaCss() //dev temp
-
 aparecimentoSections()
