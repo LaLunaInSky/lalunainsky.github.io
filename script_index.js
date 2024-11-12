@@ -25,4 +25,8 @@ function aparecimentoSections() {
     passoQuatro()
 }
 
+function mudançaHeader() {
+    
+}
+
 aparecimentoSections()
