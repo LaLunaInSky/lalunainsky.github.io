@@ -1,6 +1,54 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(fonts/RobotoMono-Regular.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    transition-duration: 1000ms;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto Mono';
+    color: green;
+}
+
+.evento {
+    background-color: black;
+    padding: 25px;
+    width: 100vw;
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.evento > h1 {
+    cursor: default;
+    font-size: 4em;
+}
+
+.evento > nav {
+    margin-top: 25px;
+}
+
+.evento #navPrimeiro {
+    margin-left: -15px;
+}
+
+.evento a {
+    color: yellowgreen;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-left: 15px;
+}
+
+.evento a:hover {
+    color: green;
 }

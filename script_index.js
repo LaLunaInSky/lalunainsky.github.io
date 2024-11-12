@@ -1,4 +1,6 @@
+
 function aparecimentoSections() {
+
     var sec = document.getElementById('primeiro')
     sec.style.visibility = 'visible';
     
@@ -23,10 +25,11 @@ function aparecimentoSections() {
     }
 
     passoQuatro()
+
 }
 
 function mudançaHeader() {
-    
+    document.getElementById('styleCss').href="./style_index_alternativo.css";
 }
 
 aparecimentoSections()
