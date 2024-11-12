@@ -7,6 +7,7 @@
 
 * {
     margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -17,58 +18,33 @@ body {
 
 header {
     height: 100vh;
-    text-align: center;
+    position: relative;
 }
 
-header > #secHeader {
+.evento {
+    background-color: aquamarine;
     padding: 25px;
+    min-width: 600px;
+    text-align: center;
+    visibility: hidden;
+
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: green;
-    cursor: default;
+    transform: translate(-60%, -50%);
 }
 
-#secHeader > h1 {
-    font-size: 7em;
-    border-right: 5px solid green;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-        typing 2s steps(11),
-        cursor .6s step-end infinite alternate;
+.evento > h1 {
+    font-size: 5em;
 }
 
-#secHeader > nav {
-    margin: 100px auto 0px;
-    border-right: 3px solid yellowgreen;
-    width: 492px;
-    white-space: nowrap;
-    overflow: hidden;
+.evento #navPrimeiro {
+    margin-left: -15px;
 }
 
-#secHeader > nav > a {
-    font-size: 1.3em;
-    text-decoration: none;
+.evento a {
     color: yellowgreen;
-    padding-left: 30px;
-}
-
-#secHeader > nav > a#primeiraOcorrênciaNav {
-    padding-left: 0px;
-}
-
-@keyframes cursor{
-    50% {border-color: transparent}
-}
-
-@keyframes typing {
-    from {width: 0}
-}
-
-#secHeader a:hover {
-    padding-bottom: 2px;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 15px;
 }
