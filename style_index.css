@@ -22,7 +22,6 @@ header {
 }
 
 .evento {
-    background-color: aquamarine;
     padding: 25px;
     min-width: 600px;
     text-align: center;
@@ -35,7 +34,11 @@ header {
 }
 
 .evento > h1 {
-    font-size: 5em;
+    font-size: 6em;
+}
+
+.evento > nav {
+    margin-top: 25px;
 }
 
 .evento #navPrimeiro {
@@ -44,7 +47,14 @@ header {
 
 .evento a {
     color: yellowgreen;
+    font-weight: bolder;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-left: 15px;
+    transition-duration: 500ms;
+}
+
+.evento a:hover {
+    color: green;
+    transition-duration: 500ms;
 }
