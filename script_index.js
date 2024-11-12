@@ -29,7 +29,16 @@ function aparecimentoSections() {
 }
 
 function mudançaHeader() {
-    document.getElementById('styleCss').href="./style_index_alternativo.css";
+    let cssStyle = document.getElementById('styleCss').href
+    let link = 'http://127.0.0.1:3000/style_index.css' // ficar de olho nesse link quando for colocar no main!
+
+    if (cssStyle == link) {
+        cssStyle = document.getElementById('styleCss').href = './style_index_alternativo.css';
+        document.getElementById('quartoH1').innerHTML = `<a href="#" target="_self" onclick="mudançaHeader()">LaLunaInSky</a>`
+    } else {
+        cssStyle = document.getElementById('styleCss').href = './style_index.css';
+        document.getElementById('quartoH1').innerHTML = `LaLunaInSky`
+    }
 }
 
 aparecimentoSections()
