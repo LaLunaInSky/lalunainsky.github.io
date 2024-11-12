@@ -45,6 +45,10 @@ function mudançaCss() {
 
 
     if (cssStyle == link) {
+        if (body.children.length > 1) {
+            body.removeChild(body.children[1])
+        }
+
         //footer elementos
 
         secFootter.innerHTML = '<p id="midiaSociaisLogos"><a id="primeiroAFooter" href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="logos_mídia_sociais/instagram_logo_50px.png" alt="logo_instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="logos_mídia_sociais/github_logo_70px.png " alt="logo_github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="logos_mídia_sociais/linkedin_logo_50px.png" alt="logo_linkedin"></a><a href="https://www.youtube.com/@LaLunaInSky" target="_blank"><img src="logos_mídia_sociais/youtube_logo_50px.png" alt="logo_youtube"></a></p>'
@@ -61,18 +65,21 @@ function mudançaCss() {
         //adicionando o main e o footer no body
         body.appendChild(main)
         body.appendChild(footer)
+        
     } else{
 
         cssStyle = document.getElementById('styleCss').href = './style_index.css';
         document.getElementById('quartoH1').innerHTML = `LaLunaInSky`
 
         //retorno links iniciais nav 
-        document.getElementById('quartoNav').innerHTML = '<a id="navPrimeiro" href="#" target="_self" onclick="mudançaHeader()">Sobre</a><a href="#" target="_self" onclick="mudançaCss()">Repositórios</a><a href="#" target="_self" onclick="mudançaCss()">Projetos</a><a href="#" target="_self" onclick="mudançaCss()">Contato</a>'
+        document.getElementById('quartoNav').innerHTML = '<a id="navPrimeiro" href="#" target="_self" onclick="mudançaCss()">Sobre</a><a href="#" target="_self" onclick="mudançaCss()">Repositórios</a><a href="#" target="_self" onclick="mudançaCss()">Projetos</a><a href="#" target="_self" onclick="mudançaCss()">Contato</a>'
 
         //removendo o main e o footer do body
-        body.removeChild(body.children[1])
         body.removeChild(body.children[2])
+        body.removeChild(body.children[1])
     }
 }
+
+mudançaCss() //dev temp
 
 aparecimentoSections()
