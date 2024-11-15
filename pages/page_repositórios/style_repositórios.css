@@ -38,8 +38,24 @@ main > h1 {
 }
 
 .repo > article > ul {
+    margin-top: 20px;
+    list-style-type: none;
     display: none;
     transition-duration: 500ms;
+}
+
+.repo li:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.repo li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.repo li > a:hover {
+    border-bottom:  2px solid white;
+    padding-bottom: 2px;
 }
 
 .repo > article:hover {
