@@ -42,3 +42,11 @@ header a {
 header a:hover {
     color: green;
 }
+
+footer {
+    background-color: black;
+    color: green;
+    font-family: var(--font01);
+    text-align: center;
+    padding: 15px;
+}
