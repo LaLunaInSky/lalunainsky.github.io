@@ -3,94 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style_main.css">
-    <link rel="stylesheet" href="styles/style_inicio.css">
+    <link rel="stylesheet" href="styles/style_all.css" media="all">
     <title>LaLunaInSky</title>
 </head>
 <body>
     <header>
         <h1>LaLunaInSky</h1>
-        <nav>
-            <a href="index.html" target="_self" id="paginaAtual">Início</a>
-            <a href="sobre.html" target="_self">Sobre</a>
-            <a href="contato.html" target="_self">Contato</a>
-        </nav>
     </header>
     <main>
-        <section>
-            <h1>INÍCIO</h1>
-            <article class="conteudos" id="conteudo1">
-                <h2>Estudos</h2>
-                <section class="estudos" id="htmlCss">
-                    <h3><a href="pages/html_e_css/html_css.html" target="_self">Estudo de HTML5 e CSS3</a></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corrupti eius dolorum veniam doloribus recusandae consequatur tenetur nobis qui exercitationem quaerat dolorem voluptatem eum ducimus obcaecati ab, vel doloremque soluta.</p>
-                    <aside>
-                        <h4>Link desse Repositório no GitHub</h4>
-                        <a href="#" target="_blank">Repositório</a>
-                    </aside>
-                </section>
-                <section class="estudos" id="javascript">
-                    <h3><a href="#" target="_self">Estudo de JavaScipt</a></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas error ea odio labore, quidem repellendus eveniet consequatur quam neque sapiente totam itaque libero cupiditate perspiciatis magnam assumenda pariatur! Excepturi, veniam?</p>
-                    <aside>
-                        <h4>Link desse Repositório no GitHub</h4>
-                        <a href="#" target="_blank">Repositório</a>
-                    </aside>
-                </section>
-                <section class="estudos" id="python">
-                    <h3><a href="#" target="_self">Estudo de Python</a></h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptatibus tempore, ex iure dolorum atque doloribus beatae sapiente nemo, deserunt saepe. Aperiam obcaecati temporibus eius dolor aliquam beatae harum distinctio.</p>
-                    <aside>
-                        <h4>Link desse Repositório no GitHub</h4>
-                        <a href="#" target="_blank">Repositório</a>
-                    </aside>
-                </section>
-            </article>
-            <article class="conteudos" id="conteudo2">
-                <h2>Projetos</h2>
-                <section class="projetos" id="android">
-                    <h3><a href="https://lalunainsky.github.io/projeto-android/" target="_blank">Projeto Android</a></h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis, corporis ipsum sapiente reprehenderit omnis odio dolores sequi eius pariatur amet quas, aliquid nihil quo illum voluptatibus voluptate ad.</p>
-                    <aside>
-                        <h4>Link do Repositório desse Projeto no GitHub</h4>
-                        <a href="#" target="_blank">Repositório</a>
-                    </aside>
-                </section>
-                <section class="projetos" id="cordel">
-                    <h3><a href="https://lalunainsky.github.io/projeto-cordel/" target="_blank">Projeto Cordel</a></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam numquam tempora debitis. Ratione necessitatibus, perspiciatis recusandae deleniti optio reprehenderit, eum, libero ipsa quod harum commodi iure enim alias tempora consequatur!</p>
-                    <aside>
-                        <h4>Link do Repositório desse Projeto no GitHub</h4>
-                        <a href="#" target="_blank">Repositório</a>
-                    </aside>
-                </section>
-                <section class="projetos" id="social">
-                    <h3><a href="https://lalunainsky.github.io/projeto-social/" target="_blank">Projeto Social</a></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ea consequatur qui cumque ad reprehenderit odio commodi. Facilis ea ducimus quos illo numquam corrupti ut quae? Minima sit non ipsam.</p>
-                    <aside>
-                        <h4>Link do Repositório desse Projeto no GitHub</h4>
-                        <a href="#" target="_blank">Repositório</a>
-                    </aside>
+        <section class="respositoriosEstudo">
+            <h1>Repositórios de Estudos</h1>
+            <article class="htmlCss">
+                <h2>Html e Css</h2>
+                <!--Exemplo de como será cada módulo!-->
+                <section class="modulos"> 
+                    <h3>Módulo 1</h3>
+                    <section>
+                        <h4 onclick="mostrarOpções(0, 1)">Desafios</h4>
+                        <ul class="mod1Df">    
+                            <li><a href="#" target="_blank">d_01</a></li>
+                            <li><a href="#" target="_blank">d_02</a></li>
+                            <li><a href="#" target="_blank">d_03</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4 onclick="mostrarOpções(1, 1)">Exercícios</h4>
+                        <ul class="mod1Ex">
+                            <li><a href="#" target="_blank">ex_01</a></li>
+                            <li><a href="#" target="_blank">ex_02</a></li>
+                            <li><a href="#" target="_blank">ex_03</a></li>
+                        </ul>
+                    </section>
                 </section>
             </article>
         </section>
+        <span id="testes"></span>
     </main>
-    <footer>
-        <section class="redesSociais">
-            <a href="#" target="_blank">
-                <img src="#" alt="Instagram">
-            </a>
-            <a href="#" target="_blank">
-                <img src="#" alt="GitHub">
-            </a>
-            <a href="#" target="_blank">
-                <img src="#" alt="Linkedin">
-            </a>
-            <a href="#" target="_blank">
-                <img src="#" alt="Youtube">
-            </a>
-        </section>
-        <p>Site Criado por LaLunaInSky em 2024</p>
-    </footer>
+    <script src="scripts/script_main.js"></script>
 </body>
 </html>

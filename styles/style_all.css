@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*Mobile First*/
+
+@font-face {
+    font-family: 'Iceberg';
+    src: url(../fonts/Iceberg-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Electrolize';
+    src: url(../fonts/Electrolize-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header > h1 {
+    cursor: default;
+    text-align: center;
+    padding: 25px;
+    font-size: 3em;
+    color: green;
+    font-family: 'Iceberg';
+}
+
+main {
+    background-color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 25px;
+    color: black;
+}
+
+main > section > h1 {
+    font-family: 'Electrolize';
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.modulos > section > h4 {
+    cursor: pointer;
+}
+
+.modulos > section > h4::before {
+    content: '➥ ';
+}
+
+.modulos > section > ul {
+    display: none;
+}
+
+.modulos a {
+    color: black;
+    text-decoration: none;
+}
+
+.modulos li {
+    margin-left: 40px;
+}
