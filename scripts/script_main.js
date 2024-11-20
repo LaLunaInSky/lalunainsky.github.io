@@ -64,25 +64,37 @@ function criaçãoDeMódulo(númeroDoMódulo, quantidadeDeDesafios=0, quantidade
     }
 }
 
+function esconderTodasOpções() {
+    let quantidadeDeMódulos = Number(articleHC.children.length) - 1
+    for (let c=1;c<=quantidadeDeMódulos;c++) {
+        let ulEx = document.querySelector(`ul.mod${c}Ex`)
+        let ulDf = document.querySelector(`ul.mod${c}Df`)
+
+        ulDf.style.display = 'none'
+        ulEx.style.display = 'none'
+    }
+}
+
 function mostrarOpções(numOpção, módulo) {
-    let ulEx = document.querySelector(`ul.mod${módulo}Ex`)
-    let ulDf = document.querySelector(`ul.mod${módulo}Df`)
+    let ulExMain = document.querySelector(`ul.mod${módulo}Ex`)
+    let ulDfMain = document.querySelector(`ul.mod${módulo}Df`)
+
     switch (numOpção) {
         case 0:
-            if (ulDf.style.display == 'block') {
-                ulDf.style.display = 'none'
+            if (ulDfMain.style.display == 'block') {
+                ulDfMain.style.display = 'none'
             } else {
-                ulDf.style.display = 'block'
-                ulEx.style.display = 'none'
+                esconderTodasOpções()
+                ulDfMain.style.display = 'block'
             }
             break
 
         case 1:
-            if (ulEx.style.display == 'block') {
-                ulEx.style.display = 'none'
+            if (ulExMain.style.display == 'block') {
+                ulExMain.style.display = 'none'
             } else {
-                ulDf.style.display = 'none'
-                ulEx.style.display = 'block'
+                esconderTodasOpções()
+                ulExMain.style.display = 'block'
             }
             break
     }
