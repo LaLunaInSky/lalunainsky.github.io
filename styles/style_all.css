@@ -46,6 +46,15 @@ main > section > h1 {
     font-size: 1.7em;
 }
 
+.htmlCss > h2 {
+    cursor: default;
+}
+
+.modulos > h3 {
+    padding: 25px 0px 5px;
+    cursor: default;
+}
+
 .modulos > section > h4 {
     cursor: pointer;
 }
@@ -63,6 +72,14 @@ main > section > h1 {
     text-decoration: none;
 }
 
+.modulos a:hover {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+}
+
 .modulos li {
     margin-left: 40px;
+    padding: 4px 0px;
 }
