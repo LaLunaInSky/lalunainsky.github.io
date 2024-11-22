@@ -8,11 +8,9 @@
 
 :root {
     /*Paleta Verde Sombras*/
-    --verde01: #00ff00;
-    --verde02: #00d600;
-    --verde03: #00ad00;
-    --verde04: #008000;
-    --verde05: #005c00;
+    --verde01: #008000;
+    --verde02: #005c00;
+    --verde03: #022502;
 
     /*Paleta Preto Sombras*/
     --preto01: #a8a8a8;
@@ -32,7 +30,7 @@ header {
     text-align: center;
     padding: 20px;
     font-size: 1.5em;
-    color: var(--verde05);
+    color: var(--verde02);
 }
 
 main {
@@ -42,29 +40,35 @@ main {
     width: 90vw;
     overflow: hidden;
     padding: 10px;
-    /*height: 75vh;*/
 }
 
 main > section:nth-child(1) > h1 {
+    cursor: pointer;
     font-size: 1.5em;
-    background-color: var(--verde03);
+    background-color: var(--verde02);
     color: white;
     text-shadow: 0px 2px 4px var(--preto04);
     margin: -10px;
     text-align: center;
-    border-radius: 0px 0px 15px 15px;
-    box-shadow: 0px 3px 5px 2px #3333338e, inset 0px 4px 10px 5px #0000002d;
+    box-shadow: inset 0px 4px 10px 5px #0000002d;
     padding: 15px;
-    cursor: default;
 }
 
 #htmlCssEstudo {
     cursor: default;
-    color: var(--preto04);
-    text-shadow: 0px 3px 3px #005c006b;
     width: 100%;
     margin-top: 25px;
     text-align: left;
+}
+
+#htmlCssEstudo > h2 {
+    color: white;
+    background-color: var(--verde03);
+    width: 80%;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px;
+    margin-left: -10px;
 }
 
 #htmlCssEstudo > p {
@@ -73,12 +77,12 @@ main > section:nth-child(1) > h1 {
 }
 
 #htmlCssEstudo a {
-    color: var(--verde05);
+    color: var(--verde02);
     text-decoration: none;
 }
 
 #htmlCssEstudo a:hover {
-    background-color: var(--verde04);
+    background-color: var(--verde02);
     padding: 2px;
     border-radius: 5px;
     color: white;
@@ -103,9 +107,14 @@ main > section:nth-child(1) > h1 {
     color: white;
     padding: 10px;
     width: 160px;
+    border: 6px solid var(--verde03);
     border-radius: 15px;
     height: 150px;
-    background-color: var(--verde04);
+    background-color: var(--verde02);
+}
+
+#mod1:hover, #mod2:hover, #mod3:hover, #mod4:hover {
+    background-color: #022502;
 }
 
 footer {
@@ -113,6 +122,6 @@ footer {
     font-size: 1.2em;
     text-align: center;
     padding: 10px;
-    color: var(--verde05);
+    color: var(--verde02);
     font-weight: bolder;
 }
