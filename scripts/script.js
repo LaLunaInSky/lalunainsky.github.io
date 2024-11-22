@@ -1,9 +1,12 @@
-function aparecerSumirOpções() {
-    let secHtmlCssEstudo = document.querySelector('section#htmlCssEstudo')
+function aparecerSumirOpções(num) {
+    
+    if (num == 0) {
+        let articleEstudos = document.querySelector('article.estudos')
 
-    if (secHtmlCssEstudo.style.display != 'none') {
-        secHtmlCssEstudo.style.display = 'none'
-    } else {
-        secHtmlCssEstudo.style.display = 'block'
+        if (articleEstudos.style.display != 'none') {
+            articleEstudos.style.display = 'none'
+        } else {
+            articleEstudos.style.display = 'block'
+        }
     }
 }

@@ -21,7 +21,7 @@
 }
 
 html, body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--preto05);
 }
 
@@ -54,14 +54,18 @@ main > section:nth-child(1) > h1 {
     padding: 15px;
 }
 
-#htmlCssEstudo {
+main > section:nth-child(1) > h1:nth-last-child(1) {
+    margin-top: 10px;
+}
+
+#htmlCssEstudo, #javascriptEstudo {
     cursor: default;
     width: 100%;
     margin-top: 25px;
     text-align: left;
 }
 
-#htmlCssEstudo > h2 {
+#htmlCssEstudo > h2, #javascriptEstudo > h2 {
     color: white;
     background-color: var(--verde03);
     width: 80%;
@@ -71,17 +75,18 @@ main > section:nth-child(1) > h1 {
     margin-left: -10px;
 }
 
-#htmlCssEstudo > p {
+#htmlCssEstudo > p, #javascriptEstudo > p {
     font-weight: bolder;
+    margin-top: 5px;
     margin-left: 10px;
 }
 
-#htmlCssEstudo a {
+#htmlCssEstudo a, #javascriptEstudo a {
     color: var(--verde02);
     text-decoration: none;
 }
 
-#htmlCssEstudo a:hover {
+#htmlCssEstudo a:hover, #javascriptEstudo a:hover {
     background-color: var(--verde02);
     padding: 2px;
     border-radius: 5px;
@@ -99,7 +104,11 @@ main > section:nth-child(1) > h1 {
     margin: 10px -10px -5px;
 }
 
-#mod1, #mod2, #mod3, #mod4 {
+.mostradorMódulos#mM2 {
+    height: 560px;
+}
+
+.mod {
     cursor: pointer;
     font-weight: bolder;
     font-size: 1.3em;
@@ -113,7 +122,7 @@ main > section:nth-child(1) > h1 {
     background-color: var(--verde02);
 }
 
-#mod1:hover, #mod2:hover, #mod3:hover, #mod4:hover {
+.mod:hover {
     background-color: #022502;
 }
 
