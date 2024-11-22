@@ -58,6 +58,32 @@ main > section:nth-child(1) > h1 {
     cursor: default;
 }
 
+#htmlCssEstudo {
+    cursor: default;
+    color: var(--preto04);
+    text-shadow: 0px 3px 3px #005c006b;
+    width: 100%;
+    margin-top: 25px;
+    text-align: left;
+}
+
+#htmlCssEstudo > p {
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+#htmlCssEstudo a {
+    color: var(--verde05);
+    text-decoration: none;
+}
+
+#htmlCssEstudo a:hover {
+    background-color: var(--verde04);
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+}
+
 footer {
     cursor: default;
     font-size: 1.2em;
