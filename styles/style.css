@@ -81,6 +81,10 @@ main > section:nth-child(1) > h1:nth-last-child(2) {
     margin-left: 10px;
 }
 
+#javascriptEstudo > p:nth-last-child(1) {
+    margin-bottom: 35px;
+}
+
 #htmlCssEstudo a, #javascriptEstudo a {
     box-sizing: border-box;
     color: var(--verde02);
