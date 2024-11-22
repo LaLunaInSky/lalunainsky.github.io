@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*Mobile First!!*/
 * {
     margin: 0px;
     padding: 0px;
@@ -27,28 +28,34 @@ html, body {
 }
 
 header {
+    cursor: default;
     text-align: center;
-    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    color: var(--verde05);
 }
 
-header > h1:nth-child(1) {
-    background-color: var(--verde01);
+main {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    width: 90vw;
+    overflow: hidden;
+    padding: 10px;
+    height: 75vh;
 }
 
-header > h1:nth-child(2) {
-    background-color: var(--verde02);
-}
-
-header > h1:nth-child(3) {
+main > section:nth-child(1) > h1 {
+    font-size: 1.5em;
     background-color: var(--verde03);
-}
-
-header > h1:nth-child(4) {
-    background-color: var(--verde04);
-}
-
-header > h1:nth-child(5) {
-    background-color: var(--verde05);
+    color: white;
+    text-shadow: 0px 2px 4px var(--preto04);
+    margin: -10px;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 3px 5px 2px #3333338e, inset 0px 4px 10px 5px #0000002d;
+    padding: 10px;
+    cursor: default;
 }
 
 footer {
