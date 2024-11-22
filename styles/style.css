@@ -82,8 +82,13 @@ main > section:nth-child(1) > h1:nth-last-child(2) {
 }
 
 #htmlCssEstudo a, #javascriptEstudo a {
+    box-sizing: border-box;
     color: var(--verde02);
     text-decoration: none;
+}
+
+.estudos a::before {
+    content: ' 🔗';
 }
 
 #htmlCssEstudo a:hover, #javascriptEstudo a:hover {
