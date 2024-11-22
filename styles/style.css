@@ -54,7 +54,7 @@ main > section:nth-child(1) > h1 {
     padding: 15px;
 }
 
-main > section:nth-child(1) > h1:nth-last-child(1) {
+main > section:nth-child(1) > h1:nth-last-child(2) {
     margin-top: 10px;
 }
 
