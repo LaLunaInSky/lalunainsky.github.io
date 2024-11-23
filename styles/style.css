@@ -22,13 +22,14 @@ html, body {
 
 header {
     cursor: default;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-shadow: 2px 3px 4px var(--cor05);
     padding: 25px;
+    border-radius: 0px 0px 110px 110px;
     text-align: center;
     color: white;
     background-color: var(--cor02);
-    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.267);
+    box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.200), inset -1px 3px 10px 3px rgba(0, 0, 0, 0.120);
 }
 
 main {
@@ -46,6 +47,10 @@ main > section > h1 {
     padding: 10px 20px;
 }
 
+main > section > h1:nth-last-child(1) {
+    border-top-left-radius: 20px;
+}
+
 .estudos h2 {
     font-size: 1.4em;
     cursor: default;
@@ -53,39 +58,6 @@ main > section > h1 {
     text-shadow: 1px 2px 2px white;
     padding: 5px 10px;
     background-image: linear-gradient(to right, var(--cor01), white 90%);
-}
-
-#javascriptEstudo > h2 {
-    border-top-left-radius: 10px;
-}
-
-#htmlCssEstudo > aside {
-    border-radius: 15px 20% 20% 15px;
-    padding: 20px 0px 20px;
-    background-color: var(--cor06);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#htmlCssEstudo > aside > p {
-    color: white;
-    font-weight: bolder;
-    margin-top: 15px;
-    text-shadow: -1px 1px 2px var(--cor05);
-    margin-left: -25px;
-}
-
-#htmlCssEstudo > aside > p > a {
-    padding: 5px;
-    text-decoration: none;
-    color: var(--cor05);
-}
-
-#htmlCssEstudo > aside > p > a:hover {
-    background-color: var(--cor05);
-    color: white;
-    border-radius: 5px;
 }
 
 .estudos > section > p:nth-child(2) {
@@ -101,20 +73,59 @@ main > section > h1 {
 .estudos > section > p:nth-child(2) > a {
     padding: 5px;
     font-weight: bolder;
-    margin-left: -3px;
     text-decoration: none;
     color: white;
 }
 
 .estudos > section > p:nth-child(2) > a:hover {
     padding: 5px;
-    background-color: var(--cor05);
-    color: white;
-    border-radius: 5px;
+    background-color: white;
+    color: var(--cor05);
+    text-shadow: none;
+    border-radius: 15px;
 }
 
 .estudos > section > p:nth-last-child(1) {
     margin: 20px 15px;
+}
+
+#javascriptEstudo > h2 {
+    border-top-left-radius: 10px;
+}
+
+#htmlCssEstudo > aside, #javascriptEstudo > aside {
+    border-radius: 15px 20% 20% 15px;
+    padding: 20px 0px 0px;
+    background-color: var(--cor06);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#htmlCssEstudo > aside > p, #javascriptEstudo > aside > p {
+    background-color: var(--cor05);
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    color: white;
+    font-weight: bolder;
+    margin-left: -30px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#htmlCssEstudo > aside > p > a, #javascriptEstudo > aside > p > a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--cor06);
+}
+
+#htmlCssEstudo > aside > p > a:hover, #javascriptEstudo > aside > p > a:hover {
+    background-color: var(--cor06);
+    color: var(--cor05);
+    border-radius: 15px;
 }
 
 .mostradorMódulos {
@@ -157,6 +168,7 @@ footer {
     text-align: center;
     color: white;
     background-color: var(--cor05);
+    box-shadow: inset 0px 4px 10px 5px rgba(0, 0, 0, 0.13);
 }
 
 footer > p:nth-child(1) img {
