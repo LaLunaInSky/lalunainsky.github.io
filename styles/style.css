@@ -21,12 +21,13 @@ html, body {
 
 header {
     cursor: default;
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-shadow: 2px 3px 4px var(--cor05);
     padding: 25px;
     text-align: center;
     color: white;
     background-color: var(--cor02);
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.267);
 }
 
 main {
@@ -53,6 +54,10 @@ main > section > h1 {
     background-image: linear-gradient(to right, var(--cor01), transparent 90%);
 }
 
+#javascriptEstudo > h2 {
+    border-top-left-radius: 10px;
+}
+
 .estudos > section > p:nth-child(2) {
     color: white;
     font-size: 1em;
@@ -61,6 +66,7 @@ main > section > h1 {
     text-shadow: 0px 3px 5px var(--cor05);
     background-image: linear-gradient(to right, var(--cor05), transparent 85%);
     margin-bottom: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .estudos > section > p:nth-child(2) > a {
@@ -72,12 +78,32 @@ main > section > h1 {
     margin: 20px 15px;
 }
 
-.mod {
-    display: none;
+.mostradorMódulos {
+    padding: 20px;
+    height: 260px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    color: white;
 }
 
 .mod > h3 {
+    background-color: var(--cor01);
+    width: 120px;
+    align-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--cor05);
+    height: 120px;
+    border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0px 2px 5px 3px var(--cor05);
+}
+
+.mod > h3:hover {
+    background-color: var(--cor03);
+    color: var(--cor05);
+    text-shadow: none;
 }
 
 .mod > h4, .mod > ul {
