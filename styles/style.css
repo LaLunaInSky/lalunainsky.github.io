@@ -28,6 +28,13 @@ header {
     background-color: var(--cor02);
 }
 
+main {
+    border: 10px solid var(--cor03);
+    border-radius: 20px;
+    height: 90vh;
+    margin: 10px;
+}
+
 footer {
     cursor: default;
     font-size: 1.2em;
