@@ -13,11 +13,13 @@
     --cor04: #24f07f;
     --cor05: #2457f0;
     --cor06: #74e1f0;
+
+    --sombraLetras: white; /*teste*/
 }
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-;
+    background-color: var(--sombraLetras);
 }
 
 header {
@@ -40,7 +42,7 @@ main {
 
 main > section > h1 {
     cursor: default;
-    background-image: linear-gradient( to right , var(--cor03), white 90%);
+    background-image: linear-gradient( to right , var(--cor03), transparent 90%);
     font-size: 2em;
     text-shadow: 0px 3px 2px var(--cor05);
     color: white;
@@ -55,9 +57,9 @@ main > section > h1:nth-last-child(1) {
     font-size: 1.4em;
     cursor: default;
     color: var(--cor05);
-    text-shadow: 1px 2px 2px white;
+    text-shadow: 1px 2px 2px var(--sombraLetras);
     padding: 5px 10px;
-    background-image: linear-gradient(to right, var(--cor01), white 90%);
+    background-image: linear-gradient(to right, var(--cor01), transparent 90%);
 }
 
 .estudos > section > p:nth-child(2) {
@@ -66,7 +68,7 @@ main > section > h1:nth-last-child(1) {
     cursor: default;
     padding: 5px 20px;
     text-shadow: 0px 3px 5px var(--cor05);
-    background-image: linear-gradient(to right, var(--cor05), white 90%);
+    background-image: linear-gradient(to right, var(--cor05), transparent 90%);
     border-bottom-left-radius: 15px;
 }
 
