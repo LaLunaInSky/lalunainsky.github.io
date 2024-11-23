@@ -22,7 +22,7 @@ html, body {
 header {
     cursor: default;
     font-size: 1.7em;
-    text-shadow: 2px 3px 2px var(--cor05);
+    text-shadow: 2px 3px 4px var(--cor05);
     padding: 25px;
     text-align: center;
     color: white;
