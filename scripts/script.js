@@ -15,4 +15,4 @@ function alteraçãoDarkLightMode(num=1) {
     }
 }
 
-alteraçãoDarkLightMode(0)
+alteraçãoDarkLightMode()
