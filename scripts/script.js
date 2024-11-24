@@ -13,3 +13,19 @@ function alteraçãoDarkLightMode() {
         imgHeaderDarkLightMode.src = 'imagens/icones_dark_light_mode/sun_32px.png'
     }
 }
+
+function mostrarOpçõesDoMódulo(idMódulo) {
+    if (idMódulo[0] == 'h' && idMódulo[1] == 'c') {
+        let quantidadeDeMódulosSectionHC = document.querySelector('section#mM1').children.length
+
+        for (let count=1; count<=quantidadeDeMódulosSectionHC; count++) {
+            if (idMódulo[3] != count) {
+                let módulo = document.querySelector(`article#hcM${count}`)
+                módulo.style.display = "none"
+            }
+        }
+         
+    } else {
+        let quantidadeDeMódulosSectionJs = document.querySelector('section#mM2').children.length
+    }
+}

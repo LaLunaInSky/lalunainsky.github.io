@@ -165,6 +165,82 @@ main > section > h1:nth-last-child(1) {
     align-content: space-between;
 }
 
+
+
+/*testes*/
+
+#mM1 {
+    height: auto;
+}
+
+#hcM2, #hcM3, #hcM4 {
+    display: none;
+}
+
+#hcM1 > h3 {
+    background-color: var(--cor05);
+    color: white;
+    font-size: 1.4em;
+    padding: 10px;
+    width: 350px;
+    height: auto;
+    box-shadow: none;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#hcM1 > h4 {
+    cursor: default;
+    background-color: var(--cor02);
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    display: block;
+}
+
+#hcM1 > ul {
+    padding: 10px;
+    columns: 3;
+    list-style-type: none;
+    background-color: white;
+    display: block;
+}
+
+#hcM1 > ul:nth-child(3) {
+    border-left: 10px solid var(--cor02);
+    border-right: 10px solid var(--cor02);
+}
+
+#hcM1 > ul:nth-last-child(1) {
+    border-left: 10px solid var(--cor02);
+    border-right: 10px solid var(--cor02);
+    border-bottom:10px solid var(--cor02);
+    border-radius: 0px 0px 20px 20px;
+}
+
+#hcM1 > ul > li { 
+    padding: 7px;
+}
+
+#hcM1 > ul > li > a {
+    color: var(--cor05);
+    font-size: 1.05em;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#hcM1 > ul > li > a:hover {
+    background-color: var(--cor04);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#hcM1 > h3:hover {
+    background-color: var(--cor04);
+    color: var(--cor05);
+}
+
+
+
 .mod > h3 {
     background-color: var(--darkLight);
     width: 120px;
