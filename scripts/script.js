@@ -18,7 +18,7 @@ function mostrarOpçõesDoMódulo(idMódulo) {
     if (idMódulo[0] == 'h' && idMódulo[1] == 'c') {
         let quantidadeDeMódulosSectionHC = document.querySelector('section#mM1').children.length
 
-        if (window.getComputedStyle(document.querySelector(`#hcM1`).children[1]).display == 'none') {
+        if (window.getComputedStyle(document.querySelector(`#${idMódulo}`).children[1]).display == 'none') {
             for (let count=1; count<=quantidadeDeMódulosSectionHC; count++) {
                 if (idMódulo[3] != count) {
                     let módulo = document.querySelector(`article#hcM${count}`)
@@ -95,7 +95,13 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                 }
             }
         } else {
-            alert(document.head.index)
+            document.head.removeChild(document.head.lastChild)
+            for (let count=1; count<=quantidadeDeMódulosSectionHC; count++) {
+                if (idMódulo[3] != count) {
+                    let módulo = document.querySelector(`article#hcM${count}`)
+                    módulo.style.display = "block"
+                }
+            }
         }
     } else {
         let quantidadeDeMódulosSectionJs = document.querySelector('section#mM2').children.length
