@@ -30,6 +30,10 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         height: auto;
                     }
 
+                    #htmlCssEstudo > aside {
+                        border-radius: 15px 18% 18% 15px;
+                    }
+
                     #${idMódulo} > h3 {
                         background-color: var(--cor05);
                         color: white;
