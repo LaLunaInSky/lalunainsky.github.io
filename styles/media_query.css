@@ -19,9 +19,9 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width: 768px) {
     header {
-        background-color: red;
-        max-width: 750px;
-        margin: auto;
+        border-radius: 0px;
+        transition: border-radius 500ms;
+        transition-timing-function: ease;
     }
 
     main {
@@ -31,11 +31,15 @@ Grandes telas: acima de 1200px
     }
     .mostradorMódulos {
         height: 360px;
+        transition: height 500ms;
+        transition-timing-function: ease;
     }
 
     .mod > h3 {
         font-size: 1.4em;
         height: 160px;
         width: 160px;
+        transition: height 500ms, width 500ms, font-size 500ms;
+        transition-timing-function: ease;
     }
 }
