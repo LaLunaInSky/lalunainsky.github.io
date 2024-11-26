@@ -12,8 +12,6 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                     styleMódulo.innerText = `
                     #mM1 {
                         height: auto;
-                        transition-duration: 500ms;
-                        transition-timing-function: ease;  
                     }
 
                     #htmlCssEstudo > aside {
@@ -30,7 +28,7 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         box-shadow: none;
                         border-radius: 20px 20px 0px 0px;
 
-                        transition: height 500ms, width 500ms font-size 500ms;
+                        transition: height 500ms, width 500ms, font-size 500ms;
                         transition-timing-function: ease;
                     }
 
@@ -76,7 +74,7 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         font-weight: bolder;
                         text-decoration: none;
 
-                        transtion: font-size 500ms;
+                        transtion: font-size 500ms, background-color 500ms;
                         transition-timing-function: ease;
                     }
 
@@ -84,11 +82,17 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         background-color: var(--cor04);
                         border-radius: 5px;
                         padding: 5px;
+
+                        transition: background-color 500ms, padding 500ms;
+                        transition-timing-function: ease;
                     }
 
                     #${idMódulo} > h3:hover {
                         background-color: var(--cor04);
                         color: var(--cor05);
+
+                        transition: background-color 500ms, color 500ms;
+                        transition-timing-function: ease;
                     }
                         
                     @media screen and (min-width: 768px) {
@@ -96,10 +100,9 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                             width: 460px;
                             font-size: 1.6em;
                                 
-                            transition: width 500ms font-size 500ms;
+                            transition: width 500ms, font-size 500ms;
                             transition-timing-function: ease;
                         }
-
                         
                         #${idMódulo} > h4 {
                             font-size: 1.3em;

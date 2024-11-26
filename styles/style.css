@@ -162,7 +162,7 @@ main > section > h1:nth-last-child(1) {
     cursor: pointer;
     box-shadow: 0px 0px 5px 5px var(--cor05);
 
-    transition: height 500ms, width 500ms, font-size 500ms;
+    transition: height 500ms, width 500ms, font-size 500ms, background-color 500ms, color 500ms;
     transition-timing-function: ease;
 }
 
@@ -171,6 +171,9 @@ main > section > h1:nth-last-child(1) {
     background-color: var(--cor05);
     color: white;
     text-shadow: none;
+
+    transition: background-color 500ms, color 500ms;
+    transition-timing-function: ease;
 }
 
 .mod > h4, .mod > ul {
@@ -202,7 +205,6 @@ footer > p:nth-child(1) > a:nth-child(2) > img {
 #hcM2, #hcM3, #hcM4 {
     display: none;
 }
-
 
 padrão
 #mM1 {
