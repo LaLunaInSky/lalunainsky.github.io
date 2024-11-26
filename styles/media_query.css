@@ -1,2 +1,41 @@
 @charset "UTF-8";
 
+/*Outras Versões
+Typical Devices Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px 
+Computador: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 485px) {
+    main {
+        width: 480px;
+        transition: width 500ms;
+        transition-timing-function: ease;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        background-color: red;
+        max-width: 750px;
+        margin: auto;
+    }
+
+    main {
+        width: 620px;
+        transition: width 500ms;
+        transition-timing-function: ease;
+    }
+    .mostradorMódulos {
+        height: 360px;
+    }
+
+    .mod > h3 {
+        font-size: 1.4em;
+        height: 160px;
+        width: 160px;
+    }
+}
