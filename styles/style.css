@@ -13,14 +13,11 @@
     --cor04: #24f07f;
     --cor05: #2457f0;
     --cor06: #74e1f0;
-
-    --darkLight: white; 
-    --pretoBranco: 1;
 }
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--darkLight);
+    background-color: white;
 }
 
 header {
@@ -34,34 +31,12 @@ header {
     height: 80px;
     text-shadow: 2px 3px 4px var(--cor05);
     border-radius: 0px 0px 60px 60px;
-    color: var(--darkLight);
+    color: white;
     background-color: var(--cor02);
     box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.200), inset -1px 3px 10px 3px rgba(0, 0, 0, 0.120);
+    
     transition: border-radius 500ms;
     transition-timing-function: ease;
-}
-
-/*header > h1 {
-    margin-left: 55px;
-}*/
-
-header > p {
-    display: none;
-    margin-left: -170px;
-    cursor: pointer;
-    transform: scale(70%);
-    /*display: flex;*/
-    align-content: center;
-    background-color: var(--cor05);
-    border-radius: 50%;
-    height: 30px;
-    padding: 10px;
-    width: 30px;
-}
-
-header > p > img {
-    display: none;
-    filter: invert(var(--pretoBranco));
 }
 
 main {
@@ -69,6 +44,7 @@ main {
     overflow: hidden;
     margin: 10px auto;
     width: 430px;
+
     transition: width 500ms;
     transition-timing-function: ease;
 }
@@ -78,7 +54,7 @@ main > section > h1 {
     background-image: linear-gradient( to right , var(--cor03), transparent 90%);
     font-size: 2em;
     text-shadow: 0px 3px 2px var(--cor05);
-    color: var(--darkLight);
+    color: white;
     padding: 10px 20px;
 }
 
@@ -90,13 +66,13 @@ main > section > h1:nth-last-child(1) {
     font-size: 1.4em;
     cursor: default;
     color: var(--cor05);
-    text-shadow: 1px 2px 2px var(--darkLight);
+    text-shadow: 1px 2px 2px white;
     padding: 5px 10px;
     background-image: linear-gradient(to right, var(--cor01), transparent 90%);
 }
 
 .estudos > section > p:nth-child(2) {
-    color: var(--darkLight);
+    color: white;
     font-size: 1em;
     cursor: default;
     padding: 5px 20px;
@@ -109,12 +85,12 @@ main > section > h1:nth-last-child(1) {
     padding: 5px;
     font-weight: bolder;
     text-decoration: none;
-    color: var(--darkLight);
+    color: white;
 }
 
 .estudos > section > p:nth-child(2) > a:hover {
     padding: 5px;
-    background-color: var(--darkLight);
+    background-color: white;
     color: var(--cor05);
     text-shadow: none;
     border-radius: 15px;
@@ -137,8 +113,6 @@ main > section > h1:nth-last-child(1) {
     overflow: hidden;
     align-items: center;
     margin-bottom: 15px;
-    transition-duration: 500ms;
-    transition-timing-function: ease;
 }
 
 #htmlCssEstudo > aside > p, #javascriptEstudo > aside > p {
@@ -146,7 +120,7 @@ main > section > h1:nth-last-child(1) {
     width: 100%;
     text-align: center;
     cursor: default;
-    color: var(--darkLight);
+    color: white;
     font-weight: bolder;
     margin-left: -30px;
     margin-top: 20px;
@@ -178,7 +152,7 @@ main > section > h1:nth-last-child(1) {
 }
 
 .mod > h3 {
-    background-color: var(--darkLight);
+    background-color: white;
     width: 120px;
     color: var(--cor05);
     align-content: center;
@@ -187,14 +161,15 @@ main > section > h1:nth-last-child(1) {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0px 0px 5px 5px var(--cor05);
+
     transition: height 500ms, width 500ms, font-size 500ms;
-        transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 
 .mod > h3:hover {
     box-shadow: 0px 0px 5px 5px var(--cor05);
     background-color: var(--cor05);
-    color: var(--darkLight);
+    color: white;
     text-shadow: none;
 }
 
@@ -207,13 +182,13 @@ footer {
     font-size: 1.2em;
     padding: 10px;
     text-align: center;
-    color: var(--darkLight);
+    color: white;
     background-color: var(--cor05);
     box-shadow: inset 0px 4px 10px 5px rgba(0, 0, 0, 0.13);
 }
 
 footer > p:nth-child(1) img {
-    filter: invert(var(--pretoBranco));
+    filter: invert();
     transform: scale(60%);
 }
 

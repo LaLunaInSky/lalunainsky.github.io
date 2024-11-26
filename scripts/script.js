@@ -1,19 +1,3 @@
-function alteraçãoDarkLightMode() {
-    let root = document.querySelector(':root')
-    let imgHeaderDarkLightMode = document.querySelector('img#darkLightModeImgem')
-    let rootStyle = getComputedStyle(root)
-
-    if (rootStyle.getPropertyValue('--pretoBranco') == 1 /*white*/) {
-        root.style.setProperty('--pretoBranco', '0')
-        root.style.setProperty('--darkLight', 'black')
-        imgHeaderDarkLightMode.src = 'imagens/icones_dark_light_mode/moon_32px.png'
-    } else {
-        root.style.setProperty('--pretoBranco', '1')
-        root.style.setProperty('--darkLight', 'white')
-        imgHeaderDarkLightMode.src = 'imagens/icones_dark_light_mode/sun_32px.png'
-    }
-}
-
 function mostrarOpçõesDoMódulo(idMódulo) {
     if (idMódulo[0] == 'h' && idMódulo[1] == 'c') {
         let quantidadeDeMódulosSectionHC = document.querySelector('section#mM1').children.length
@@ -33,9 +17,7 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                     }
 
                     #htmlCssEstudo > aside {
-                        border-radius: 15px 18% 18% 15px;
-                        transition-duration: 500ms;
-                        transition-timing-function: ease;       
+                        border-radius: 15px 18% 18% 15px;      
                     }
 
                     #${idMódulo} > h3 {
@@ -47,8 +29,6 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         height: auto;
                         box-shadow: none;
                         border-radius: 20px 20px 0px 0px;
-                        transition: border-radius 50ms, all 700ms;
-                        transition-timing-function: ease; 
                     }
 
                     #${idMódulo} > h4 {
@@ -58,8 +38,6 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         font-size: 1.1em;
                         padding: 10px;
                         display: block;
-                        transition-duration: 500ms;
-                        transition-timing-function: ease; 
                     }
 
                     #${idMódulo} > ul {
@@ -68,15 +46,11 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         list-style-type: none;
                         background-color: white;
                         display: block;
-                        transition-duration: 500ms;
-                        transition-timing-function: ease; 
                     }
 
                     #${idMódulo} > ul:nth-child(3) {
                         border-left: 10px solid var(--cor02);
                         border-right: 10px solid var(--cor02);
-                        transition-duration: 500ms;
-                        transition-timing-function: ease; 
                     }
 
                     #${idMódulo} > ul:nth-last-child(1) {
@@ -84,14 +58,10 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         border-right: 10px solid var(--cor02);
                         border-bottom:10px solid var(--cor02);
                         border-radius: 0px 0px 20px 20px;
-                        transition-duration: 500ms;
-                        transition-timing-function: ease; 
                     }
 
                     #${idMódulo} > ul > li { 
                         padding: 7px;
-                        transition-duration: 500ms;
-                        transition-timing-function: ease; 
                     }
 
                     #${idMódulo} > ul > li > a {
@@ -99,23 +69,17 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         font-size: 1.05em;
                         font-weight: bolder;
                         text-decoration: none;
-                        transition-duration: 250ms;
-                        transition-timing-function: ease; 
                     }
 
                     #${idMódulo} > ul > li > a:hover {
                         background-color: var(--cor04);
                         border-radius: 5px;
                         padding: 5px;
-                        transition-duration: 250ms;
-                        transition-timing-function: ease; 
                     }
 
                     #${idMódulo} > h3:hover {
                         background-color: var(--cor04);
                         color: var(--cor05);
-                        transition-duration: 500ms;
-                        transition-timing-function: ease; 
                     }`
                     document.head.appendChild(styleMódulo)          
                 }
