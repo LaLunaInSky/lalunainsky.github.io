@@ -29,6 +29,9 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         height: auto;
                         box-shadow: none;
                         border-radius: 20px 20px 0px 0px;
+
+                        transition: height 500ms, width 500ms font-size 500ms;
+                        transition-timing-function: ease;
                     }
 
                     #${idMódulo} > h4 {
@@ -38,6 +41,9 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         font-size: 1.1em;
                         padding: 10px;
                         display: block;
+
+                        transtion: font-size 500ms;
+                        transition-timing-function: ease;
                     }
 
                     #${idMódulo} > ul {
@@ -69,6 +75,9 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                         font-size: 1.05em;
                         font-weight: bolder;
                         text-decoration: none;
+
+                        transtion: font-size 500ms;
+                        transition-timing-function: ease;
                     }
 
                     #${idMódulo} > ul > li > a:hover {
@@ -80,6 +89,31 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                     #${idMódulo} > h3:hover {
                         background-color: var(--cor04);
                         color: var(--cor05);
+                    }
+                        
+                    @media screen and (min-width: 768px) {
+                        #${idMódulo} > h3 {
+                            width: 460px;
+                            font-size: 1.6em;
+                                
+                            transition: width 500ms font-size 500ms;
+                            transition-timing-function: ease;
+                        }
+
+                        
+                        #${idMódulo} > h4 {
+                            font-size: 1.3em;
+
+                            transtion: font-size 500ms;
+                            transition-timing-function: ease;
+                        }
+
+                        #${idMódulo} > ul > li > a {
+                            font-size: 1.2em;
+
+                            transtion: font-size 500ms;
+                            transition-timing-function: ease;
+                        }
                     }`
                     document.head.appendChild(styleMódulo)          
                 }
