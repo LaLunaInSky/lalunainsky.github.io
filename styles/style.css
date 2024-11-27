@@ -58,7 +58,7 @@ main > section > h1 {
     padding: 10px 20px;
 }
 
-main > section > h1:nth-last-child(1) {
+main > section > h1:nth-last-child(2) {
     border-top-left-radius: 20px;
 }
 
