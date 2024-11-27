@@ -134,3 +134,45 @@ function mostrarOpçõesDoMódulo(idMódulo) {
         let quantidadeDeMódulosSectionJs = document.querySelector('section#mM2').children.length
     }
 }
+
+let escolhaProjeto = 1
+let sectionOpções = document.querySelector('section#quantidadeOpções')
+
+function mostrarEsconderProjeto() {
+    let link = document.querySelector('#conteudoProjetos>a')
+    let quantidadeDeProjetos = document.querySelector('#conteudoProjetos>a>aside').children.length
+    for (let count=1; count <= quantidadeDeProjetos ; count++) {
+        let projetoAtual = document.querySelector(`#conteudoProjetos>a>aside>section:nth-child(${count})`)
+        if (count == escolhaProjeto) {
+            projetoAtual.style.display = 'block'
+            link.setAttribute('href', `https://lalunainsky.github.io/projeto-${projetoAtual.innerText.slice(8).toLowerCase()}/`)
+        } else {
+            projetoAtual.style.display = 'none'
+        }
+        criaçãoMostradorQuantidadeOpções()
+    }
+}
+
+function mudarProjetoMostrador(num) {
+    switch (num) {
+        case 0:
+            if (escolhaProjeto != 1) {
+                escolhaProjeto -= 1
+            }
+            break
+        case 1:
+            if (escolhaProjeto != 4) {
+                escolhaProjeto += 1
+            }
+            break
+    }
+
+    mostrarEsconderProjeto()
+}
+
+function criaçãoMostradorQuantidadeOpções() {
+    let pBolinha = document.createElement('p')
+    sectionOpções.appendChild(pBolinha)
+}
+
+mostrarEsconderProjeto()

@@ -187,20 +187,58 @@ main > section > h1:nth-last-child(1) {
 }
 
 .projetos > section {
-    cursor: pointer;
     align-content: center;
 }
 
 .projetos > section#conteudoProjetos {
     background-color: blueviolet;
+    align-content: center;
+    text-align: center;
     width: 80%;
+}
+
+.projetos > section:nth-child(1), .projetos > section:nth-child(3) {
+    cursor: pointer;
 }
 
 .projetos img {
     transform: scale(50%);
 }
 
-.projetos aside {
+#conteudoProjetos > a {
+    text-decoration: none;
+    color: black;
+}
+
+#conteudoProjetos > #quantidadeOpções {
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 15px auto 0px;
+}
+
+#quantidadeOpções > p {
+    margin: 0px 5px;
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background-color: rgb(53, 53, 53);
+}
+
+#conteudoProjetos > a > aside {
+    margin: auto;
+    background-color: white;
+    height: 200px;
+    align-content: center;
+    width: 80%;
+}
+
+#conteudoProjetos > a > aside:hover {
+    background-color: rgb(163, 163, 163);
+}
+
+#conteudoProjetos > a > aside > section {
     display: none;
 }
 
