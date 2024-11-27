@@ -137,19 +137,28 @@ function mostrarOpçõesDoMódulo(idMódulo) {
 
 let escolhaProjeto = 1
 let sectionOpções = document.querySelector('section#quantidadeOpções')
+let quantidadeDeProjetos = document.querySelector('#conteudoProjetos>a>aside').children.length
+
+function criaçãoBolinhasOpções() {
+    for (let count=1; count<=quantidadeDeProjetos;count++) {
+        let bolinha = document.createElement('p')
+        bolinha.style.backgroundColor = 'gray'
+        sectionOpções.append(bolinha)
+    }
+}
 
 function mostrarEsconderProjeto() {
     let link = document.querySelector('#conteudoProjetos>a')
-    let quantidadeDeProjetos = document.querySelector('#conteudoProjetos>a>aside').children.length
     for (let count=1; count <= quantidadeDeProjetos ; count++) {
         let projetoAtual = document.querySelector(`#conteudoProjetos>a>aside>section:nth-child(${count})`)
         if (count == escolhaProjeto) {
             projetoAtual.style.display = 'block'
             link.setAttribute('href', `https://lalunainsky.github.io/projeto-${projetoAtual.innerText.slice(8).toLowerCase()}/`)
+            sectionOpções.children[count-1].style.backgroundColor = 'white'
         } else {
             projetoAtual.style.display = 'none'
+            sectionOpções.children[count-1].style.backgroundColor = 'gray'
         }
-        criaçãoMostradorQuantidadeOpções()
     }
 }
 
@@ -170,9 +179,5 @@ function mudarProjetoMostrador(num) {
     mostrarEsconderProjeto()
 }
 
-function criaçãoMostradorQuantidadeOpções() {
-    let pBolinha = document.createElement('p')
-    sectionOpções.appendChild(pBolinha)
-}
-
+criaçãoBolinhasOpções()
 mostrarEsconderProjeto()
