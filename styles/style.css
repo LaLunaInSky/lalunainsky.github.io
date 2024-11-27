@@ -181,7 +181,27 @@ main > section > h1:nth-last-child(1) {
 }
 
 .projetos {
-    color: var(--cor05);
+    display: flex;
+    background-color: #24f0c4;
+    height: 250px;
+}
+
+.projetos > section {
+    cursor: pointer;
+    align-content: center;
+}
+
+.projetos > section#conteudoProjetos {
+    background-color: blueviolet;
+    width: 80%;
+}
+
+.projetos img {
+    transform: scale(50%);
+}
+
+.projetos aside {
+    display: none;
 }
 
 footer {
