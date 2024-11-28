@@ -176,7 +176,7 @@ function mostrarEsconderProjeto() {
         if (count == escolhaProjeto) {
             projetoAtual.style.display = 'block'
             link.setAttribute('href', `https://lalunainsky.github.io/projeto-${projetoAtual.innerText.slice(8).toLowerCase()}/`)
-            sectionOpções.children[count-1].style.backgroundColor = 'white'
+            sectionOpções.children[count-1].style.backgroundColor = '#2498f0'
             document.querySelector('.projetos>section>p>a').setAttribute('href', `https://github.com/LaLunaInSky/projeto-${projetoAtual.innerText.slice(8).toLowerCase()}`)
         } else {
             projetoAtual.style.display = 'none'

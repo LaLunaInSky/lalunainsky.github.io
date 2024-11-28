@@ -29,6 +29,7 @@ Grandes telas: acima de 1200px
         transition: width 500ms;
         transition-timing-function: ease;
     }
+    
     .mostradorMódulos {
         height: 360px;
         transition: height 500ms;
