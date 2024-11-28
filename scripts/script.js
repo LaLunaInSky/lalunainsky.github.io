@@ -1,3 +1,7 @@
+let escolhaProjeto = 1
+let sectionOpções = document.querySelector('section#quantidadeOpções')
+let quantidadeDeProjetos = document.querySelector('#conteudoProjetos>a>aside').children.length
+
 function mostrarOpçõesDoMódulo(idMódulo) {
     if (idMódulo[0] == 'h' && idMódulo[1] == 'c') {
         let quantidadeDeMódulosSectionHC = document.querySelector('section#mM1').children.length
@@ -130,14 +134,32 @@ function mostrarOpçõesDoMódulo(idMódulo) {
                 }
             }
         }
-    } else {
-        let quantidadeDeMódulosSectionJs = document.querySelector('section#mM2').children.length
+    } else if (idMódulo[0] == 'j' && idMódulo[1] == 's'){
+        let móduloJSEscolhido = Number()
+        switch (idMódulo[3]) {
+            case "A":
+                móduloJSEscolhido = 1
+                break
+            case "B":
+                móduloJSEscolhido = 2
+                break
+            case "C":
+                móduloJSEscolhido = 3
+                break
+            case "D":
+                móduloJSEscolhido = 4
+                break
+            case "E":
+                móduloJSEscolhido = 5
+                break
+            case "F":
+                móduloJSEscolhido = 6
+                break
+        }
+
+        
     }
 }
-
-let escolhaProjeto = 1
-let sectionOpções = document.querySelector('section#quantidadeOpções')
-let quantidadeDeProjetos = document.querySelector('#conteudoProjetos>a>aside').children.length
 
 function criaçãoBolinhasOpções() {
     for (let count=1; count<=quantidadeDeProjetos;count++) {
