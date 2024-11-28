@@ -180,34 +180,89 @@ main > section > h1:nth-last-child(2) {
     display: none;
 }
 
-.projetos {
+.projetos > section {
+    background-color: var(--cor05);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bolder;
+}
+
+.projetos > section a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 15px;
+    color: var(--cor03);
+
+    transition: color 300ms, background-color 300ms;
+    transition-timing-function: ease;
+}
+
+.projetos > section a:hover {
+    background-color: var(--cor03);
+    color: var(--cor05);
+
+    transition: background-color 300ms, color 300ms;
+    transition-timing-function: ease;
+}
+
+#mostradorProjetos {
     display: flex;
-    background-color: #24f0c4;
+    background-color: var(--cor06);
     height: 250px;
 }
 
-.projetos > section {
+.botõesSetas {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+    transition-timing-function: ease;
+}
+ 
+.botõesSetas > img {
+    background-color: var(--cor02);
+    padding: 14px;
+    margin-left: -14px;
+    transform: scale(50%);
+    border-radius: 50%;
+
+    transition: background-color 500ms;
+    transition-timing-function: ease;
+}
+
+.botõesSetas:hover {
+    background-color: #2457f08e;
+
+    transition: background-color 500ms;
+    transition-timing-function: ease;
+}
+
+.botõesSetas:hover > img {
+    background-color: transparent;
+
+    transition: background-color 500ms;
+    transition-timing-function: ease;
+}
+
+#mostradorProjetos > section {
     align-content: center;
 }
 
-.projetos > section#conteudoProjetos {
-    background-color: blueviolet;
+#conteudoProjetos {
+    cursor: default;
+}
+
+#mostradorProjetos > section#conteudoProjetos {
     align-content: center;
     text-align: center;
-    width: 80%;
-}
-
-.projetos > section:nth-child(1), .projetos > section:nth-child(3) {
-    cursor: pointer;
-}
-
-.projetos img {
-    transform: scale(50%);
+    width: 73.5%;
 }
 
 #conteudoProjetos > a {
     text-decoration: none;
-    color: black;
 }
 
 #conteudoProjetos > #quantidadeOpções {
@@ -228,13 +283,24 @@ main > section > h1:nth-last-child(2) {
 #conteudoProjetos > a > aside {
     margin: auto;
     background-color: white;
+    box-shadow: 0px 0px 5px 5px var(--cor05);
+    border-radius: 50px;
+    color: var(--cor05);
+    font-size: 1.2em;
     height: 200px;
     align-content: center;
     width: 80%;
+
+    transition: color 500ms, background-color 500ms;
+    transition-timing-function: ease;
 }
 
 #conteudoProjetos > a > aside:hover {
-    background-color: rgb(163, 163, 163);
+    background-color: var(--cor05);
+    color: white;
+
+    transition: color 500ms, background-color 500ms;
+    transition-timing-function: ease;
 }
 
 #conteudoProjetos > a > aside > section {
