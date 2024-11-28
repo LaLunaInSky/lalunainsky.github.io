@@ -15,6 +15,14 @@ Grandes telas: acima de 1200px
         transition: width 500ms;
         transition-timing-function: ease;
     }
+
+    #conteudoProjetos > a > aside {
+        width: 70%;
+    }
+
+    #conteudoProjetos > #quantidadeOpções {
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -29,7 +37,24 @@ Grandes telas: acima de 1200px
         transition: width 500ms;
         transition-timing-function: ease;
     }
-    
+
+    .botõesSetas {
+        width: 80px;
+    }
+
+    #mostradorProjetos {
+        height: 330px;
+    }
+
+    #conteudoProjetos > #quantidadeOpções {
+        width: 20%;
+    }
+
+    #conteudoProjetos > a > aside {
+        width: 70%;
+        height: 250px;
+    }
+
     .mostradorMódulos {
         height: 360px;
         transition: height 500ms;
