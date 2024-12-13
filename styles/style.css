@@ -36,6 +36,7 @@
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: light-dark(var(--branco03), var(--preto02));
 }
 
 header {
