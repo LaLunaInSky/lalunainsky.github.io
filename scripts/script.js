@@ -193,7 +193,7 @@ function mudarProjetoMostrador(num) {
             }
             break
         case 1:
-            if (escolhaProjeto != 4) {
+            if (escolhaProjeto != quantidadeDeProjetos) {
                 escolhaProjeto += 1
             }
             break
