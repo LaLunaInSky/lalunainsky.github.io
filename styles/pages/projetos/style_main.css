@@ -115,7 +115,7 @@ main {
 }
 
 .mostradorProjeto {
-    display: flex;
+    display: none;
     background-color: var(--preto02);
     width: 100vw;
     height: 100vh;
