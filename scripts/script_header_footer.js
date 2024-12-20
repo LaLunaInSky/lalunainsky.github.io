@@ -7,7 +7,17 @@ function criaçãoHeader() {
     let header = document.createElement('header')
     let p = document.createElement('p')
     p.innerHTML = "<h1><a href='../../index.html'>LaLunaInSky</a></h1>"
+    let nav = document.createElement('nav')
+    let firstTitleh1 = document.querySelector('main>section>h1').innerText
+    
+    if (firstTitleh1 == 'Estudos') {
+        nav.innerHTML = '<a href="index.html" target="_self">Início</a><a href="pages/projetos/index.html" target="_self">Projetos</a>'
+    } else if (firstTitleh1 == 'Projetos') {
+        nav.innerHTML = '<a href="../../index.html" target="_self">Início</a><a href="index.html" target="_self">Projetos</a>'
+    }
+
     header.appendChild(p)
+    header.appendChild(nav)
 
     let styleHeader = document.createElement('style')
     styleHeader.innerHTML = `
@@ -21,23 +31,26 @@ function criaçãoHeader() {
     }
 
     header {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-
-        cursor: default;
+        display: block;
+        text-align: center;
         font-size: 1.3em;
-        height: 80px;
         border-radius: 0px 0px 60px 60px;
         background-color: #2498f0;
         box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.200), inset -1px 3px 10px 3px rgba(0, 0, 0, 0.120);
-        
+        padding: 10px;
         transition: border-radius 500ms;
         transition-timing-function: ease;
     }
+
+    header > nav {
+        margin: 15px 0px 5px;
+    }
+
+    header > nav > a{
+        padding: 15px;
+    }
         
-    header a {
+    header a{
         text-decoration: none;
         text-shadow: 2px 3px 4px #2457f0;
         color: white;
