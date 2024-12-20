@@ -39,25 +39,6 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-
-    cursor: default;
-    font-size: 1.3em;
-    height: 80px;
-    text-shadow: 2px 3px 4px var(--cor05);
-    border-radius: 0px 0px 60px 60px;
-    color: white;
-    background-color: var(--cor02);
-    box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.200), inset -1px 3px 10px 3px rgba(0, 0, 0, 0.120);
-    
-    transition: border-radius 500ms;
-    transition-timing-function: ease;
-}
-
 .projeto {
     cursor: pointer;
     margin: 15px auto;
@@ -107,24 +88,4 @@ iframe {
     background-color: var(--branco04);
     color: var(--preto02);
     border-radius: 50%;
-}
-
-footer {
-    cursor: default;
-    font-size: 1.2em;
-    padding: 5px;
-    border-radius: 60px 60px 0px 0px;
-    text-align: center;
-    color: white;
-    background-color: var(--cor05);
-    box-shadow: inset 0px 4px 10px 5px rgba(0, 0, 0, 0.13);
-}
-
-footer > p:nth-child(1) img {
-    filter: invert();
-    transform: scale(60%);
-}
-
-footer > p:nth-child(1) > a:nth-child(2) > img {
-    margin: 0px 5px;
 }
