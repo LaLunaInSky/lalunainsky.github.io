@@ -7,7 +7,7 @@
 }
 
 :root {
-    color-scheme: light dark;
+    /*color-scheme: light dark;*/
 
     /*Paleta de Sombras do Branco*/
     --branco01: #FFFFFF;
@@ -54,7 +54,7 @@ main > section > h1 {
     background-image: linear-gradient( to right , var(--cor03), transparent 90%);
     font-size: 2em;
     text-shadow: 0px 3px 2px var(--cor05);
-    color: white;
+    color: var(--branco01);
     padding: 10px 20px;
 }
 
@@ -72,7 +72,7 @@ main > section > h1:nth-last-child(2) {
 }
 
 .estudos > section > p:nth-child(2) {
-    color: white;
+    color: var(--branco01);
     font-size: 1em;
     cursor: default;
     padding: 5px 20px;
@@ -85,12 +85,12 @@ main > section > h1:nth-last-child(2) {
     padding: 5px;
     font-weight: bolder;
     text-decoration: none;
-    color: white;
+    color: var(--branco01);
 }
 
 .estudos > section > p:nth-child(2) > a:hover {
     padding: 5px;
-    background-color: white;
+    background-color: var(--branco01);
     color: var(--cor05);
     text-shadow: none;
     border-radius: 15px;
@@ -116,7 +116,7 @@ main > section > h1:nth-last-child(2) {
     width: 100%;
     text-align: center;
     cursor: default;
-    color: white;
+    color: var(--branco01);
     font-weight: bolder;
     margin-left: -30px;
     margin-top: 20px;
@@ -148,7 +148,7 @@ main > section > h1:nth-last-child(2) {
 }
 
 .mod > h3 {
-    background-color: white;
+    background-color: var(--branco01);
     width: 120px;
     color: var(--cor05);
     align-content: center;
@@ -165,7 +165,7 @@ main > section > h1:nth-last-child(2) {
 .mod > h3:hover {
     box-shadow: 0px 0px 5px 5px var(--cor05);
     background-color: var(--cor05);
-    color: white;
+    color: var(--branco01);
     text-shadow: none;
 
     transition: background-color 500ms, color 500ms;
@@ -174,6 +174,11 @@ main > section > h1:nth-last-child(2) {
 
 .mod > h4, .mod > ul {
     display: none;
+}
+
+#projetoTexto {
+    text-decoration: none;
+    color: var(--branco01);
 }
 
 .projetos > section {

@@ -6,7 +6,7 @@ function criaçãoHeader() {
     let firstChildBody = document.querySelector('main')
     let header = document.createElement('header')
     let p = document.createElement('p')
-    p.innerHTML = "<h1>LaLunaInSky</h1>"
+    p.innerHTML = "<h1><a href='../../index.html'>LaLunaInSky</a></h1>"
     header.appendChild(p)
 
     let styleHeader = document.createElement('style')
@@ -29,14 +29,18 @@ function criaçãoHeader() {
         cursor: default;
         font-size: 1.3em;
         height: 80px;
-        text-shadow: 2px 3px 4px #2457f0;
         border-radius: 0px 0px 60px 60px;
-        color: white;
         background-color: #2498f0;
         box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.200), inset -1px 3px 10px 3px rgba(0, 0, 0, 0.120);
         
         transition: border-radius 500ms;
         transition-timing-function: ease;
+    }
+        
+    header a {
+        text-decoration: none;
+        text-shadow: 2px 3px 4px #2457f0;
+        color: white;
     }`
 
     document.head.appendChild(styleHeader)
@@ -51,7 +55,7 @@ function criaçãoFooter() {
     aInstragram.setAttribute('href', 'https://www.instagram.com/lalunainsky/')
     aInstragram.setAttribute('target', '_blank')
     let imgInstagram = document.createElement('img')
-    imgInstagram.setAttribute('src', '../imagens/logos_midias_sociais/instagram_64px.png')
+    imgInstagram.setAttribute('src', '../../imagens/logos_midias_sociais/instagram_64px.png')
     imgInstagram.setAttribute('alt', 'logo instragram')
     aInstragram.appendChild(imgInstagram)
     p1.appendChild(aInstragram)
@@ -60,7 +64,7 @@ function criaçãoFooter() {
     aGithub.setAttribute('href', 'https://github.com/LaLunaInSky')
     aGithub.setAttribute('target', '_blank')
     let imgGithub = document.createElement('img')
-    imgGithub.setAttribute('src', '../imagens/logos_midias_sociais/github_64px.png')
+    imgGithub.setAttribute('src', '../../imagens/logos_midias_sociais/github_64px.png')
     imgGithub.setAttribute('alt', 'logo github')
     aGithub.appendChild(imgGithub)
     p1.appendChild(aGithub)
@@ -69,7 +73,7 @@ function criaçãoFooter() {
     aLinkedin.setAttribute('href', 'https://www.linkedin.com/in/lalunainsky/')
     aLinkedin.setAttribute('target', '_blank')
     let imgLinkedin = document.createElement('img')
-    imgLinkedin.setAttribute('src', '../imagens/logos_midias_sociais/linkedin_64px.png')
+    imgLinkedin.setAttribute('src', '../../imagens/logos_midias_sociais/linkedin_64px.png')
     imgLinkedin.setAttribute('alt', 'logo linkedin')
     aLinkedin.appendChild(imgLinkedin)
     p1.appendChild(aLinkedin)
