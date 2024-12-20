@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/pages/projetos/style_main.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close">
     <title>LaLunaInSky | Projetos</title>
 </head>
 <body>
-    
+    <main>
+        <section class="projetos">
+            <!--Exemplo de como deve ser cada projeto
+            <section onclick="abrirProjeto('projeto-nome')" class="projeto" id="nomeProjeto"> 
+                <h1>Nome Projeto</h1>
+                <h2>Ano e mês Projeto</h2>
+            </section>-->
+            <section onclick="abrirProjeto('projeto-cronometro')" class="projeto" id="cronometro"> 
+                <h1>Cronômetro</h1>
+                <h2>Dezembro de 2024</h2>
+            </section>
+            <section onclick="abrirProjeto('projeto-relogio-digital')" class="projeto" id="relogioDigital"> 
+                <h1>Relógio Digital</h1>
+                <h2>Dezembro de 2024</h2>
+            </section>
+            <section onclick="abrirProjeto('projeto-relogio-analogico')" class="projeto" id="relogioAnalogico"> 
+                <h1>Relógio Analógico</h1>
+                <h2>Dezembro de 2024</h2>
+            </section>
+            <section onclick="abrirProjeto('projeto-calculadora')" class="projeto" id="calculadora">
+                <h1>Calculadora</h1>
+                <h2>Dezembro de 2024</h2>
+            </section>
+            <section onclick="abrirProjeto('projeto-login')" class="projeto" id="login"> 
+                <h1>Login</h1>
+                <h2>Novembro de 2024</h2>
+            </section>
+            <section onclick="abrirProjeto('projeto-social')" class="projeto" id="social"> 
+                <h1>Social</h1>
+                <h2>Novembro de 2024</h2>
+            </section>
+            <section onclick="abrirProjeto('projeto-cordel')" class="projeto" id="cordel"> 
+                <h1>Cordel</h1>
+                <h2>Outubro de 2024</h2>
+            </section>
+            <section onclick="abrirProjeto('projeto-android')" class="projeto" id="android"> 
+                <h1>Android</h1>
+                <h2>Outubro de 2024</h2>
+            </section>
+        </section>
+        <section class="mostradorProjeto">
+            <iframe src="" frameborder="0"></iframe>
+            <span onclick="fecharMostradorProjeto()" class="material-symbols-outlined">close</span>
+        </section>
+    </main>
+    <script src="../../scripts/pages/projetos/script_main.js"></script>
 </body>
 </html>
