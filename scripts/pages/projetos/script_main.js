@@ -3,8 +3,8 @@
 let mostradorProjetoÚnico = document.querySelector('.mostradorProjeto')
 let header = document.querySelector('header')
 let footer = document.querySelector('footer')
-let main = document.querySelector('main')
 let mostradorProjetos = document.querySelector('.projetos')
+let style = document.createElement('style')
 
 function abrirProjeto(nomeProjeto) {
     let nomeDoProjeto = nomeProjeto
@@ -16,8 +16,27 @@ function abrirProjeto(nomeProjeto) {
     header.style.display = 'none'
     footer.style.display = 'none'
 
-    main.style.margin = '0px auto'
-    main.style.width = "100%"
+    style.innerHTML = `
+    main {
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 485px) {
+        main {
+            width: 100%;
+            transition: width 500ms;
+            transition-timing-function: ease;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        main {
+            width: 100%;
+            transition: width 500ms;
+            transition-timing-function: ease;
+        }
+    }`
 }
 
 function fecharMostradorProjeto() {
@@ -25,6 +44,28 @@ function fecharMostradorProjeto() {
     mostradorProjetos.style.display = 'block'
     header.style.display = 'flex'
     footer.style.display = 'block'
-    main.style.margin = '15px auto'
-    main.style.width = "90%"
+    
+    style.innerHTML = `
+    main {
+        margin: 15px auto;
+        width: 90%;
+    }
+
+    @media screen and (min-width: 485px) {
+        main {
+            width: 480px;
+            transition: width 500ms;
+            transition-timing-function: ease;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        main {
+            width: 620px;
+            transition: width 500ms;
+            transition-timing-function: ease;
+        }
+    }`
 }
+
+document.head.appendChild(style)

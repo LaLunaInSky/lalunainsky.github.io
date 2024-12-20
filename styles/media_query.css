@@ -26,12 +26,6 @@ Grandes telas: acima de 1200px
 }
 
 @media screen and (min-width: 768px) {
-    header {
-        border-radius: 0px;
-        transition: border-radius 500ms;
-        transition-timing-function: ease;
-    }
-
     main {
         width: 620px;
         transition: width 500ms;
