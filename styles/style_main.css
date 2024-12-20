@@ -119,11 +119,7 @@ main > section > h1:nth-last-child(2) {
     margin: 20px 15px;
 }
 
-#javascriptEstudo > h2 {
-    border-top-left-radius: 10px;
-}
-
-#htmlCssEstudo > aside, #javascriptEstudo > aside {
+#htmlCssEstudo > aside {
     border-radius: 15px 20% 20% 15px;
     padding: 20px 0px 0px;
     background-color: var(--cor06);
@@ -134,7 +130,7 @@ main > section > h1:nth-last-child(2) {
     margin-bottom: 15px;
 }
 
-#htmlCssEstudo > aside > p, #javascriptEstudo > aside > p {
+#htmlCssEstudo > aside > p {
     background-color: var(--cor05);
     width: 100%;
     text-align: center;
@@ -146,13 +142,13 @@ main > section > h1:nth-last-child(2) {
     padding: 15px;
 }
 
-#htmlCssEstudo > aside > p > a, #javascriptEstudo > aside > p > a {
+#htmlCssEstudo > aside > p > a {
     padding: 5px;
     text-decoration: none;
     color: var(--cor06);
 }
 
-#htmlCssEstudo > aside > p > a:hover, #javascriptEstudo > aside > p > a:hover {
+#htmlCssEstudo > aside > p > a:hover {
     background-color: var(--cor06);
     color: var(--cor05);
     border-radius: 15px;
