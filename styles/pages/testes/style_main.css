@@ -1,5 +1,35 @@
 @charset "UTF-8";
 
+/*Mobile First*/
+
+:root {
+    /*color-scheme: light dark;*/
+
+    /*Paleta de Sombras do Branco*/
+    --branco01: #FFFFFF;
+    --branco02: #F6F6F6;
+    --branco03: #D4D4D4;
+    --branco04: #B3B3B3;
+    --branco05: #919191;
+    --branco06: #6F6F6F;
+
+    /*Paleta de Sombras do Preto*/
+    --preto01: #000000;
+    --preto02: #3C3C3C;
+    --preto03: #5E5E5E;
+    --preto04: #808080;
+    --preto05: #A2A2A2;
+    --preto06: #C3C3C3;
+
+    /*Paleta Cores Principais*/
+    --cor01: #24f0c4;
+    --cor02: #2498f0;
+    --cor03: #23d8f0;
+    --cor04: #24f07f;
+    --cor05: #2457f0;
+    --cor06: #74e1f0;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -13,6 +43,9 @@ html, body {
 
 header {
     display: flex;
+    height: 78px;
+    width: 100%;
+    background-color: var(--cor03);
     align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
@@ -21,7 +54,7 @@ header {
 
 header > h1 {
     cursor: default;
-    color: white;
+    color: var(--branco02);
     transition: font-size 400ms ease, margin-top 400ms ease;
 }
 
@@ -32,7 +65,7 @@ header > h1 {
 
 .menuCentral > a {
     text-decoration: none;
-    color: white;
+    color: var(--branco01);
     padding: 5px;
     border-radius: 10px;
     margin: 0px 10px;
@@ -41,15 +74,9 @@ header > h1 {
 }
 
 .menuCentral > a:hover {
-    background-color: white;
-    color: red;
+    background-color: var(--branco02);
+    color: var(--cor03);
     transition: color 300ms ease, background-color 300ms ease;
-}
-
-header, footer {
-    background-color: red;
-    width: 100%;
-    height: 10%;
 }
 
 main {
@@ -62,7 +89,7 @@ main {
     position: absolute;
     width: 40%;
     height: 28%;
-    top: 2.36%;
+    top: 2.25%;
     left: 0px;
 }
 
@@ -80,16 +107,31 @@ main {
 
 .menuLateral > nav {
     display: none;
+    width: 180px;
     text-align: center;
-    background-color: blue;
+    background-color: var(--cor05);
     flex-flow: column nowrap;
 }
 
+.menuLateral a:nth-child(2), .menuLateral a:nth-child(1) {
+    border-bottom: solid 2px;
+}
+
 .menuLateral a {
-    background-color: aqua;
-    padding: 5px;
+    padding: 10px;
     font-size: 1.5em;
     text-decoration: none;
-    color: white;
-    margin: 10px 15px;
+    color: var(--branco01);
+}
+
+.menuLateral a:hover {
+    background-color: var(--branco01);
+    color: var(--cor05);
+}
+
+footer {
+    background-color: var(--cor03);
+    color: var(--branco03);
+    width: 100%;
+    height: 10%;
 }
