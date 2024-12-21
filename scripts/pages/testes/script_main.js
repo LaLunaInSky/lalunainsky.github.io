@@ -3,7 +3,6 @@
 let menuLateralAbertura = false
 let opçõesMenuLateral = document.querySelector('.menuLateral>nav')
 let imgMenuLateral = document.querySelector('.menuLateral>section>img')
-let menuCentral = document.querySelector('.menuCentral')
 
 function trueOrFalseMenuLateralAbertura() {
     if (menuLateralAbertura == false) {
@@ -24,8 +23,9 @@ function trueOrFalseMenuLateralAbertura() {
     }
 }
 
-function funfou() {
-    alert('funfou!')
+window.onresize = function(event) {
+    if (window.innerWidth >= 768) {
+        opçõesMenuLateral.style.display = 'none'
+        imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/menu_icon_50px.png')
+    }
 }
-
-menuCentral.addEventListener("animationiteration", funfou)
