@@ -18,17 +18,13 @@ function trueOrFalseMenuLateralAbertura() {
             opçõesMenuLateral.style.display = 'flex'
             imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/close_icon_50px.png')
             menuLateral.style = `
-                border-left: solid 2px var(--branco01);
-                border-right: solid 2px var(--branco01);
-                background-color: #2457f0;
+                background-color: var(--branco01);
                 border-radius: 50% 50% 0% 0%;`
             break
         case false:
             opçõesMenuLateral.style.display = 'none'
             imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/menu_icon_50px.png')
             menuLateral.style = `
-                border-left: solid 0px var(--branco01);
-                border-right: solid 0px var(--branco01);
                 background-color: transparent;
                 border-radius: 0% 0% 0% 0%;`
             break
