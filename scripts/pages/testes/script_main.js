@@ -27,5 +27,6 @@ window.onresize = function(event) {
     if (window.innerWidth >= 768) {
         opçõesMenuLateral.style.display = 'none'
         imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/menu_icon_50px.png')
+        menuLateralAbertura = false
     }
 }
