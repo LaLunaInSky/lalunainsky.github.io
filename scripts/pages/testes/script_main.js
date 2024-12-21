@@ -3,6 +3,7 @@
 let menuLateralAbertura = false
 let opçõesMenuLateral = document.querySelector('.menuLateral>nav')
 let imgMenuLateral = document.querySelector('.menuLateral>section>img')
+let menuCentral = document.querySelector('.menuCentral')
 
 function trueOrFalseMenuLateralAbertura() {
     if (menuLateralAbertura == false) {
@@ -22,3 +23,9 @@ function trueOrFalseMenuLateralAbertura() {
             break
     }
 }
+
+function funfou() {
+    alert('funfou!')
+}
+
+menuCentral.addEventListener("animationiteration", funfou)
