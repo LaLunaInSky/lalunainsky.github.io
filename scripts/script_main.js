@@ -1,10 +1,10 @@
 "use strict"
 
 let menuLateralAbertura = false
+let menuLateral = document.querySelector('.menuLateral')
 let navMenuLateral = document.querySelectorAll('.menuLateral>nav>a')
 let redesSociaisMenuLateral = document.querySelectorAll('.redesSociaisMenuLateral a')
 let imgMenuLateral = document.querySelector('.menuLateral>section>img')
-let menuLateral = document.querySelector('.menuLateral>section')
 let date = new Date()
 let anoAtual = date.getFullYear()
 let footer = document.querySelector('footer>p')
@@ -27,6 +27,7 @@ function trueOrFalseMenuLateralAbertura() {
                 item.style.display = 'block'
             } 
             imgMenuLateral.setAttribute('src', './imagens/menu_icones/close_icon_50px.png')
+            menuLateral.style = 'width: 192px;height: 260px;'
             break
         case false:
             for (let item of redesSociaisMenuLateral) {
@@ -36,6 +37,7 @@ function trueOrFalseMenuLateralAbertura() {
                 item.style.display = 'none'
             }
             imgMenuLateral.setAttribute('src', './imagens/menu_icones/menu_icon_50px.png')
+            menuLateral.style = 'width: 55px;height: 55px;'
             break
     }
 }

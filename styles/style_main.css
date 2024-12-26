@@ -119,8 +119,13 @@ header > h1 {
 
 .menuLateral {
     position: fixed;
+    cursor: default;
+    width: 55px;
+    height: 55px;
     top: 0px;
     left: 0px;
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
 }
 
 .menuLateral > section {
@@ -146,12 +151,13 @@ header > h1 {
 }
 
 .menuLateral > nav > a:hover {
-    background-color: var(--branco01);
+    background-color: var(--corC101);
     color: var(--cor02);
 }
 
 .redesSociaisMenuLateral {
     display: flex;
+    cursor: default;
     margin-left: 68px;
     margin-top: 6px;
     align-items: center;
@@ -164,8 +170,13 @@ header > h1 {
 }
 
 .redesSociaisMenuLateral img {
-    filter: invert();
-    transform: scale(45%);
+    transform: scale(55%);
+    filter: grayscale(100%);
+    filter: brightness(100);
+}
+
+.redesSociaisMenuLateral img:hover {
+    filter: grayscale(0%);
 }
 
 main {
@@ -174,6 +185,16 @@ main {
     background-color: var(--preto02);
 }
 
+.espaçoVazio {
+    width: 100%;
+    height: 55px;
+    background-color: var(--branco01);
+}
+
+.páginaAtual h1 {
+    background-color: var(--branco01);
+    padding: 15px;
+}
 
 footer {
     cursor: default;
