@@ -181,7 +181,8 @@ header > h1 {
 
 main {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    padding-bottom: 20px;
     background-color: var(--preto02);
 }
 
@@ -199,6 +200,70 @@ main {
     font-size: 1.6em;
     border-radius: 0px 0px 20px 20px;
     padding: 10px 30px 12px;
+}
+
+.destaques {
+    width: 95%;
+    margin: 15px auto 0px;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 450px;
+    background-color: var(--corC101);
+}
+
+.destaques > h1 {
+    cursor: default;
+    text-align: center;
+    padding: 10px;
+    color: var(--corC103);
+}
+
+.conteudoDestaques {
+    margin-top: 5px;
+    width: 100%;
+    height: 400px;
+    background-color: var(--corC102);
+}
+
+.setasDestaques {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.setasDestaques > aside {
+    cursor: pointer;
+    margin-top: 168px;
+    border-radius: 50%;
+    background-color: var(--corC106);
+}
+
+.setaEsquerda {
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+}
+
+.setaEsquerda img {
+    margin-left: -3px;
+}
+
+.setaDireita {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
+
+.setaDireita img {
+    margin-left: 3px;
+}
+
+.setasDestaques > aside:hover {
+    background-color: var(--corC104);
+}
+
+.setasDestaques img {
+    transform: scale(50%);
 }
 
 footer {
