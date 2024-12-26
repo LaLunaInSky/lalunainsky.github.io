@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*Outras Versões
+Typical Devices Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px 
+Computador: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 55px;
+        justify-content: space-between;
+    }
+    
+    header > h1 {
+        margin-left: 15px;
+        transition: all 2000ms ease;
+    }
+    
+    .menuCentral {
+        display: flex;
+        flex-flow: row nowrap;
+        transition: all 2000ms ease;
+    }
+
+    .redesSociaisHeader {
+        display: flex;
+        transition: all 2000ms ease;
+    }
+
+    .menuLateral {
+        display: none;
+    }
+}

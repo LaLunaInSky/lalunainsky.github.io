@@ -58,6 +58,127 @@ html, body {
     background-color: var(--preto01);
 }
 
+header {
+    display: flex;
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    background-color: var(--corC104);
+    align-items: center;
+    justify-content: center;
+}
+
+header > h1 {
+    cursor: default;
+    color: var(--branco01);
+    text-shadow: 1px 2px 5px var(--preto02);
+    transition: all 2000ms ease;
+}
+
+.menuCentral {
+    display: none;
+    transition: all 2000ms ease;
+}
+
+.menuCentral > a {
+    text-decoration: none;
+    color: var(--branco01);
+    padding: 8px;
+    border-radius: 25px;
+    border: solid 2px transparent;
+    margin: 0px 5px;
+    font-size: 1.2em;
+    transition: border 500ms ease, color 300ms ease, background-color 300ms ease;
+}
+
+.menuCentral > a:hover {
+    border: solid 2px var(--corC101);
+    color: var(--corC101);
+    transition: border 500ms ease, color 300ms ease, background-color 300ms ease;
+}
+
+.redesSociaisHeader {
+    display: none;
+    margin-right: 5px;
+    transition: all 2000ms ease;
+}
+
+.redesSociaisHeader > a {
+    margin-left: -20px;
+}
+
+.redesSociaisHeader img {
+    transform: scale(45%);
+    filter: grayscale(100%);
+    filter: brightness(100);
+}
+
+.redesSociaisHeader img:hover {
+    filter: grayscale(0%);
+}
+
+.menuLateral {
+    position: fixed;
+    cursor: default;
+    width: 55px;
+    height: 55px;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+}
+
+.menuLateral > section {
+    display: flex;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+}
+
+.menuLateral > section > img {
+    transform: scale(70%);
+}
+
+.menuLateral > nav > a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: var(--branco01);
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: var(--cor02);
+    width: 172px;
+}
+
+.menuLateral > nav > a:hover {
+    background-color: var(--corC101);
+    color: var(--cor02);
+}
+
+.redesSociaisMenuLateral {
+    display: flex;
+    cursor: default;
+    margin-left: 68px;
+    margin-top: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesSociaisMenuLateral a {
+    display: none;
+    background-color: var(--cor05);
+}
+
+.redesSociaisMenuLateral img {
+    transform: scale(55%);
+    filter: grayscale(100%);
+    filter: brightness(100);
+}
+
+.redesSociaisMenuLateral img:hover {
+    filter: grayscale(0%);
+}
+
 main {
     width: 100%;
     height: 100%;
@@ -71,10 +192,27 @@ main {
 }
 
 .páginaAtual h1 {
+    cursor: default;
     background-image: linear-gradient(to right,var(--cor02), var(--cor01));
     color: var(--branco01);
     text-shadow: 1px 2px 2px var(--corC106);
     font-size: 1.6em;
     border-radius: 0px 0px 20px 20px;
     padding: 10px 30px 12px;
+}
+
+footer {
+    cursor: default;
+    width: 100%;
+    height: 40px;
+    background-color: var(--corC101);
+    color: var(--corC103);
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    align-content: center;
+}
+
+footer > p {
+    padding: 5px;
 }

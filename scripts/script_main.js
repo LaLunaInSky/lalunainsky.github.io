@@ -51,6 +51,7 @@ window.onresize = function(event) {
             item.style.display = 'none'
         }
         imgMenuLateral.setAttribute('src', './imagens/menu_icones/menu_icon_50px.png')
+        menuLateral.style = 'width: 55px;height: 55px;'
         menuLateralAbertura = false
     }
 }
