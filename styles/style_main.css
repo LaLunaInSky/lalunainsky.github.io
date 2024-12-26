@@ -194,8 +194,8 @@ main {
 
 .páginaAtual h1 {
     cursor: default;
-    background-image: linear-gradient(to right,var(--cor02), var(--cor01));
-    color: var(--branco01);
+    background-image: linear-gradient(to bottom,var(--cor05) 8%, var(--cor06));
+    color: var(--branco02);
     text-shadow: 1px 2px 2px var(--corC106);
     font-size: 1.6em;
     border-radius: 0px 0px 20px 20px;
@@ -214,14 +214,14 @@ main {
 .destaques > h1 {
     cursor: default;
     text-align: center;
-    padding: 10px;
+    font-size: 1.4em;
+    padding: 15px;
     color: var(--corC103);
 }
 
 .conteudoDestaques {
-    margin-top: 5px;
     width: 100%;
-    height: 400px;
+    height: 395px;
     background-color: var(--corC102);
 }
 
@@ -233,9 +233,10 @@ main {
 
 .setasDestaques > aside {
     cursor: pointer;
-    margin-top: 168px;
+    margin-top: 150px;
     border-radius: 50%;
-    background-color: var(--corC106);
+    background-color: var(--corC205);
+    transition: background-color 300ms ease;
 }
 
 .setaEsquerda {
@@ -260,10 +261,36 @@ main {
 
 .setasDestaques > aside:hover {
     background-color: var(--corC104);
+    transition: background-color 300ms ease;
 }
 
 .setasDestaques img {
     transform: scale(50%);
+}
+
+.bolinhasCarroselItems {
+    height: 45px;
+    margin-top: 135px;
+    background-color: var(--corC201);
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 0px 30%;
+    align-items: center;
+}
+
+.bolinhasCarroselItems p {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--corC205);
+    transition: background-color 300ms ease;
+}
+
+.bolinhasCarroselItems p:hover {
+    background-color: var(--corC204);
+    transition: background-color 300ms ease;
 }
 
 footer {
