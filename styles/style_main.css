@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
-/*Mobile First!!*/
-* {
-    margin: 0px;
-    padding: 0px;
-}
+/*Mobile First*/
 
 :root {
     /*color-scheme: light dark;*/
@@ -32,281 +28,154 @@
     --cor04: #24f07f;
     --cor05: #2457f0;
     --cor06: #74e1f0;
+
+    /*Paleta Cores Complementares cor05*/
+    --corC101: #f0b724;
+    --corC102: #9b854b;
+    --corC103: #464239;
+    --corC104: #2457f0;
+    --corC105: #495370;
+    --corC106: #4661b0;
+
+    /*Paleta Cores Complementares cor06*/
+    --corC201: #f0a973;
+    --corC202: #9b8a7e;
+    --corC203: #46382e;
+    --corC204: #74e1f0;
+    --corC205: #5c6e70;
+    --corC206: #80aab0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 html, body {
+    height: 100vh;
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: light-dark(var(--branco03), var(--preto02));
+    background-color: var(--preto01);
+}
+
+header {
+    display: flex;
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    background-color: var(--corC104);
+    align-items: center;
+    justify-content: center;
+}
+
+header > h1 {
+    cursor: default;
+    color: var(--branco01);
+    text-shadow: 1px 2px 5px var(--preto02);
+    transition: all 2000ms ease;
+}
+
+.menuCentral {
+    display: none;
+    transition: all 2000ms ease;
+}
+
+.menuCentral > a {
+    text-decoration: none;
+    color: var(--branco01);
+    padding: 10px;
+    border-radius: 25px;
+    margin: 0px 5px;
+    font-size: 1.2em;
+    transition: color 300ms ease, background-color 300ms ease;
+}
+
+.menuCentral > a:hover {
+    background-color: var(--branco01);
+    color: var(--cor05);
+    transition: color 300ms ease, background-color 300ms ease;
+}
+
+.redesSociaisHeader {
+    display: none;
+    margin-right: 5px;
+    transition: all 2000ms ease;
+}
+
+.redesSociaisHeader > a {
+    margin-left: -20px;
+}
+
+.redesSociaisHeader img {
+    transform: scale(45%);
+    filter: invert();
+}
+
+.menuLateral {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.menuLateral > section {
+    display: flex;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+}
+
+.menuLateral > section > img {
+    transform: scale(70%);
+}
+
+.menuLateral > nav > a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: var(--branco01);
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: var(--cor02);
+    width: 172px;
+}
+
+.menuLateral > nav > a:hover {
+    background-color: var(--branco01);
+    color: var(--cor02);
+}
+
+.redesSociaisMenuLateral {
+    display: flex;
+    margin-left: 68px;
+    margin-top: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesSociaisMenuLateral a {
+    display: none;
+    background-color: var(--cor05);
+}
+
+.redesSociaisMenuLateral img {
+    filter: invert();
+    transform: scale(45%);
 }
 
 main {
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 10px auto;
-    width: 430px;
-
-    transition: width 500ms;
-    transition-timing-function: ease;
-}
-
-main > section > h1 {
-    cursor: default;
-    background-image: linear-gradient( to right , var(--cor03), transparent 90%);
-    font-size: 2em;
-    text-shadow: 0px 3px 2px var(--cor05);
-    color: var(--branco01);
-    padding: 10px 20px;
-}
-
-main > section > h1:nth-last-child(2) {
-    border-top-left-radius: 20px;
-}
-
-.estudos h2 {
-    font-size: 1.4em;
-    cursor: default;
-    color: var(--cor05);
-    text-shadow: 1px 2px 2px white;
-    padding: 5px 10px;
-    background-image: linear-gradient(to right, var(--cor01), transparent 90%);
-}
-
-.estudos > section > p:nth-child(2) {
-    color: var(--branco01);
-    font-size: 1em;
-    cursor: default;
-    padding: 5px 20px;
-    text-shadow: 0px 3px 5px var(--cor05);
-    background-image: linear-gradient(to right, var(--cor05), transparent 90%);
-    border-bottom-left-radius: 15px;
-}
-
-.estudos > section > p:nth-child(2) > a {
-    padding: 5px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: var(--branco01);
-}
-
-.estudos > section > p:nth-child(2) > a:hover {
-    padding: 5px;
-    background-color: var(--branco01);
-    color: var(--cor05);
-    text-shadow: none;
-    border-radius: 15px;
-}
-
-.estudos > section > p:nth-last-child(1) {
-    margin: 20px 15px;
-}
-
-#htmlCssEstudo > aside {
-    border-radius: 15px 20% 20% 15px;
-    padding: 20px 0px 0px;
-    background-color: var(--cor06);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-#htmlCssEstudo > aside > p {
-    background-color: var(--cor05);
     width: 100%;
-    text-align: center;
+    height: 100%;
+    background-color: var(--preto02);
+}
+
+
+footer {
     cursor: default;
-    color: var(--branco01);
-    font-weight: bolder;
-    margin-left: -30px;
-    margin-top: 20px;
-    padding: 15px;
-}
-
-#htmlCssEstudo > aside > p > a {
-    padding: 5px;
-    text-decoration: none;
-    color: var(--cor06);
-}
-
-#htmlCssEstudo > aside > p > a:hover {
-    background-color: var(--cor06);
-    color: var(--cor05);
-    border-radius: 15px;
-}
-
-.mostradorMódulos {
-    padding: 20px;
-    height: 260px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    
-    transition: height 500ms, justify-content 500ms, align-content 500ms, flex-flow 500ms;
-    transition-timing-function: ease;
-}
-
-.mod > h3 {
-    background-color: var(--branco01);
-    width: 120px;
-    color: var(--cor05);
-    align-content: center;
-    text-align: center;
-    height: 120px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px 5px var(--cor05);
-
-    transition: height 500ms, width 500ms, font-size 500ms, background-color 500ms, color 500ms;
-    transition-timing-function: ease;
-}
-
-.mod > h3:hover {
-    box-shadow: 0px 0px 5px 5px var(--cor05);
-    background-color: var(--cor05);
-    color: var(--branco01);
-    text-shadow: none;
-
-    transition: background-color 500ms, color 500ms;
-    transition-timing-function: ease;
-}
-
-.mod > h4, .mod > ul {
-    display: none;
-}
-
-#projetoTexto {
-    text-decoration: none;
-    color: var(--branco01);
-}
-
-.projetos > section {
-    background-color: var(--cor05);
-    text-align: center;
-    padding: 15px;
-    color: white;
-    font-weight: bolder;
-}
-
-.projetos > section a {
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 15px;
-    color: var(--cor06);
-
-    transition: color 300ms, background-color 300ms;
-    transition-timing-function: ease;
-}
-
-.projetos > section a:hover {
-    background-color: var(--cor06);
-    color: var(--cor05);
-
-    transition: background-color 300ms, color 300ms;
-    transition-timing-function: ease;
-}
-
-#mostradorProjetos {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--cor06);
-    height: 280px;
-    overflow: hidden;
-    border-top-right-radius: 80px;
-}
-
-.botõesSetas {
-    width: 60px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    transition: background-color 500ms;
-    transition-timing-function: ease;
-}
- 
-.botõesSetas > img {
-    background-color: var(--cor02);
-    padding: 14px;
-    margin-left: -14px;
-    transform: scale(50%);
-    border-radius: 50%;
-
-    transition: background-color 500ms;
-    transition-timing-function: ease;
-}
-
-.botõesSetas:hover {
-    background-color: #2457f08e;
-
-    transition: background-color 500ms;
-    transition-timing-function: ease;
-}
-
-.botõesSetas:hover > img {
-    background-color: transparent;
-
-    transition: background-color 500ms;
-    transition-timing-function: ease;
-}
-
-#mostradorProjetos > section {
-    align-content: center;
-}
-
-#conteudoProjetos {
-    cursor: default;
-}
-
-#mostradorProjetos > section#conteudoProjetos {
-    align-content: center;
-    text-align: center;
-    width: 73.5%;
-}
-
-#conteudoProjetos > a {
-    text-decoration: none;
-}
-
-#conteudoProjetos > #quantidadeOpções {
-    width: 40%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin: 15px auto 0px;
-}
-
-#quantidadeOpções > p {
-    margin: 0px 5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
-#conteudoProjetos > a > aside {
-    margin: 20px auto;
-    background-color: white;
-    box-shadow: 0px 0px 5px 5px var(--cor05);
-    border-radius: 50px;
-    color: var(--cor05);
+    background-color: var(--corC101);
+    color: var(--corC103);
     font-size: 1.2em;
-    height: 200px;
+    font-style: italic;
+    text-align: center;
     align-content: center;
-    width: 80%;
-
-    transition: color 500ms, background-color 500ms;
-    transition-timing-function: ease;
-}
-
-#conteudoProjetos > a > aside:hover {
-    background-color: var(--cor05);
-    color: white;
-
-    transition: color 500ms, background-color 500ms;
-    transition-timing-function: ease;
-}
-
-#conteudoProjetos > a > aside > section {
-    display: none;
+    height: 40px;
 }
