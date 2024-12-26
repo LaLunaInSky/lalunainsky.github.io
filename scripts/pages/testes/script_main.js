@@ -1,7 +1,8 @@
 "use strict"
 
 let menuLateralAbertura = false
-let opçõesMenuLateral = document.querySelector('.menuLateral>nav')
+let navMenuLateral = document.querySelectorAll('.menuLateral>nav>a')
+let redesSociaisMenuLateral = document.querySelectorAll('.redesSociaisMenuLateral a')
 let imgMenuLateral = document.querySelector('.menuLateral>section>img')
 let menuLateral = document.querySelector('.menuLateral>section')
 
@@ -14,23 +15,30 @@ function trueOrFalseMenuLateralAbertura() {
 
     switch (menuLateralAbertura) {
         case true:
-            opçõesMenuLateral.style.display = 'flex'
+            for (let item of redesSociaisMenuLateral) {
+                item.style.display = 'block'
+            }
+            for (let item of navMenuLateral) {
+                item.style.display = 'block'
+            } 
             imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/close_icon_50px.png')
-            menuLateral.style = `background-color: var(--branco01);border-radius: 50% 50% 0% 0%;`
             break
         case false:
-            opçõesMenuLateral.style.display = 'none'
+            for (let item of redesSociaisMenuLateral) {
+                item.style.display = 'none'
+            }
+            for (let item of navMenuLateral) {
+                item.style.display = 'none'
+            }
             imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/menu_icon_50px.png')
-            menuLateral.style = `background-color: transparent;border-radius: 0% 0% 0% 0%;`
             break
     }
 }
 
-window.onresize = function(event) {
+/*window.onresize = function(event) {
     if (window.innerWidth >= 768) {
         opçõesMenuLateral.style.display = 'none'
         imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/menu_icon_50px.png')
         menuLateralAbertura = false
-        menuLateral.style = `background-color: transparent;border-radius: 0% 0% 0% 0%;`
     }
-}
+}*/
