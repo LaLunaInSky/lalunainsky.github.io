@@ -11,7 +11,6 @@ let footer = document.querySelector('footer>p')
 
 footer.innerText = `${anoAtual} - LaLunaInSky`
 
-
 function trueOrFalseMenuLateralAbertura() {
     if (menuLateralAbertura == false) {
         menuLateralAbertura = true
