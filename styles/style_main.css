@@ -28,22 +28,6 @@
     --cor04: #24f07f;
     --cor05: #2457f0;
     --cor06: #74e1f0;
-
-    /*Paleta Cores Complementares cor05*/
-    --corC101: #f0b724;
-    --corC102: #9b854b;
-    --corC103: #464239;
-    --corC104: #2457f0;
-    --corC105: #495370;
-    --corC106: #4661b0;
-
-    /*Paleta Cores Complementares cor06*/
-    --corC201: #f0a973;
-    --corC202: #9b8a7e;
-    --corC203: #46382e;
-    --corC204: #74e1f0;
-    --corC205: #5c6e70;
-    --corC206: #80aab0;
 }
 
 * {
@@ -61,15 +45,20 @@ header {
     position: fixed;
     height: 55px;
     width: 100%;
-    background-color: var(--corC104);
+    background-color: var(--preto01);
     align-items: center;
     justify-content: center;
 }
 
 header > h1 {
     cursor: default;
+    background-image: linear-gradient(to top, var(--cor05) 20%, var(--cor01), var(--cor04));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: var(--branco01);
-    text-shadow: 1px 2px 5px var(--preto02);
+    font-size: 2em;
+    font-weight: bolder;
     transition: all 2000ms ease;
 }
 
@@ -186,8 +175,8 @@ main {
 footer {
     cursor: default;
     height: 40px;
-    background-color: var(--corC101);
-    color: var(--corC103);
+    background-color: var(--preto01);
+    color: var(--branco06);
     font-size: 1.2em;
     font-style: italic;
     text-align: center;
