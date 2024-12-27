@@ -15,7 +15,9 @@
 
     /*Paleta de Sombras do Preto*/
     --preto01: #000000;
+    --pret001: #333333;
     --preto02: #3C3C3C;
+    --preto002: #575757;
     --preto03: #5E5E5E;
     --preto04: #808080;
     --preto05: #A2A2A2;
@@ -71,14 +73,26 @@ header > h1 {
     border-radius: 25px;
     border: solid 2px transparent;
     margin: 0px 5px;
-    font-size: 1.2em;
+    font-size: 1.25em;
     transition: border 500ms ease, color 300ms ease, background-color 300ms ease;
 }
 
 .menuCentral > a:hover {
-    border: solid 2px var(--corC101);
-    color: var(--corC101);
+    border: solid 2px transparent;
+    color: var(--branco01);
     transition: border 500ms ease, color 300ms ease, background-color 300ms ease;
+}
+
+.menuCentral > a:hover:nth-child(1) {
+    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #3224f0 50%, #24F0C5) border-box;
+}
+
+.menuCentral > a:hover:nth-child(2) {
+    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #24F0C5) border-box;
+}
+
+.menuCentral > a:hover:nth-child(3) {
+    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #7424F0 55%) border-box;
 }
 
 .redesSociaisHeader {
@@ -130,13 +144,25 @@ header > h1 {
     color: var(--branco01);
     font-size: 1.5em;
     padding: 10px;
-    background-color: var(--cor02);
+    background-color: #1D1D1D;
     width: 172px;
 }
 
 .menuLateral > nav > a:hover {
-    background-color: var(--corC101);
-    color: var(--cor02);
+    color: var(--branco02);
+}
+
+.menuLateral > nav > a:hover:nth-child(1) {
+    background-image: linear-gradient(to bottom, #3224f0 50%, #24F0C5);
+}
+
+.menuLateral > nav > a:hover:nth-child(2) {
+    background-color: #24F0C5;
+    color: var(--preto02);
+}
+
+.menuLateral > nav > a:hover:nth-child(3) {
+    background-image: linear-gradient(to bottom, #24F0C5, #7424F0 55%);
 }
 
 .redesSociaisMenuLateral {
@@ -150,7 +176,7 @@ header > h1 {
 
 .redesSociaisMenuLateral a {
     display: none;
-    background-color: var(--cor05);
+    background-color: var(--preto01);
 }
 
 .redesSociaisMenuLateral img {

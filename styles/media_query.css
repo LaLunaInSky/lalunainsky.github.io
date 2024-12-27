@@ -53,6 +53,12 @@ Grandes telas: acima de 1200px
     --corC206: #80aab0;
 }
 
+@media screen and (max-width: 450px) {
+    body {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 768px) {
     header {
         height: 55px;
