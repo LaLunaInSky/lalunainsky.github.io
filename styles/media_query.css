@@ -53,71 +53,6 @@ Grandes telas: acima de 1200px
     --corC206: #80aab0;
 }
 
-@media screen and (max-width: 450px) {
-    main {
-        background-color: var(--preto01);
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    main {
-        background-color: red;
-    }
-
-    .páginaAtual h1 {
-        max-width: 600px;
-        transition: max-width 1500ms ease;
-    }
-
-    .destaques {
-        width: 550px;
-        height: 550px;
-        transition: width 1500ms ease, height 1500ms ease;
-    }
-
-    .conteudoDestaques {
-        height: 495px;
-        transition: height 1500ms ease;
-    }
-
-    .setasDestaques > aside {
-        margin-top: 190px;
-        transition: margin 1500ms ease;
-    }
-
-    .setaEsquerda {
-        width: 68px;
-        height: 68px;
-        transition: width 1500ms ease, height 1500ms ease;
-    }
-    
-    .setaEsquerda img {
-        margin-left: -1px;
-        transition: margin 1500ms ease;
-    }
-    
-    .setaDireita {
-        width: 68px;
-        height: 68px;
-        transition: width 1500ms ease, height 1500ms ease;
-    }
-    
-    .setaDireita img {
-        margin-left: 5px;
-        transition: margin 1500ms ease;
-    }
-
-    .setasDestaques img {
-        transform: scale(60%);
-        transition: transform 1500ms ease;
-    }
-
-    .bolinhasCarroselItems {
-        margin-top: 190px;
-        transition: margin 1500ms ease;
-    }
-}
-
 @media screen and (min-width: 768px) {
     header {
         height: 55px;
@@ -142,9 +77,5 @@ Grandes telas: acima de 1200px
 
     .menuLateral {
         display: none;
-    }
-
-    main {
-        background-color: green;
     }
 }
