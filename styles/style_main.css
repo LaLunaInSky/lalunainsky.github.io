@@ -69,30 +69,34 @@ header > h1 {
 .menuCentral > a {
     text-decoration: none;
     color: var(--branco01);
-    padding: 8px;
+    padding: 10px;
     border-radius: 25px;
     border: solid 2px transparent;
     margin: 0px 5px;
     font-size: 1.25em;
-    transition: border 500ms ease, color 300ms ease, background-color 300ms ease;
+    transition: border 500ms ease, color 500ms ease;
 }
 
 .menuCentral > a:hover {
     border: solid 2px transparent;
     color: var(--branco01);
-    transition: border 500ms ease, color 300ms ease, background-color 300ms ease;
+    text-shadow: 0px 1px 2px var(--preto002);
+    transition: border 500ms ease, color 500ms ease;
 }
 
 .menuCentral > a:hover:nth-child(1) {
     background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #3224f0 50%, #24F0C5) border-box;
+    color: #3224f0;
 }
 
 .menuCentral > a:hover:nth-child(2) {
     background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #24F0C5) border-box;
+    color: #24F0C5;
 }
 
 .menuCentral > a:hover:nth-child(3) {
     background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #7424F0 55%) border-box;
+    color: #7424F0;
 }
 
 .redesSociaisHeader {
@@ -141,28 +145,28 @@ header > h1 {
     display: none;
     text-align: center;
     text-decoration: none;
-    color: var(--branco01);
+    color: var(--branco02);
     font-size: 1.5em;
     padding: 10px;
     background-color: #1D1D1D;
-    width: 172px;
+    transition: border 1500ms ease;
 }
 
 .menuLateral > nav > a:hover {
-    color: var(--branco02);
+    background-color: var(--preto002);
+    text-shadow: 1px 2px 1px var(--pret001);
 }
 
 .menuLateral > nav > a:hover:nth-child(1) {
-    background-image: linear-gradient(to bottom, #3224f0 50%, #24F0C5);
+    color: #3224f0;
 }
 
 .menuLateral > nav > a:hover:nth-child(2) {
-    background-color: #24F0C5;
-    color: var(--preto02);
+    color: #24F0C5;
 }
 
 .menuLateral > nav > a:hover:nth-child(3) {
-    background-image: linear-gradient(to bottom, #24F0C5, #7424F0 55%);
+    color: #7424F0;
 }
 
 .redesSociaisMenuLateral {
@@ -172,6 +176,7 @@ header > h1 {
     margin-top: 6px;
     align-items: center;
     justify-content: center;
+    transition: margin 1500ms ease;
 }
 
 .redesSociaisMenuLateral a {
