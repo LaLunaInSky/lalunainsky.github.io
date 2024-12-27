@@ -15,35 +15,18 @@
 
     /*Paleta de Sombras do Preto*/
     --preto01: #000000;
+    --pret001: #333333;
     --preto02: #3C3C3C;
+    --preto002: #575757;
     --preto03: #5E5E5E;
     --preto04: #808080;
     --preto05: #A2A2A2;
     --preto06: #C3C3C3;
 
-    /*Paleta Cores Principais*/
-    --cor01: #24f0c4;
-    --cor02: #2498f0;
-    --cor03: #23d8f0;
-    --cor04: #24f07f;
-    --cor05: #2457f0;
-    --cor06: #74e1f0;
-
-    /*Paleta Cores Complementares cor05*/
-    --corC101: #f0b724;
-    --corC102: #9b854b;
-    --corC103: #464239;
-    --corC104: #2457f0;
-    --corC105: #495370;
-    --corC106: #4661b0;
-
-    /*Paleta Cores Complementares cor06*/
-    --corC201: #f0a973;
-    --corC202: #9b8a7e;
-    --corC203: #46382e;
-    --corC204: #74e1f0;
-    --corC205: #5c6e70;
-    --corC206: #80aab0;
+    /*Paleta Logo*/
+    --cor01: #3224f0;
+    --cor02: #24F0C5;
+    --cor03: #7424F0;
 }
 
 * {
@@ -52,8 +35,6 @@
 }
 
 html, body {
-    height: 100vh;
-    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--preto01);
 }
@@ -63,15 +44,20 @@ header {
     position: fixed;
     height: 55px;
     width: 100%;
-    background-color: var(--corC104);
+    background-color: var(--preto01);
     align-items: center;
     justify-content: center;
 }
 
 header > h1 {
     cursor: default;
+    background-image: linear-gradient(to right, #3224f0, #24F0C5, #7424F0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: var(--branco01);
-    text-shadow: 1px 2px 5px var(--preto02);
+    font-size: 2em;
+    font-weight: bolder;
     transition: all 2000ms ease;
 }
 
@@ -83,18 +69,34 @@ header > h1 {
 .menuCentral > a {
     text-decoration: none;
     color: var(--branco01);
-    padding: 8px;
+    padding: 10px;
     border-radius: 25px;
     border: solid 2px transparent;
     margin: 0px 5px;
-    font-size: 1.2em;
-    transition: border 500ms ease, color 300ms ease, background-color 300ms ease;
+    font-size: 1.25em;
+    transition: border 500ms ease, color 500ms ease;
 }
 
 .menuCentral > a:hover {
-    border: solid 2px var(--corC101);
-    color: var(--corC101);
-    transition: border 500ms ease, color 300ms ease, background-color 300ms ease;
+    border: solid 2px transparent;
+    color: var(--branco01);
+    text-shadow: 0px 1px 2px var(--preto002);
+    transition: border 500ms ease, color 500ms ease;
+}
+
+.menuCentral > a:hover:nth-child(1) {
+    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #3224f0 50%, #24F0C5) border-box;
+    color: #3224f0;
+}
+
+.menuCentral > a:hover:nth-child(2) {
+    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #24F0C5) border-box;
+    color: #24F0C5;
+}
+
+.menuCentral > a:hover:nth-child(3) {
+    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #7424F0 55%) border-box;
+    color: #7424F0;
 }
 
 .redesSociaisHeader {
@@ -143,16 +145,28 @@ header > h1 {
     display: none;
     text-align: center;
     text-decoration: none;
-    color: var(--branco01);
+    color: var(--branco02);
     font-size: 1.5em;
     padding: 10px;
-    background-color: var(--cor02);
-    width: 172px;
+    background-color: #1D1D1D;
+    transition: border 1500ms ease;
 }
 
 .menuLateral > nav > a:hover {
-    background-color: var(--corC101);
-    color: var(--cor02);
+    background-color: var(--preto002);
+    text-shadow: 1px 2px 1px var(--pret001);
+}
+
+.menuLateral > nav > a:hover:nth-child(1) {
+    color: #3224f0;
+}
+
+.menuLateral > nav > a:hover:nth-child(2) {
+    color: #24F0C5;
+}
+
+.menuLateral > nav > a:hover:nth-child(3) {
+    color: #7424F0;
 }
 
 .redesSociaisMenuLateral {
@@ -162,11 +176,12 @@ header > h1 {
     margin-top: 6px;
     align-items: center;
     justify-content: center;
+    transition: margin 1500ms ease;
 }
 
 .redesSociaisMenuLateral a {
     display: none;
-    background-color: var(--cor05);
+    background-color: var(--preto01);
 }
 
 .redesSociaisMenuLateral img {
@@ -181,32 +196,15 @@ header > h1 {
 
 main {
     width: 100%;
-    height: 100%;
+    height: 95vh;
     background-color: var(--preto02);
-}
-
-.espaçoVazio {
-    width: 100%;
-    height: 55px;
-    background-color: transparent;
-}
-
-.páginaAtual h1 {
-    cursor: default;
-    background-image: linear-gradient(to right,var(--cor02), var(--cor01));
-    color: var(--branco01);
-    text-shadow: 1px 2px 2px var(--corC106);
-    font-size: 1.6em;
-    border-radius: 0px 0px 20px 20px;
-    padding: 10px 30px 12px;
 }
 
 footer {
     cursor: default;
-    width: 100%;
     height: 40px;
-    background-color: var(--corC101);
-    color: var(--corC103);
+    background-color: var(--preto01);
+    color: var(--branco06);
     font-size: 1.2em;
     font-style: italic;
     text-align: center;

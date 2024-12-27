@@ -26,7 +26,7 @@ function trueOrFalseMenuLateralAbertura() {
             for (let item of navMenuLateral) {
                 item.style.display = 'block'
             } 
-            imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/close_icon_50px.png')
+            imgMenuLateral.setAttribute('src', './imagens/menu_icones/close_icon_50px.png')
             menuLateral.style = 'width: 192px;height: 260px;'
             break
         case false:
@@ -36,7 +36,7 @@ function trueOrFalseMenuLateralAbertura() {
             for (let item of navMenuLateral) {
                 item.style.display = 'none'
             }
-            imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/menu_icon_50px.png')
+            imgMenuLateral.setAttribute('src', './imagens/menu_icones/menu_icon_50px.png')
             menuLateral.style = 'width: 55px;height: 55px;'
             break
     }
@@ -50,7 +50,7 @@ window.onresize = function(event) {
         for (let item of navMenuLateral) {
             item.style.display = 'none'
         }
-        imgMenuLateral.setAttribute('src', '../../imagens/menu_icones/menu_icon_50px.png')
+        imgMenuLateral.setAttribute('src', './imagens/menu_icones/menu_icon_50px.png')
         menuLateral.style = 'width: 55px;height: 55px;'
         menuLateralAbertura = false
     }
