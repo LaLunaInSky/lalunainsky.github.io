@@ -200,6 +200,10 @@ main {
     background-color: var(--preto02);
 }
 
+.espaçoVazio {
+    height: 55px;
+}
+
 footer {
     cursor: default;
     height: 40px;
