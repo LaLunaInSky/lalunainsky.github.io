@@ -21,13 +21,10 @@
     --preto05: #A2A2A2;
     --preto06: #C3C3C3;
 
-    /*Paleta Cores Principais*/
-    --cor01: #24f0c4;
-    --cor02: #2498f0;
-    --cor03: #23d8f0;
-    --cor04: #24f07f;
-    --cor05: #2457f0;
-    --cor06: #74e1f0;
+    /*Paleta Logo*/
+    --cor01: #3224f0;
+    --cor02: #24F0C5;
+    --cor03: #7424F0;
 }
 
 * {
@@ -52,7 +49,7 @@ header {
 
 header > h1 {
     cursor: default;
-    background-image: linear-gradient(to top, var(--cor05) 20%, var(--cor01), var(--cor04));
+    background-image: linear-gradient(to right, #3224f0, #24F0C5, #7424F0);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
