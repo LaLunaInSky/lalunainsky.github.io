@@ -9,6 +9,115 @@ Computador: de 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
+:root {
+    /*color-scheme: light dark;*/
+
+    /*Paleta de Sombras do Branco*/
+    --branco01: #FFFFFF;
+    --branco02: #F6F6F6;
+    --branco03: #D4D4D4;
+    --branco04: #B3B3B3;
+    --branco05: #919191;
+    --branco06: #6F6F6F;
+
+    /*Paleta de Sombras do Preto*/
+    --preto01: #000000;
+    --preto02: #3C3C3C;
+    --preto03: #5E5E5E;
+    --preto04: #808080;
+    --preto05: #A2A2A2;
+    --preto06: #C3C3C3;
+
+    /*Paleta Cores Principais*/
+    --cor01: #24f0c4;
+    --cor02: #2498f0;
+    --cor03: #23d8f0;
+    --cor04: #24f07f;
+    --cor05: #2457f0;
+    --cor06: #74e1f0;
+
+    /*Paleta Cores Complementares cor05*/
+    --corC101: #f0b724;
+    --corC102: #9b854b;
+    --corC103: #464239;
+    --corC104: #2457f0;
+    --corC105: #495370;
+    --corC106: #4661b0;
+
+    /*Paleta Cores Complementares cor06*/
+    --corC201: #f0a973;
+    --corC202: #9b8a7e;
+    --corC203: #46382e;
+    --corC204: #74e1f0;
+    --corC205: #5c6e70;
+    --corC206: #80aab0;
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        background-color: var(--preto01);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    main {
+        background-color: red;
+    }
+
+    .páginaAtual h1 {
+        max-width: 600px;
+        transition: max-width 1500ms ease;
+    }
+
+    .destaques {
+        width: 550px;
+        height: 550px;
+        transition: width 1500ms ease, height 1500ms ease;
+    }
+
+    .conteudoDestaques {
+        height: 495px;
+        transition: height 1500ms ease;
+    }
+
+    .setasDestaques > aside {
+        margin-top: 190px;
+        transition: margin 1500ms ease;
+    }
+
+    .setaEsquerda {
+        width: 68px;
+        height: 68px;
+        transition: width 1500ms ease, height 1500ms ease;
+    }
+    
+    .setaEsquerda img {
+        margin-left: -1px;
+        transition: margin 1500ms ease;
+    }
+    
+    .setaDireita {
+        width: 68px;
+        height: 68px;
+        transition: width 1500ms ease, height 1500ms ease;
+    }
+    
+    .setaDireita img {
+        margin-left: 5px;
+        transition: margin 1500ms ease;
+    }
+
+    .setasDestaques img {
+        transform: scale(60%);
+        transition: transform 1500ms ease;
+    }
+
+    .bolinhasCarroselItems {
+        margin-top: 190px;
+        transition: margin 1500ms ease;
+    }
+}
+
 @media screen and (min-width: 768px) {
     header {
         height: 55px;
@@ -33,5 +142,9 @@ Grandes telas: acima de 1200px
 
     .menuLateral {
         display: none;
+    }
+
+    main {
+        background-color: green;
     }
 }

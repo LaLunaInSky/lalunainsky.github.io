@@ -52,8 +52,6 @@
 }
 
 html, body {
-    height: 100vh;
-    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--preto01);
 }
@@ -181,34 +179,41 @@ header > h1 {
 
 main {
     width: 100%;
-    height: 100vh;
     padding-bottom: 20px;
     background-color: var(--preto02);
 }
 
 .espaçoVazio {
-    width: 100%;
     height: 55px;
+    width: 100%;
     background-color: transparent;
+}
+
+.páginaAtual {
+    margin: 0px 10px;
 }
 
 .páginaAtual h1 {
     cursor: default;
+    margin: auto;
+    max-width: 450px;
     background-image: linear-gradient(to bottom,var(--cor05) 8%, var(--cor06));
     color: var(--branco02);
     text-shadow: 1px 2px 2px var(--corC106);
     font-size: 1.6em;
     border-radius: 0px 0px 20px 20px;
     padding: 10px 30px 12px;
+    transition: max-width 1500ms ease;
 }
 
 .destaques {
-    width: 95%;
+    width: 450px;
+    height: 450px;
     margin: 15px auto 0px;
     overflow: hidden;
     border-radius: 20px;
-    height: 450px;
     background-color: var(--corC101);
+    transition: width 1500ms ease, height 1500ms ease;
 }
 
 .destaques > h1 {
@@ -223,6 +228,7 @@ main {
     width: 100%;
     height: 395px;
     background-color: var(--corC102);
+    transition: height 1500ms ease;
 }
 
 .setasDestaques {
@@ -236,27 +242,31 @@ main {
     margin-top: 150px;
     border-radius: 50%;
     background-color: var(--corC205);
-    transition: background-color 300ms ease;
+    transition: background-color 300ms ease, margin 1500ms ease;
 }
 
 .setaEsquerda {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     margin-left: 10px;
+    transition: width 1500ms ease, height 1500ms ease;
 }
 
 .setaEsquerda img {
-    margin-left: -3px;
+    margin-left: -2px;
+    transition: margin 1500ms ease;
 }
 
 .setaDireita {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     margin-right: 10px;
+    transition: width 1500ms ease, height 1500ms ease;
 }
 
 .setaDireita img {
-    margin-left: 3px;
+    margin-left: 2px;
+    transition: margin 1500ms ease;
 }
 
 .setasDestaques > aside:hover {
@@ -265,18 +275,20 @@ main {
 }
 
 .setasDestaques img {
-    transform: scale(50%);
+    transform: scale(40%);
+    transition: transform 1500ms ease;
 }
 
 .bolinhasCarroselItems {
     height: 45px;
-    margin-top: 135px;
+    margin-top: 140px;
     background-color: var(--corC201);
     display: flex;
     justify-content: center;
     justify-content: space-around;
     padding: 0px 30%;
     align-items: center;
+    transition: margin 1500ms ease;
 }
 
 .bolinhasCarroselItems p {
@@ -295,7 +307,6 @@ main {
 
 footer {
     cursor: default;
-    width: 100%;
     height: 40px;
     background-color: var(--corC101);
     color: var(--corC103);
