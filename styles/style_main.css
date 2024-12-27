@@ -205,23 +205,6 @@ main {
     height: 55px;
 }
 
-.destaques {
-    height: 350px;
-    background-color: var(--preto002);
-}
-
-.destaques > h1 {
-    cursor: default;
-    padding: 10px 5px 15px;
-    margin: auto;
-    font-size: 1.4em;
-    text-align: center;
-    background-color: #1d1d1d7c;
-    color: var(--branco01);
-    width: 150px;
-    border-radius: 0px 0px 20px 20px;
-}
-
 footer {
     cursor: default;
     height: 40px;
