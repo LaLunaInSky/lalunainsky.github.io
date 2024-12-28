@@ -58,12 +58,12 @@ Grandes telas: acima de 1200px
         display: none;
     }
 }
-
+/*
 @media screen and (min-width: 450px) and (max-width: 768px) {
     .projetos {
         background-color: var(--preto04);
     }
-}
+}*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .projetos {
