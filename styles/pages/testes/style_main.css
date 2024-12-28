@@ -109,7 +109,7 @@ main {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    padding-top: 60%;
+    padding-top: 50%;
     color: var(--branco01);
     font-size: 1.6em;
     text-align: center;
@@ -126,6 +126,7 @@ main {
     padding: 10px 2px;
     text-align: center;
     flex-flow: column nowrap;
+    transition: opacity 1000ms ease;
 }
 
 .conteudoOpçãoProjeto p > a {
@@ -157,4 +158,31 @@ main {
     to {
         height: 30%;
     }
+}
+
+.projetoMostrar {
+    display: none;
+    width: 100%;
+    height: 100vh;
+}
+
+.projetoMostrar > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.fechadorProjetoMostrador {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--preto03);
+}
+
+.fechadorProjetoMostrador:hover {
+    background-color: var(--pret001);
 }
