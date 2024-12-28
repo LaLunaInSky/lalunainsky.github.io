@@ -67,7 +67,7 @@ main {
     color: var(--branco01);
     text-align: center;
     height: 40px;
-    background-image: linear-gradient(to bottom, transparent 4%, #24F0C5 40%, transparent 90%);
+    background-image: linear-gradient(to bottom, transparent 4%, var(--preto01) 40%, transparent 90%);
     border-radius: 30px;
     text-shadow: 0px 2px 5px var(--preto01);
 }
@@ -126,7 +126,6 @@ main {
     padding: 10px 2px;
     text-align: center;
     flex-flow: column nowrap;
-    animation: expansão 500ms ease alternate;
 }
 
 .conteudoOpçãoProjeto p > a {
@@ -147,10 +146,15 @@ main {
 
 .conteudoOpçãoProjeto:hover > p {
     display: flex;
-    animation: expansão 1000ms ease-in alternate-reverse;
+    animation: expansão 1000ms forwards ease-out normal;
 }
 
 @keyframes expansão {
-    from {height: 30%;}
-    to {height: 0%;}
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 30%;
+    }
 }
