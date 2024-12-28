@@ -44,13 +44,13 @@ main {
     background-color: var(--preto02);
 }
 
-.destaques {
-    height: 350px;
+.projetos {
+    height: 450px;
     overflow: hidden;
     background-color: var(--preto002);
 }
 
-.destaques > article {
+.projetos > article {
     display: flex;
     height: 100%;
     width: 100%;
@@ -58,7 +58,7 @@ main {
     align-items: center;
 }
 
-.opçãoDestaque {
+.opçãoProjeto {
     width: 250px;
     height: 350px;
     display: flex;
@@ -68,7 +68,7 @@ main {
     border-radius: 20px;
 }
 
-.conteudoOpçãoDestaque {
+.conteudoOpçãoProjeto {
     background-color: black;
     border-radius: 15px;
     display: flex;
@@ -77,7 +77,7 @@ main {
     overflow: hidden;
 }
 
-.conteudoOpçãoDestaque > h1 {
+.conteudoOpçãoProjeto > h1 {
     width: 90%;
     height: 100%;
     margin: 50% auto 0%; /*provavelmente quebre alguma hora*/
@@ -86,7 +86,7 @@ main {
     color: white;
 }
 
-.conteudoOpçãoDestaque > article {
+.conteudoOpçãoProjeto > article {
     display: none;
     flex-flow: column nowrap;
     justify-content: center;
@@ -98,12 +98,12 @@ main {
     height: 100%;
 }
 
-.conteudoOpçãoDestaque p:nth-child(1) {
+.conteudoOpçãoProjeto p:nth-child(1) {
     width: 80%;
     margin-top: 50px;
 }
 
-.conteudoOpçãoDestaque p:nth-last-child(1) {
+.conteudoOpçãoProjeto p:nth-last-child(1) {
     background-color: #333333;
     display: flex;
     flex-flow: column;
@@ -116,10 +116,10 @@ main {
     cursor: default;
 }
 
-.conteudoOpçãoDestaque:hover > h1 {
+.conteudoOpçãoProjeto:hover > h1 {
     display: none;
 }
 
-.conteudoOpçãoDestaque:hover > article {
+.conteudoOpçãoProjeto:hover > article {
     display: flex;
 }
