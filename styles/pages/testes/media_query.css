@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-/*Outras Versões
-Typical Devices Breakpoints
-Pequenas telas: até 600px
-Celular: de 600px até 768px
-Tablet: de 768px até 992px 
-Computador: de 992px até 1200px
-Grandes telas: acima de 1200px
-*/
-
 :root {
     /*color-scheme: light dark;*/
 
@@ -53,14 +44,35 @@ Grandes telas: acima de 1200px
     --corC206: #80aab0;
 }
 
-@media screen and (max-width: 450px) {
+/*Outras Versões
+Typical Devices Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px 
+Computador: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (max-width: 449px) {
     body {
         display: none;
     }
 }
-/*
-@media screen and (min-width: 768px) {
-    .destaques {
-        height: 400px;
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    .projetos {
+        background-color: var(--preto04);
     }
-}*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .projetos {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .projetos {
+        background-color: blue;
+    }
+}
