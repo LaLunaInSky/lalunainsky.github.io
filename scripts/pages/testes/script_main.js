@@ -4,15 +4,16 @@ const projetoMostrador = document.querySelector('.projetoMostrar')
 const mainProjetos = document.querySelector('main')
 
 let mostradorProjeto = (nomeProjeto) => {
-    if (projetoMostrador.style.display = 'none') {
-        projetoMostrador.style.display = 'flex'
-        mainProjetos.style.display = 'none'
-    }
+    let iframe =  document.querySelector('iframe')
+    iframe.setAttribute('src', `https://www.lalunainsky.com/projeto-${nomeProjeto}/`)
+
+    projetoMostrador.style.display = 'flex'
+    mainProjetos.style.display = 'none'
 }
 
 let fecharMostradorProjeto = () => {
-    if (projetoMostrador.style.display = 'flex') {
-        projetoMostrador.style.display = 'none'
-        mainProjetos.style.display = 'block'
-    }
+    projetoMostrador.style.display = 'none'
+    mainProjetos.style.display = 'block'
 }
+
+/*<iframe src="https://www.lalunainsky.com/projeto-android/" frameborder="0"></iframe>*/

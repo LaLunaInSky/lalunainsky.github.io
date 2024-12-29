@@ -53,9 +53,26 @@ main {
     align-items: center;
 }
 
+.anoProjetos > h1 {
+    padding: 10px;
+    margin: 15px auto;
+    width: 100px;
+    border-radius: 50px;
+    background-color: var(--preto01);
+    cursor: default;
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--branco01);
+}
+
+.anoProjetos > hr {
+    width: 400px;
+    margin: 20px auto 0px;
+}
+
 .mesProjetos {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .mesProjetos > h1 {
@@ -63,26 +80,28 @@ main {
     padding: 10px 0px 5px;
     margin: auto;
     font-size: 1.5em;
-    width: 300px;
+    width: 200px;
     color: var(--branco01);
     text-align: center;
     height: 40px;
-    background-image: linear-gradient(to bottom, transparent 4%, var(--preto01) 40%, transparent 90%);
-    border-radius: 30px;
     text-shadow: 0px 2px 5px var(--preto01);
 }
 
 .mesProjetos > section {
+    margin-top: -15px;
+    margin-right: -5px;
+    width: 80vw;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .mesProjetos > section > article {
-    margin: 15px auto 0px;
-    align-items: center;
+    margin-top: 15px;
+    margin-right: 5px;
     justify-content: center;
+    align-items: center;
 }
 
 .opçãoProjeto {
@@ -107,7 +126,8 @@ main {
 
 .conteudoOpçãoProjeto > h1 {
     cursor: pointer;
-    width: 100%;
+    margin: auto;
+    width: 80%;
     height: 100%;
     padding-top: 50%;
     color: var(--branco01);
