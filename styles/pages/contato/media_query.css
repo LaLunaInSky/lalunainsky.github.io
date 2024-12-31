@@ -53,7 +53,7 @@ Grandes telas: acima de 1200px
     --corC206: #80aab0;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 449px) {
     body {
         display: none;
     }
