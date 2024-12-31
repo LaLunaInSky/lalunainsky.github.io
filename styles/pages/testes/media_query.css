@@ -58,18 +58,8 @@ Grandes telas: acima de 1200px
         display: none;
     }
 }
-/*
-@media screen and (min-width: 450px) and (max-width: 768px) {
-    .projetos {
-        background-color: var(--preto04);
-    }
-}*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .projetos {
-        background-color: green;
-    }
-
     .mesProjetos:nth-last-child(1) > section, .mesProjetos:nth-last-child(2) > section {
         max-width: 445px;
         margin: auto;
@@ -77,12 +67,12 @@ Grandes telas: acima de 1200px
 }
 
 @media screen and (min-width: 992px) {
-    .projetos {
-        background-color: blue;
-    }
-
     .mesProjetos:nth-last-child(1) > section, .mesProjetos:nth-last-child(2) > section {
         max-width: 445px;
         margin: auto;
+    }
+
+    .fechadorProjetoMostrador > p {
+        display: none;
     }
 }

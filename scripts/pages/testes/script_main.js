@@ -7,6 +7,9 @@ let mostradorProjeto = (nomeProjeto) => {
     let iframe =  document.querySelector('iframe')
     iframe.setAttribute('src', `https://www.lalunainsky.com/projeto-${nomeProjeto}/`)
 
+    let linkRepoProjeto = document.querySelector('.fechadorProjetoMostrador > p > a')
+    linkRepoProjeto.setAttribute('href', `https://github.com/LaLunaInSky/projeto-${nomeProjeto}/`)
+
     projetoMostrador.style.display = 'flex'
     mainProjetos.style.display = 'none'
 }
