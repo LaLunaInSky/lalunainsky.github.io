@@ -12,7 +12,7 @@ const mainProjetos = document.querySelector('main')
 let footer = document.querySelector('footer>p')
 footer.innerText = `${anoAtual} - LaLunaInSky`
 let headerPágina = document.querySelector('header')
-let fotterPágina = document.querySelector('footer')
+let footerPágina = document.querySelector('footer')
 
 let mostradorProjeto = (nomeProjeto) => {
     let iframe =  document.querySelector('iframe')
@@ -24,15 +24,16 @@ let mostradorProjeto = (nomeProjeto) => {
     projetoMostrador.style.display = 'flex'
     mainProjetos.style.display = 'none'
     headerPágina.style.display = 'none'
-    fotterPágina.style.display = 'none'
-    /*falta esconder o header, foooter*/
+    footerPágina.style.display = 'none'
+    menuLateral.style.display = 'none'
 }
 
 let fecharMostradorProjeto = () => {
     projetoMostrador.style.display = 'none'
     mainProjetos.style.display = 'block'
     headerPágina.style.display = 'flex'
-    fotterPágina.style.display = 'block'
+    footerPágina.style.display = 'block'
+    menuLateral.style.display = 'block'
 }
 
 function trueOrFalseMenuLateralAbertura() {
