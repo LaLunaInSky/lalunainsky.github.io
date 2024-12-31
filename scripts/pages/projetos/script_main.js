@@ -15,6 +15,9 @@ let headerPágina = document.querySelector('header')
 let footerPágina = document.querySelector('footer')
 
 let mostradorProjeto = (nomeProjeto) => {
+    let fechadorProjetoMostradorLinkAncora = document.querySelector('.fechadorProjetoMostrador > a')
+    fechadorProjetoMostradorLinkAncora.setAttribute('href', `#${nomeProjeto}`)
+    
     let iframe =  document.querySelector('iframe')
     iframe.setAttribute('src', `https://www.lalunainsky.com/projeto-${nomeProjeto}/`)
 

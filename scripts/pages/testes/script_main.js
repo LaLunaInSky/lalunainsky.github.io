@@ -4,6 +4,9 @@ const projetoMostrador = document.querySelector('.projetoMostrar')
 const mainProjetos = document.querySelector('main')
 
 let mostradorProjeto = (nomeProjeto) => {
+    let fechadorProjetoMostradorLinkAncora = document.querySelector('.fechadorProjetoMostrador > a')
+    fechadorProjetoMostradorLinkAncora.setAttribute('href', `#${nomeProjeto}`)
+
     let iframe =  document.querySelector('iframe')
     iframe.setAttribute('src', `https://www.lalunainsky.com/projeto-${nomeProjeto}/`)
 
