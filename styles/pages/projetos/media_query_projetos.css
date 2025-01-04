@@ -60,31 +60,6 @@ Grandes telas: acima de 1200px
 }
 
 @media screen and (min-width: 768px) {
-    header {
-        height: 55px;
-        justify-content: space-between;
-    }
-    
-    header > h1 {
-        margin-left: 15px;
-        transition: all 2000ms ease;
-    }
-    
-    .menuCentral {
-        display: flex;
-        flex-flow: row nowrap;
-        transition: all 2000ms ease;
-    }
-
-    .redesSociaisHeader {
-        display: flex;
-        transition: all 2000ms ease;
-    }
-
-    .menuLateral {
-        display: none;
-    }
-
     .mesProjetos:nth-last-child(1) > section, .mesProjetos:nth-last-child(2) > section {
         max-width: 445px;
         margin: auto;

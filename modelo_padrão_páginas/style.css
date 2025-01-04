@@ -58,12 +58,10 @@ header > h1 {
     color: var(--branco01);
     font-size: 2em;
     font-weight: bolder;
-    transition: all 2000ms ease;
 }
 
 .menuCentral {
     display: none;
-    transition: all 2000ms ease;
 }
 
 .menuCentral > a {
@@ -102,7 +100,6 @@ header > h1 {
 .redesSociaisHeader {
     display: none;
     margin-right: 5px;
-    transition: all 2000ms ease;
 }
 
 .redesSociaisHeader > a {
@@ -176,7 +173,6 @@ header > h1 {
     margin-top: 6px;
     align-items: center;
     justify-content: center;
-    transition: margin 1500ms ease;
 }
 
 .redesSociaisMenuLateral a {
@@ -196,7 +192,8 @@ header > h1 {
 
 main {
     width: 100%;
-    height: 95vh;
+    height: 90vh; /*alteral em cada página!!!*/
+    padding-bottom: 25px;
     background-color: var(--preto02);
 }
 
@@ -217,4 +214,44 @@ footer {
 
 footer > p {
     padding: 5px;
+}
+
+
+/*Outras Versões
+Typical Devices Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px 
+Computador: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (max-width: 449px) {
+    body {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 55px;
+        justify-content: space-between;
+    }
+    
+    header > h1 {
+        margin-left: 15px;
+    }
+    
+    .menuCentral {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .redesSociaisHeader {
+        display: flex;
+    }
+
+    .menuLateral {
+        display: none;
+    }
 }
