@@ -1,5 +1,3 @@
-"use strict"
-
 let menuLateral = document.querySelector('.menuLateral')
 let projetoMostrador = document.querySelector('.projetoMostrar')
 let mainProjetos = document.querySelector('main')
