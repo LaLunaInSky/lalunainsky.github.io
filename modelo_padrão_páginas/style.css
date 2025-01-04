@@ -192,7 +192,6 @@ header > h1 {
 
 main {
     width: 100%;
-    height: 90vh; /*alteral em cada página!!!*/
     padding-bottom: 25px;
     background-color: var(--preto02);
 }

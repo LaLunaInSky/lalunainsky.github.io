@@ -15,6 +15,10 @@ if (headPáginaTítulo.innerText != 'Modelo Padrão Páginas') {
             prefixoComplementar = '../../'
             localizaçãoPáginas = ['../../index.html', '../projetos/index.html', './index.html']
             break
+        case 'LaLunaInSky | Projetos':
+            prefixoComplementar = '../../'
+            localizaçãoPáginas = ['../../index.html', './index.html', '../contato/index.html']
+            break
     }
     
     let head = document.querySelector('head')
@@ -27,11 +31,24 @@ if (headPáginaTítulo.innerText != 'Modelo Padrão Páginas') {
     linkToHead.setAttribute('media', 'all')
     head.appendChild(linkToHead)
 
-    /*Criando os itens no body*/
-    body.innerHTML =`<header><h1>LaLunaInSky</h1><nav class="menuCentral"><a href="${localizaçãoPáginas[0]}">Início</a><a href="${localizaçãoPáginas[1]}">Projetos</a><a href="${localizaçãoPáginas[2]}">Contato</a></nav><section class="redesSociaisHeader"><a href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/instagram_64px.png" alt="icone instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/github_64px.png" alt="icone github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/linkedin_64px.png" alt="icone linkedin"></a></section></header>`
-    body.innerHTML += '<main><section class="espaçoVazio"></section></main>'
-    body.innerHTML += '<footer><p>LaLunaInSky</p></footer>'
-    body.innerHTML += `<aside class="menuLateral"><section onclick="trueOrFalseMenuLateralAbertura()"><img src="${prefixoComplementar}imagens/menu_icones/menu_icon_50px.png" alt="icone menu lateral"></section><nav><a href="${localizaçãoPáginas[0]}">Início</a><a href="${localizaçãoPáginas[1]}">Projetos</a><a href="${localizaçãoPáginas[2]}">Contato</a></nav><section class="redesSociaisMenuLateral"><a href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/instagram_64px.png" alt="icone instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/github_64px.png" alt="icone github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/linkedin_64px.png" alt="icone linkedin"></a></section></aside>`
+    /*Criando os itens nescessários do body*/
+    let headerPágina = document.createElement('header')
+    headerPágina.innerHTML = `<h1>LaLunaInSky</h1><nav class="menuCentral"><a href="${localizaçãoPáginas[0]}">Início</a><a href="${localizaçãoPáginas[1]}">Projetos</a><a href="${localizaçãoPáginas[2]}">Contato</a></nav><section class="redesSociaisHeader"><a href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/instagram_64px.png" alt="icone instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/github_64px.png" alt="icone github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/linkedin_64px.png" alt="icone linkedin"></a></section>`
+    body.prepend(headerPágina)
+
+    let mainEspaçoExtra = document.createElement('section')
+    let mainPágina = document.querySelector('main')
+    mainEspaçoExtra.setAttribute('class', 'espaçoVazio')
+    mainPágina.prepend(mainEspaçoExtra)
+
+    let footerPágina = document.createElement('footer')
+    footerPágina.innerHTML = '<p>LaLunaInSky</p>'
+    mainPágina.after(footerPágina)
+
+    let asideMenuLateral = document.createElement('aside')
+    asideMenuLateral.setAttribute('class', 'menuLateral')
+    asideMenuLateral.innerHTML = `<section onclick="trueOrFalseMenuLateralAbertura()"><img src="${prefixoComplementar}imagens/menu_icones/menu_icon_50px.png" alt="icone menu lateral"></section><nav><a href="${localizaçãoPáginas[0]}">Início</a><a href="${localizaçãoPáginas[1]}">Projetos</a><a href="${localizaçãoPáginas[2]}">Contato</a></nav><section class="redesSociaisMenuLateral"><a href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/instagram_64px.png" alt="icone instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/github_64px.png" alt="icone github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/linkedin_64px.png" alt="icone linkedin"></a></section>`
+    footerPágina.after(asideMenuLateral)
 }
 
 /*Depois da criação dos HTMLS*/
