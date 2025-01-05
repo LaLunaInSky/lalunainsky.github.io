@@ -46,3 +46,40 @@ main {
 .espaçoVazio {
     height: 55px;
 }
+
+.sobre {
+    height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre > section {
+    background-color: var(--preto03);
+    display: flex;
+    width: 450px;
+    padding: 50px 5px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px var(--pret001);
+    transition: width 500ms ease-out;
+
+    &>p {
+        font-size: 1.2em;
+        color: var(--branco01);
+        width: 200px;
+        text-shadow: 1px 3px 2px var(--preto02);
+        text-align: center;
+        transition: font-size 500ms ease-out, width 500ms ease-out;
+    }
+
+    &>article {
+        overflow: hidden;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 2px 3px 5px var(--pret001);
+    }
+}
