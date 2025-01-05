@@ -111,6 +111,7 @@ window.onresize = function(event) {
 
 
 /*Temporário!!!!!!!!!*/
+/*temp projetos*/
 let projetoMostrador = document.querySelector('.projetoMostrar')
 let mainProjetos = document.querySelector('main')
 let headerPágina = document.querySelector('header')
@@ -140,3 +141,20 @@ let fecharMostradorProjeto = () => {
     footerPágina.style.display = 'block'
     menuLateral.style.display = 'block'
 }
+
+
+/*temp home*/
+const mudarTamanhoFotoSobre = () => {
+    let imgFotoSobre = document.querySelector('.sobre img')
+    if (window.innerWidth >= 992) {
+        imgFotoSobre.setAttribute('src', '../../imagens/foto_perfil/foto_lalunainsky_300px.jpg')
+    } else {
+        imgFotoSobre.setAttribute('src', '../../imagens/foto_perfil/foto_lalunainsky_200px.jpg')
+    }
+}
+
+window.onresize = function(event) {
+    mudarTamanhoFotoSobre()
+}
+
+mudarTamanhoFotoSobre()
