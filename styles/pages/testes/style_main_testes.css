@@ -46,3 +46,87 @@ main {
 .espaçoVazio {
     height: 55px;
 }
+
+.estudo {
+    & > .cabeçalhoEstudo {
+        background-color: var(--preto01);
+        width: 300px;
+        margin: auto;
+        border-radius: 20px;
+        text-align: center;
+        padding: 15px;
+
+        & > h1 {
+            cursor: default;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            color: var(--branco03);
+        }
+
+        & > p {
+            color: var(--branco01); 
+
+            & > a {
+                text-decoration: none;
+                padding: 5px;
+                border-radius: 15px;
+                font-weight: bold;
+                color: #24F0C5;
+                transition: background-color 500ms ease-out, color 300ms ease-out;
+
+                &:hover {
+                    background-color: #7424F0;
+                    color: var(--preto01);
+                    transition: background-color 500ms ease-out, color 300ms ease-out;
+                }
+            }
+        }
+    }
+}
+
+.módulo {
+    & > h2 {
+        cursor: default;
+        margin: auto;
+        text-align: center;
+        background-color: #3224f0;
+        color: var(--branco03);
+        width: 250px;
+        font-size: 1.4em;
+        padding: 10px 0px;
+        border-radius: 20px;
+    }
+
+    & > h2:nth-child(1) {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    & > section {
+        background-color: var(--branco01);
+        width: 420px;
+        height: 100px;
+        margin: auto;
+
+        & > h3 {
+            cursor: default;
+            margin-left: 15px;
+            font-size: 1.3em;
+            padding: 15px 0px 10px;
+        }
+
+        & > hr {
+            margin: auto;
+            width: 390px;
+            border: 1px solid;
+        }
+    }
+
+    & > .desafio {
+        border-radius: 20px 20px 0px 0px;
+        margin-top: 10px;
+    }
+
+    & > .exercício {
+        border-radius: 0px 0px 20px 20px;
+    }
+}
