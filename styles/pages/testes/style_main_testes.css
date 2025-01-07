@@ -85,6 +85,8 @@ main {
 }
 
 .módulos {
+    max-width: 500px;
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

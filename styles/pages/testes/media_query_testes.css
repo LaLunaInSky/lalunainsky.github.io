@@ -59,9 +59,9 @@ Grandes telas: acima de 1200px
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 850px) {
     .módulos {
-        justify-content: space-around;
+        justify-content: space-around; /*passar pro js*/
         max-width: 970px;
         margin: auto;
     }
