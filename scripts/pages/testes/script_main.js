@@ -9,6 +9,7 @@ const organizaçãoMods = ()=>{
             h2IDm1.style = 'margin-top: 0px;border-radius: 0px 0px 20px 20px;'
         } else {
             quantidadeDeMódulos.style.justifyContent = 'space-around'
+            quantidadeDeMódulos.style.alignItems = 'flex-start'
             h2IDm1.style = 'margin-top: 20px;border-radius: 20px;'
         }
     } else {

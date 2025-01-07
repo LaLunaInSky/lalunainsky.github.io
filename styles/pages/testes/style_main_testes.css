@@ -112,31 +112,69 @@ main {
     }
 
     & > section {
-        background-color: var(--branco01);
+        background-color: var(--preto04);
         width: 420px;
-        height: 100px;
         margin: auto;
 
         & > h3 {
+            color: var(--preto01);
+            background-color: var(--preto05);
             cursor: default;
-            margin-left: 15px;
-            font-size: 1.3em;
-            padding: 15px 0px 10px;
+            font-size: 1.35em;
+            padding: 15px 0px 10px 15px;
         }
 
         & > hr {
             margin: auto;
+            color: var(--pret001);
             width: 390px;
             border: 1px solid;
+        }
+
+        & > article {
+            & a {
+                text-decoration: none;
+                color: var(--branco03);
+                background-color: red;width: 60px;
+                background-color: var(--preto02);
+                font-size: 1.1em;
+                font-weight: bold;
+                text-align: center;
+                padding: 5px;
+                border: 3px solid transparent;
+                border-radius: 10px;
+
+                &:hover {
+                    border-color: #24F0C5;
+                    color: #24F0C5;
+                }
+            }
+
+            & ul {
+                list-style-type: none;
+                padding: 15px;
+                display: grid;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                row-gap: 10px;
+                column-gap: 10px;
+            }
+
+            & li {
+                display: grid;
+            }
         }
     }
 
     & > .desafio {
         border-radius: 20px 20px 0px 0px;
         margin-top: 10px;
+        overflow: hidden;
     }
 
     & > .exercício {
         border-radius: 0px 0px 20px 20px;
+        overflow: hidden;
     }
 }
