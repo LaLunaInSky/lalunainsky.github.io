@@ -1,6 +1,6 @@
 "use strict"
 
-let organizaçãoMods = ()=>{
+const organizaçãoMods = ()=>{
     let h2IDm1 = document.querySelector('#m1>h2')
     if (window.innerWidth >= 850) {
         let quantidadeDeMódulos = document.querySelector('.módulos')
@@ -16,9 +16,8 @@ let organizaçãoMods = ()=>{
     }
 }
 
-window.onresize = function(evento) {
+window.onresize = ()=>{
     organizaçãoMods()
-    console.log(window.innerWidth)
 }
 
 organizaçãoMods()
