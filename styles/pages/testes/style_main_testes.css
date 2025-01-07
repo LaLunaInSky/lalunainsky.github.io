@@ -164,7 +164,7 @@ main {
 
                 &:hover {
                     border-color: #7424F0;
-                    background-color: var(--preto03);
+                    background-color: #14032e;
                     color: var(--branco01);
                     transition: border-color 300ms ease-out, background-color 300ms ease-out, color 300ms ease-out;
                 }
