@@ -126,7 +126,7 @@ main {
 
         & > hr {
             margin: auto;
-            color: #7424F0;
+            color: #24F0C5;
             border: 2px solid;
         }
 
@@ -134,31 +134,32 @@ main {
             & a {
                 text-decoration: none;
                 color: var(--branco03);
-                background-color: red;width: 60px;
+                width: 60px;
                 background-color: var(--preto02);
                 font-size: 1.1em;
                 font-weight: bold;
                 text-align: center;
                 padding: 5px;
-                border: 3px solid transparent;
+                border: 3px solid var(--preto03);
                 border-radius: 10px;
+                transition: border-color 300ms ease-out, background-color 300ms ease-out, color 300ms ease-out;
 
                 &:hover {
                     border-color: #7424F0;
-                    background-color: var(--branco03);
-                    color: var(--preto02);
+                    background-color: var(--preto03);
+                    color: var(--branco01);
+                    transition: border-color 300ms ease-out, background-color 300ms ease-out, color 300ms ease-out;
                 }
             }
 
             & ul {
                 list-style-type: none;
                 padding: 15px;
-                display: grid;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
                 row-gap: 10px;
-                column-gap: 10px;
+                column-gap: 10px;*/
             }
 
             & li {
