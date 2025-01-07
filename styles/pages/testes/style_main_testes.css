@@ -159,7 +159,7 @@ main {
                 flex-flow: row wrap;
                 justify-content: center;
                 row-gap: 10px;
-                column-gap: 10px;*/
+                column-gap: 10px;
             }
 
             & li {
