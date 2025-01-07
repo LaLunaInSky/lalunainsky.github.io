@@ -124,10 +124,28 @@ main {
             padding: 15px 0px 10px 15px;
         }
 
-        & > hr {
-            margin: auto;
-            color: #24F0C5;
-            border: 2px solid;
+        & > p {
+            cursor: default;
+            padding: 8px;
+            color: var(--preto01);
+            font-weight: bolder;
+            font-size: 0.95em;
+            background-color: var(--preto06);
+
+            & > a {
+                padding: 5px;
+                border-radius: 15px;
+                color: #7424F0;
+                font-size: 1.05em;
+                text-decoration: none;
+                transition: color 400ms ease-out, background-color 400ms ease-out;
+
+                &:hover {
+                    background-color: #24F0C5;
+                    color: var(--preto02);
+                    transition: color 400ms ease-out, background-color 400ms ease-out;
+                }
+            }
         }
 
         & > article {
