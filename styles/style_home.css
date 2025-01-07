@@ -58,7 +58,7 @@
         color: var(--branco01);
         font-weight: bold;
         width: 200px;
-        text-shadow: 2px 3px 10px var(--preto01);
+        text-shadow: 0px 1px 10px var(--preto01);
         text-align: center;
         transition: font-size 500ms ease-out, width 500ms ease-out;
     }
