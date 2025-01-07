@@ -38,10 +38,11 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, #3224f0, #24F0C5, #7424F0);
 }
 
 .sobre > section {
-    background-color: var(--preto03);
+    background-color: #5e5e5ed0;
     display: flex;
     width: 450px;
     padding: 50px 5px;
@@ -52,10 +53,12 @@
     transition: width 500ms ease-out;
 
     &>p {
+        cursor: default;
         font-size: 1.2em;
         color: var(--branco01);
+        font-weight: bold;
         width: 200px;
-        text-shadow: 1px 3px 2px var(--preto02);
+        text-shadow: 2px 3px 10px var(--preto01);
         text-align: center;
         transition: font-size 500ms ease-out, width 500ms ease-out;
     }
