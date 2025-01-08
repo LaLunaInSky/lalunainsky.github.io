@@ -58,15 +58,3 @@ Grandes telas: acima de 1200px
         display: none;
     }
 }
-
-@media screen and (min-width: 850px) {
-    .módulos {
-        max-width: 970px;
-        margin: auto;
-    }
-
-    #m1 > h2 {
-        margin-top: 20px;
-        border-radius: 20px;
-    }
-}
