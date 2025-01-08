@@ -43,7 +43,7 @@
 }
 
 .sobre > section {
-    background-color: #5e5e5ed0;
+    background-color: #5e5e5ea8;
     display: flex;
     width: 450px;
     padding: 50px 5px;
@@ -76,12 +76,12 @@
 main > hr {
     width: 95%;
     margin: 40px auto 40px;
-    border: 2px solid var(--preto03);
+    border: 2px solid var(--preto04);
 }
 
 .estudo {
     & > .cabeçalhoEstudo {
-        background-image: linear-gradient(to bottom, var(--preto01) 75%, #3224f0) ;
+        background-image: linear-gradient(to bottom, var(--preto01) 60%, #3224f0) ;
         background-color: var(--preto01);
         width: 300px;
         margin: auto;
@@ -164,7 +164,7 @@ main > hr {
             font-weight: bolder;
             font-size: 0.95em;
             margin-top: -5px;
-            padding-top: 15px;
+            padding-top: 20px;
             background-image: linear-gradient(to bottom, var(--preto01), var(--preto06) 40%);
 
             & > a {
@@ -228,7 +228,7 @@ main > hr {
 
         
         & > h3 {
-            background-image: linear-gradient(to bottom, #3224f0, var(--preto01) 50%);
+            background-image: linear-gradient(to bottom, #3224f0, var(--preto01) 40%);
         }
     }
 
