@@ -135,7 +135,7 @@ let mostradorProjeto = (nomeProjeto) => {
         headerPágina.style.display = 'none'
         footerPágina.style.display = 'none'
         menuLateral.style.display = 'none'
-    }, 1000)
+    }, 500)
         
 }
 
@@ -144,7 +144,10 @@ let fecharMostradorProjeto = () => {
     mainProjetos.style.display = 'block'
     headerPágina.style.display = 'flex'
     footerPágina.style.display = 'block'
-    trueOrFalseMenuLateralAbertura()
+    
+    if (window.innerWidth < 768) {
+        menuLateral.style.display = 'block'
+    }
 }
 
 

@@ -97,6 +97,13 @@
     align-items: center;
     border: 3px solid white;
     border-radius: 20px;
+    transition: border-color 350ms ease-out;
+
+    &:hover {
+        border: 3px solid transparent;
+        background: linear-gradient(var(--preto02), var(--preto02)) padding-box, linear-gradient(to right, #3224f0, #24F0C5, #7424F0) border-box;
+        transition: border-color 350ms ease-out;
+    }
 }
 
 .conteudoOpçãoProjeto {
