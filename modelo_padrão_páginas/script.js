@@ -9,15 +9,15 @@ if (headPáginaTítulo.innerText != 'Modelo Padrão Páginas') {
         /*Adicionar as páginas existentes no site*/
         case 'LaLunaInSky':
             prefixoComplementar = './'
-            localizaçãoPáginas = ['./index.html', './pages/projetos/index.html', './pages/contato/index.html']
+            localizaçãoPáginas = ['./index.html', './pages/projetos/index.html']
             break
-        case 'LaLunaInSky | Contato':
+        case 'LaLunaInSky | Teste':
             prefixoComplementar = '../../'
-            localizaçãoPáginas = ['../../index.html', '../projetos/index.html', './index.html']
+            localizaçãoPáginas = ['#', '#']
             break
         case 'LaLunaInSky | Projetos':
             prefixoComplementar = '../../'
-            localizaçãoPáginas = ['../../index.html', './index.html', '../contato/index.html']
+            localizaçãoPáginas = ['../../index.html', './index.html']
             break
     }
     
@@ -27,13 +27,13 @@ if (headPáginaTítulo.innerText != 'Modelo Padrão Páginas') {
     /*Criando os itens nescessários do head*/
     let linkToHead = document.createElement('link')
     linkToHead.setAttribute('rel', 'stylesheet')
-    linkToHead.setAttribute('href', `${prefixoComplementar}modelo_padrão_páginas/style.css`)
+    linkToHead.setAttribute('href', `${prefixoComplementar}modelo_padrão_páginas/style_adaptivo.css`)
     linkToHead.setAttribute('media', 'all')
     head.appendChild(linkToHead)
 
     /*Criando os itens nescessários do body*/
     let headerPágina = document.createElement('header')
-    headerPágina.innerHTML = `<h1>LaLunaInSky</h1><nav class="menuCentral"><a href="${localizaçãoPáginas[0]}">Início</a><a href="${localizaçãoPáginas[1]}">Projetos</a><!--<a href="${localizaçãoPáginas[2]}">Contato</a>--></nav><section class="redesSociaisHeader"><a href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/instagram_64px.png" alt="icone instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/github_64px.png" alt="icone github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/linkedin_64px.png" alt="icone linkedin"></a></section>`
+    headerPágina.innerHTML = `<h1>LaLunaInSky</h1><nav class="menuCentral"><a href="${localizaçãoPáginas[0]}">Início</a><a href="${localizaçãoPáginas[1]}">Projetos</a></nav><section class="redesSociaisHeader"><a href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/instagram_64px.png" alt="icone instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/github_64px.png" alt="icone github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/linkedin_64px.png" alt="icone linkedin"></a></section>`
     body.prepend(headerPágina)
 
     let mainEspaçoExtra = document.createElement('section')
@@ -47,7 +47,7 @@ if (headPáginaTítulo.innerText != 'Modelo Padrão Páginas') {
 
     let asideMenuLateral = document.createElement('aside')
     asideMenuLateral.setAttribute('class', 'menuLateral')
-    asideMenuLateral.innerHTML = `<section onclick="trueOrFalseMenuLateralAbertura()"><img src="${prefixoComplementar}imagens/menu_icones/menu_icon_50px.png" alt="icone menu lateral"></section><nav><a href="${localizaçãoPáginas[0]}">Início</a><a href="${localizaçãoPáginas[1]}">Projetos</a><!--<a href="${localizaçãoPáginas[2]}">Contato</a>--></nav><section class="redesSociaisMenuLateral"><a href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/instagram_64px.png" alt="icone instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/github_64px.png" alt="icone github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/linkedin_64px.png" alt="icone linkedin"></a></section>`
+    asideMenuLateral.innerHTML = `<section onclick="trueOrFalseMenuLateralAbertura()"><img src="${prefixoComplementar}imagens/menu_icones/menu_icon_50px.png" alt="icone menu lateral"></section><nav><a href="${localizaçãoPáginas[0]}">Início</a><a href="${localizaçãoPáginas[1]}">Projetos</a></nav><section class="redesSociaisMenuLateral"><a href="https://www.instagram.com/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/instagram_64px.png" alt="icone instagram"></a><a href="https://github.com/LaLunaInSky" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/github_64px.png" alt="icone github"></a><a href="https://www.linkedin.com/in/lalunainsky/" target="_blank"><img src="${prefixoComplementar}imagens/logos_midias_sociais/linkedin_64px.png" alt="icone linkedin"></a></section>`
     footerPágina.after(asideMenuLateral)
 }
 
@@ -80,7 +80,13 @@ function trueOrFalseMenuLateralAbertura() {
                 item.style.display = 'block'
             } 
             imgMenuLateral.setAttribute('src', `${prefixoComplementar}imagens/menu_icones/close_icon_50px.png`)
-            menuLateral.style = 'width: 192px;height: 210px;'/*height: 270px; original*/
+            
+            if (window.innerWidth < 480) {
+                menuLateral.style = 'width: 150px;height: 178px;'
+            } else {
+                menuLateral.style = 'width: 170px;height: 200px;'
+            }
+
             break
         case false:
             for (let item of redesSociaisMenuLateral) {
@@ -90,25 +96,14 @@ function trueOrFalseMenuLateralAbertura() {
                 item.style.display = 'none'
             }
             imgMenuLateral.setAttribute('src', `${prefixoComplementar}imagens/menu_icones/menu_icon_50px.png`)
-            menuLateral.style = 'width: 55px;height: 55px;'
+            if (window.innerWidth < 480) {
+                menuLateral.style = 'width: 45px;height: 45px;'
+            } else {
+                menuLateral.style = 'width: 55px;height: 55px;'
+            }
             break
     }
 }
-
-/* Temp
-window.onresize = ()=> {
-    if (window.innerWidth >= 768) {
-        for (let item of redesSociaisMenuLateral) {
-            item.style.display = 'none'
-        }
-        for (let item of navMenuLateral) {
-            item.style.display = 'none'
-        }
-        imgMenuLateral.setAttribute('src', `${prefixoComplementar}imagens/menu_icones/menu_icon_50px.png`)
-        menuLateral.style = 'width: 55px;height: 55px;'
-        menuLateralAbertura = false
-    }
-}*/
 
 
 /*Temporário!!!!!!!!!*/
@@ -152,31 +147,19 @@ let fecharMostradorProjeto = () => {
 
 
 /*temp home*/
-const mudarTamanhoFotoSobre = () => {
-    let imgFotoSobre = document.querySelector('.sobre img')
-    if (window.innerWidth >= 992) {
-        imgFotoSobre.setAttribute('src', '../../imagens/foto_perfil/foto_lalunainsky_300px.jpg')
-    } else {
-        imgFotoSobre.setAttribute('src', '../../imagens/foto_perfil/foto_lalunainsky_200px.jpg')
-    }
-}
-
+/*
 const organizaçãoMods = ()=>{
     let h2IDm1 = document.querySelector('#m1>h2')
-    if (window.innerWidth >= 850) {
-        let quantidadeDeMódulos = document.querySelector('.módulos')
-        if (quantidadeDeMódulos.children.length < 2) {
-            quantidadeDeMódulos.style.justifyContent = 'center'
-            h2IDm1.style = 'margin-top: 0px;border-radius: 0px 0px 20px 20px;'
-        } else {
-            quantidadeDeMódulos.style.justifyContent = 'space-around'
-            quantidadeDeMódulos.style.alignItems = 'flex-start'
-            h2IDm1.style = 'margin-top: 20px;border-radius: 20px;'
-        }
+    if (window.innerWidth >= 1025) {
+        let módulos = document.querySelector('.módulos')
+        módulos.style.justifyContent = 'space-around'
+        módulos.style.alignItems = 'flex-start'
+        h2IDm1.style = 'margin-top: 20px;border-radius: 20px;'
+        
     } else {
         h2IDm1.style = 'margin-top: 0px;border-radius: 0px 0px 20px 20px;'
     }
-}
+}*/
 
 window.onresize = ()=>{
     if (window.innerWidth >= 768) {
@@ -187,13 +170,15 @@ window.onresize = ()=>{
             item.style.display = 'none'
         }
         imgMenuLateral.setAttribute('src', `${prefixoComplementar}imagens/menu_icones/menu_icon_50px.png`)
-        menuLateral.style = 'width: 55px;height: 55px;'
+        if (window.innerWidth < 480) {
+            menuLateral.style = 'width: 45px;height: 45px;'
+        } else {
+            menuLateral.style = 'width: 55px;height: 55px;'
+        }
         menuLateralAbertura = false
     }
 
     organizaçãoMods()
-    mudarTamanhoFotoSobre()
 }
 
-mudarTamanhoFotoSobre()
 organizaçãoMods()
