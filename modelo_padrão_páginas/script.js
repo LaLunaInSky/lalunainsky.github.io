@@ -120,19 +120,23 @@ let footerPágina = document.querySelector('footer')
 
 let mostradorProjeto = (nomeProjeto) => {
     let fechadorProjetoMostradorLinkAncora = document.querySelector('.fechadorProjetoMostrador > a')
-    fechadorProjetoMostradorLinkAncora.setAttribute('href', `#${nomeProjeto}`)
-    
+    let mesProjeto = document.querySelector(`#${nomeProjeto}`).parentElement.previousElementSibling.id
+    fechadorProjetoMostradorLinkAncora.setAttribute('href', `#${mesProjeto}`)
+
     let iframe =  document.querySelector('iframe')
     iframe.setAttribute('src', `https://www.lalunainsky.com/projeto-${nomeProjeto}/`)
 
     let linkRepoProjeto = document.querySelector('.fechadorProjetoMostrador > p > a')
     linkRepoProjeto.setAttribute('href', `https://github.com/LaLunaInSky/projeto-${nomeProjeto}/`)
 
-    projetoMostrador.style.display = 'flex'
-    mainProjetos.style.display = 'none'
-    headerPágina.style.display = 'none'
-    footerPágina.style.display = 'none'
-    menuLateral.style.display = 'none'
+    setTimeout(()=>{
+        projetoMostrador.style.display = 'flex'
+        mainProjetos.style.display = 'none'
+        headerPágina.style.display = 'none'
+        footerPágina.style.display = 'none'
+        menuLateral.style.display = 'none'
+    }, 1000)
+        
 }
 
 let fecharMostradorProjeto = () => {
@@ -140,7 +144,7 @@ let fecharMostradorProjeto = () => {
     mainProjetos.style.display = 'block'
     headerPágina.style.display = 'flex'
     footerPágina.style.display = 'block'
-    menuLateral.style.display = 'block'
+    trueOrFalseMenuLateralAbertura()
 }
 
 

@@ -241,3 +241,21 @@
         background-color: var(--pret001);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .mesProjetos:nth-last-child(1) > section, .mesProjetos:nth-last-child(2) > section {
+        max-width: 445px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .mesProjetos:nth-last-child(1) > section, .mesProjetos:nth-last-child(2) > section {
+        max-width: 445px;
+        margin: auto;
+    }
+
+    .fechadorProjetoMostrador > p {
+        display: none;
+    }
+}
