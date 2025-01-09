@@ -238,8 +238,7 @@ main > hr {
         background-image: linear-gradient(to bottom, var(--preto04) 92%, #3224f0);
 
         & > h3 {
-            padding-top: 25px;
-            background-image: linear-gradient(to bottom, var(--preto04), var(--preto01) 40%);
+            padding-top: -25px;
         }
     }
 }
