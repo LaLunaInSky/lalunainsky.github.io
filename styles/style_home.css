@@ -81,7 +81,6 @@ main > hr {
 
 .estudo {
     & > .cabeçalhoEstudo {
-        background-image: linear-gradient(to bottom, var(--preto01) 60%, #3224f0) ;
         background-color: var(--preto01);
         width: 300px;
         margin: auto;
