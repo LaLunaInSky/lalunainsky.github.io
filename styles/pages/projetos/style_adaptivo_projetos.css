@@ -27,6 +27,11 @@
     --cor03: #7424F0;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 @media (min-width:320px)  {
     .projetos {
         margin: auto;

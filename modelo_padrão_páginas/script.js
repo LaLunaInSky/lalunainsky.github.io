@@ -147,31 +147,19 @@ let fecharMostradorProjeto = () => {
 
 
 /*temp home*/
-const mudarTamanhoFotoSobre = () => {
-    let imgFotoSobre = document.querySelector('.sobre img')
-    if (window.innerWidth >= 992) {
-        imgFotoSobre.setAttribute('src', '../../imagens/foto_perfil/foto_lalunainsky_300px.jpg')
-    } else {
-        imgFotoSobre.setAttribute('src', '../../imagens/foto_perfil/foto_lalunainsky_200px.jpg')
-    }
-}
-
+/*
 const organizaçãoMods = ()=>{
     let h2IDm1 = document.querySelector('#m1>h2')
-    if (window.innerWidth >= 850) {
-        let quantidadeDeMódulos = document.querySelector('.módulos')
-        if (quantidadeDeMódulos.children.length < 2) {
-            quantidadeDeMódulos.style.justifyContent = 'center'
-            h2IDm1.style = 'margin-top: 0px;border-radius: 0px 0px 20px 20px;'
-        } else {
-            quantidadeDeMódulos.style.justifyContent = 'space-around'
-            quantidadeDeMódulos.style.alignItems = 'flex-start'
-            h2IDm1.style = 'margin-top: 20px;border-radius: 20px;'
-        }
+    if (window.innerWidth >= 1025) {
+        let módulos = document.querySelector('.módulos')
+        módulos.style.justifyContent = 'space-around'
+        módulos.style.alignItems = 'flex-start'
+        h2IDm1.style = 'margin-top: 20px;border-radius: 20px;'
+        
     } else {
         h2IDm1.style = 'margin-top: 0px;border-radius: 0px 0px 20px 20px;'
     }
-}
+}*/
 
 window.onresize = ()=>{
     if (window.innerWidth >= 768) {
@@ -191,8 +179,6 @@ window.onresize = ()=>{
     }
 
     organizaçãoMods()
-    mudarTamanhoFotoSobre()
 }
 
-mudarTamanhoFotoSobre()
 organizaçãoMods()
