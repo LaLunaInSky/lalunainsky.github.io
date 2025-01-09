@@ -65,7 +65,7 @@
             cursor: default;
             padding: 10px 0px 5px;
             margin: auto;
-            font-size: 1.5em;
+            font-size: 1.15em;
             width: 200px;
             color: var(--branco01);
             text-align: center;
@@ -145,6 +145,11 @@
             flex-flow: column nowrap;
             transition: opacity 1000ms ease;
 
+            &:nth-last-child(1) a:hover {
+                color: var(--branco02);
+                background-color: #3224f0;
+            }
+
             & > a {
                 text-decoration: none;
                 font-size: 1em;
@@ -156,11 +161,6 @@
                 border-radius: 25px;
             }
         }
-    }
-    
-    .conteudoOpçãoProjeto p:nth-last-child(1) a:hover {
-        color: var(--branco02);
-        background-color: #3224f0;
     }
     
     @keyframes expansão {
@@ -177,38 +177,67 @@
         display: none;
         width: 100%;
         height: 100vh;
+
+        & > iframe {
+            width: 100%;
+            height: 100%;
+        }
     }
-    
-    .projetoMostrar > iframe {
-        width: 100%;
-        height: 100%;
-    }
-    
+
     .fechadorProjetoMostrador {
         display: flex;
         position: absolute;
         top: 10px;
         right: 10px;
+
+        &  img {
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--preto03);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+        
+            &:hover {
+                background-color: var(--pret001);
+            }
+        }
+
+        & > p {
+            color: var(--branco01);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.39);
+            display: flex;
+            height: 35px;
+            cursor: default;
+            font-size: 1em;
+            text-align: center;
+            padding: 0px 15px;
+            padding-right: 30px;
+            align-items: center;
+            margin-top: 8px;
+            margin-right: -25px;
+            border-radius: 50px 0px 0px 50px;
+            background-color: var(--preto03);
+            animation: expansãoLinkRepo 1500ms ease-out normal;
+        
+            & > a {
+                text-decoration: none;
+                margin-left: 5px;
+                padding: 5px;
+                color: #24F0C5;
+                font-weight: bolder;
+                border-radius: 50px;
+                text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.425);
+            
+                &:hover {
+                    background-color: #24F0C5;
+                    color: var(--pret001);
+                    text-shadow: none;
+                }
+            }
+        }
     }
-    
-    .fechadorProjetoMostrador > p {
-        color: var(--branco01);
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.39);
-        display: flex;
-        height: 35px;
-        cursor: default;
-        font-size: 1em;
-        text-align: center;
-        padding: 0px 15px;
-        padding-right: 30px;
-        align-items: center;
-        margin-top: 8px;
-        margin-right: -25px;
-        border-radius: 50px 0px 0px 50px;
-        background-color: var(--preto03);
-        animation: expansãoLinkRepo 1500ms ease-out normal;
-    }
-    
+
     @keyframes expansãoLinkRepo {
         from {
             width: 0px;
@@ -220,38 +249,13 @@
             font-size: 0.98em;
         }
     }
-    
-    .fechadorProjetoMostrador > p > a {
-        text-decoration: none;
-        margin-left: 5px;
-        padding: 5px;
-        color: #24F0C5;
-        font-weight: bolder;
-        border-radius: 50px;
-        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.425);
-    
-        &:hover {
-            background-color: #24F0C5;
-            color: var(--pret001);
-            text-shadow: none;
-        }
-    }
-    
-    .fechadorProjetoMostrador img {
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: var(--preto03);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
-    
-        &:hover {
-            background-color: var(--pret001);
-        }
-    }
 }
 
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:480px)  {
+    .anoProjetos > h1 {
+        background-color: red;
+    }
+}
 @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
 @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
