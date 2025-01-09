@@ -210,6 +210,21 @@ body {
     .espaçoVazio {
         height: 55px;
     }
+
+    footer {
+        cursor: default;
+        height: 40px;
+        background-color: var(--preto01);
+        color: var(--branco06);
+        font-size: 1.2em;
+        font-style: italic;
+        text-align: center;
+        align-content: center;
+    }
+    
+    footer > p {
+        padding: 5px;
+    }
 }
 
 @media (min-width: 480px)  {
