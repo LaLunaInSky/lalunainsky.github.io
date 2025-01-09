@@ -83,12 +83,17 @@ header > h1 {
 }
 
 .menuCentral > a:hover:nth-child(1) {
-    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #3224f0 50%, #24F0C5) border-box;
-    color: #3224f0;
+    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #3224f0 20%, #24F0C5) border-box;
+    /*color: #3224f0;*/
+    /*temp*/
+    color: #24F0C5;
 }
 
 .menuCentral > a:hover:nth-child(2) {
-    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #24F0C5) border-box;
+    /*background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #24F0C5) border-box;
+    color: #24F0C5;*/
+    /*temp*/
+    background: linear-gradient(var(--preto01), var(--preto01)) padding-box, linear-gradient(to right, #24F0C5, #7424F0 75%) border-box;
     color: #24F0C5;
 }
 
