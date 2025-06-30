@@ -1,0 +1,13 @@
+{
+  "name": "lalunainsky.github.io",
+  "version": "1.0.0",
+  "description": "portifólio lalunainsky",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "LaLunaInSKy",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.1"
+}
